@@ -1,0 +1,578 @@
+
+.client_logo_item{
+    overflow: hidden;
+    animation: 30s scroll infinite 2s linear;
+    white-space: nowrap;
+    padding: 30px 5px;
+}
+@keyframes scroll {
+    0%{
+        /* transform: translateX(0); */
+           transform: translate3d(0,0,0);
+    }
+    100%{
+        /* transform: translateX(calc(-250px * 7)); */
+        transform: translate3d(-2211.43px,0px,0px)
+    }
+    
+}
+.myLogos{
+    overflow: hidden;
+    animation: 35s slideAnimation infinite linear;
+    white-space: nowrap;
+}
+@keyframes slideAnimation {
+    from {
+      transform: translate3d(0,0,0);
+    }
+    to {
+      transform: translate3d(-2211.43px,0px,0px)
+    }
+  }
+  
+.my-slider{
+    animation: mySlider 16s  infinite ;
+}
+/* @keyframes mySlider {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+} */
+.nav-link-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+ .nav-link-container:hover{
+    outline: .5px solid #1B2155;
+    border-radius: 40px;
+ }
+ 
+  
+  /* Ensure both text and icon are white */
+  .nav-link-container .nav-link,
+  .nav-link-container .dropdown-toggle-icon box-icon {
+    color: white;
+    fill: white;
+    text-decoration: none;
+  }
+  
+  .dropdown-toggle-icon {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Optional: On hover, arrow color stays white */
+ 
+  
+  .seoPara{
+    padding: 10px 130px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .seoimg:hover{
+    cursor: pointer;
+  }
+
+
+.myparallax{
+    background-blend-mode: overlay;
+}
+
+.myimg:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 30px 0 rgba(174, 191, 210, 0.3);
+  }
+
+
+.myText,
+.myPara {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.myPara1{
+     max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  letter-spacing: .5px;
+  font-size: 18px;
+}
+/* .myText{
+    margin: 0px 380px;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+.myPara{
+    margin: 0px 330px;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+ */
+
+
+/* @media screen and  (max-width: 375px){
+    .myPara .myText{
+     margin: 0px 0px -20px 0px;
+     font-size: 18px;
+    }
+}
+
+
+
+@media screen and  (max-width: 390px){
+    .myPara .myText{
+     margin: 0px 0px -20px 0px;
+     font-size: 18px;
+    }
+} */
+
+.pricing_block{
+  text-align: center;
+}
+
+.type-heading{
+  height: 40px;
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+
+ .myconPara{
+    letter-spacing: .5px;
+    overflow: hidden;
+ }
+
+.mycon{
+    height: 300px;
+}
+
+.img-border{
+  border-radius: 8px;
+}
+
+.typed-cursor{
+  display: none !important;
+}
+
+.myform{
+    display: contents;
+}
+.port1{
+    height: 602px;
+}
+
+.margincontainer{
+  /* margin-left: 105px;
+  margin-right: 105px; */
+  max-width: 1320px !important;
+}
+.myblock{
+  height: 540px;
+}
+.myicon_list{
+  height: 245px !important;
+}
+.tbl-hd{
+  gap: 0 !important;
+}
+.txtcolor{
+  color: #fff !important;
+  position: relative;
+    top: -100px;
+    background: linear-gradient(#9d9cff, #E8E5E1, #f2f2f2);
+    animation: tada 5s infinite  ;
+}
+@keyframes tada {
+  0%{
+    transform: translateY(0);
+    box-shadow: 0px 5px 10px #9fbcdb;
+  }
+  50%{
+    transform: translateY(50px);
+  }
+  100%{
+    transform: translateY(0);
+    box-shadow: 0px 5px 10px #9fbcdb;
+  }
+}
+.business_consulting_hero_section .shape_1 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex
+;
+  max-width: 615px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+@media (max-width: 1550px) {
+  .main_menu_list.unordered_list.justify-content-center {
+    width: 750px !important;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width:787px){
+
+    .software_company_hero_section {
+        padding: 170px 0 60px;
+      }
+    .nav-link-container:hover{
+        outline: none;
+        border-radius: none;
+     }
+    .nav-link  {
+        color: black  !important;
+        font-size: 14px;
+    }
+    .dropdown-toggle-icon box-icon{
+        color: black !important;
+        fill: black !important;
+    }
+    .seoPara{
+        padding: 10px 20px 10px 30px;
+    }
+    .seodiv{
+        max-width: 300px;
+    }
+   
+   .about_funfact_info {
+    z-index: 1;
+    width: 345px;
+    flex: 0 0 auto;
+    padding: 20px 40px;
+    position: relative;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .about_funfact_info .icon_globe {
+    display: none;
+  }
+  .about_funfact_info .about_funfact_counter {
+    gap: 50px;
+    display: flex;
+    margin-top: 45px;
+    justify-content: flex-end;
+    padding-left: 14px;
+}
+  }
+
+@media (max-width:576px){
+  .txtcolor{
+    color: #fff !important;
+    position: relative;
+      top: -100px;
+      background: linear-gradient(#77E5FA, #E8E5E1, #E0FADA);
+      animation: tada 5s infinite  ;
+      order: 0 !important;
+      width: 280px !important;
+  }
+  .col-none{
+    display: none !important;
+  }
+    .mycon{
+        height: 350px;
+       }
+       .myconPara{
+        overflow: hidden;
+        letter-spacing: normal !important;
+       }
+       .port1{
+        height: auto !important;
+       }
+       .fun6{
+        font-size: 27px !important;
+       }
+       .myPara1{
+       text-align: left !important;
+       font-size: 16px !important;
+       }
+       .job-block{
+        display: block !important;
+       }
+       
+}
+
+@media (max-width: 432px) {
+
+
+  .main_menu_list.unordered_list.justify-content-center {
+    width: 370px !important;
+  }
+
+  .type-heading{
+    height: 55px;
+    font-size: 40px;
+  }
+
+  .pricing_block.myblock {
+    height: 610px;
+  }
+
+  .pricing_block_title {
+    text-align: center;
+  }
+
+  .myicon_list {
+    height: 270px !important;
+  }
+
+
+  .about_image_2 .image_wrap {
+    flex: 0 0 auto;
+    max-width: 265px;
+    overflow: hidden;
+    border-radius: var(--bs-border-radius);
+  }
+
+    .about_funfact_info .about_funfact_counter {
+        gap: 50px;
+        display: flex;
+        margin-top: 45px;
+        justify-content: flex-end;
+        padding-left: 30px;
+    }
+
+    .about_funfact_info {
+        z-index: 1;
+        width: 345px;
+        flex: 0 0 auto;
+        padding: 20px 30px;
+        position: relative;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .about_funfact_info .about_funfact_counter .counter_value {
+      line-height: 1;
+      font-size: 25px;
+      font-weight: 700;
+      display: inline-flex;
+      color: var(--bs-dark);
+      font-family: "Axiforma Bold";
+  }
+
+  .case_study_block .case_technologies > li {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 auto;
+    border-radius: 100%;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    background-color: var(--bs-white);
+    box-shadow: 0 4px 23px 0 rgba(174, 191, 210, 0.3);
+}
+.margincontainer{
+  margin-left: 0;
+  margin-right: 0;
+}
+    .service_facilities_group > li {
+        padding: 4px;
+        flex: 0 0 100%;
+        justify-content: center;
+    }
+
+
+  }
+
+
+
+  @media (max-width: 414px) {
+
+    .about_funfact_info .about_funfact_counter {
+        gap: 50px;
+        display: flex;
+        margin-top: 45px;
+        justify-content: flex-end;
+        padding-left: 22px;
+    }
+
+    .about_funfact_info {
+        z-index: 1;
+        width: 292px;
+        flex: 0 0 auto;
+        padding: 20px 30px;
+        position: relative;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .about_funfact_info .about_funfact_counter .counter_value {
+      line-height: 1;
+      font-size: 25px;
+      font-weight: 700;
+      display: inline-flex;
+      color: var(--bs-dark);
+      font-family: "Axiforma Bold";
+  }
+    .service_facilities_group > li {
+        padding: 4px;
+        flex: 0 0 100%;
+        justify-content: center;
+    }
+
+  }
+
+  @media (max-width: 392px){
+
+    .type-heading{
+      height: 100px;
+      font-size: 40px;
+    }
+  
+    .txtcolor{
+      color: #fff !important;
+      position: relative;
+        top: -100px;
+        background: linear-gradient(#77E5FA, #E8E5E1, #E0FADA);
+        animation: tada 5s infinite  ;
+        order: 0 !important;
+        width: 250px !important;
+    }
+
+    
+.pricing_block {
+  padding: 40px;
+  position: relative;
+  background-color: var(--bs-white);
+  border-radius: var(--bs-border-radius-sm);
+  box-shadow: 0 1px 2px 0 rgba(174, 191, 210, 0.3);
+  height: 900px;
+}
+
+    .pricing_block .icon_list {
+      columns: 2;
+      display: block;
+      column-gap: 20px;
+      padding: 29px 0 25px;
+      text-align: left;
+      height: 550px;
+    }
+
+        .service_facilities_group > li {
+        padding: 4px;
+        flex: 0 0 100%;
+        justify-content: center;
+    }
+
+  }
+
+  @media (max-width: 380px){
+
+    .main_menu_list.unordered_list.justify-content-center {
+      width: 350px !important;
+    } 
+
+  }
+
+
+
+  @media (max-width:360px){
+
+    .main_menu_list.unordered_list.justify-content-center {
+      width: 330px !important;
+    } 
+
+    .about_funfact_info {
+        z-index: 1;
+        width: 292px;
+        flex: 0 0 auto;
+        padding: 20px 40px;
+        position: relative;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      .about_funfact_info .about_funfact_counter {
+        gap: 50px;
+        display: flex;
+        margin-top: 45px;
+        justify-content: flex-end;
+        padding-left: 16px;
+    }
+
+    .pricing_block {
+    padding: 40px;
+    position: relative;
+    background-color: var(--bs-white);
+    border-radius: var(--bs-border-radius-sm);
+    box-shadow: 0 1px 2px 0 rgba(174, 191, 210, 0.3);
+    height: 900px;
+  }
+
+  .btn {
+  gap: 10px;
+  line-height: 1;
+  padding: 0 35px;
+  font-size: 14px;
+  overflow: hidden;
+  font-weight: 600;
+  transition: 300ms;
+  position: relative;
+  align-items: center;
+  letter-spacing: 1px;
+  display: inline-flex;
+  color: var(--bs-white);
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "Axiforma SemiBold";
+  background-color: var(--bs-primary);
+  border: 1px solid var(--bs-primary);
+  border-radius: var(--bs-border-radius-pill);
+}
+
+    .service_facilities_group > li {
+        padding: 4px;
+        flex: 0 0 100%;
+        justify-content: center;
+    }
+    
+  }

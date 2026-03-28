@@ -1,0 +1,14 @@
+.calltoaction_section.parallaxie {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    position: relative;
+    width: 100%;
+    /* background-color: rgba(2,8,66,0.1); Add this line */
+  }
+  
+  .calltoaction_section .container {
+    position: relative;
+    z-index: 1;
+  }
