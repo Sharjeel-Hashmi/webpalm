@@ -15,14 +15,14 @@ const servicePriceMap = {
     "€1,200 - €2,500",
     "€2,500+",
   ],
-  "Web Maintenance": ["€50 - €150", "€150 - €300", "€300 - €600", "€600+"],
+  "Website Maintenance": ["€100 - €150", "€150 - €300", "€300 - €600", "€600+"],
   "Social Media Graphics": [
     "€100 - €200",
     "€200 - €400",
     "€400 - €700",
     "€700+",
   ],
-  "Web Development": [
+  "Website Design & Development": [
     "€400 - €650",
     "€1,000 - €2,500",
     "€2,500 - €5,000",
@@ -171,7 +171,7 @@ export default function Contact() {
         <section
           className="page_banner_section text-center"
           style={{
-            backgroundImage: `url(${"assets/images/shapes/bg_pattern_4.svg"})`,
+            backgroundImage: `url(${"assets/images/shapes/bg_pattern_3.svg"})`,
           }}
         >
           <div className="container">

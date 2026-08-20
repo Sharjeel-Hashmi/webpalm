@@ -77,8 +77,7 @@ export default function Career() {
         <section
           className="page_banner_section text-center"
           style={{
-            backgroundImage: `url(${"assets/images/site_logo/site_logo_05.jpg"})`,
-            backgroundBlendMode: "overlay",
+            backgroundImage: `url(${"assets/images/shapes/bg_pattern_3.svg"})`,
           }}
         >
           <div className="container">

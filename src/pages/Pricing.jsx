@@ -82,7 +82,7 @@ export default function Pricing() {
         <section
           class="page_banner_section text-center"
           style={{
-            backgroundImage: `url(${"assets/images/shapes/bg_pattern_4.svg"})`,
+            backgroundImage: `url(${"assets/images/shapes/bg_pattern_3.svg"})`,
           }}
         >
           <div class="container">

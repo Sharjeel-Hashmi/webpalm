@@ -26,14 +26,14 @@ const servicePriceMap = {
     "€1,200 - €2,500",
     "€2,500+",
   ],
-  "Web Maintenance": ["€50 - €150", "€150 - €300", "€300 - €600", "€600+"],
+  "Website Maintenance": ["€100 - €150", "€150 - €300", "€300 - €600", "€600+"],
   "Social Media Graphics": [
     "€100 - €200",
     "€200 - €400",
     "€400 - €700",
     "€700+",
   ],
-  "Web Development": [
+  "Website Design & Development": [
     "€500 - €1,000",
     "€1,000 - €2,500",
     "€2,500 - €5,000",
@@ -253,7 +253,7 @@ export default function Home() {
 
               <div className="col-lg-6 col-none">
                 <div className="hero_image">
-                  <img src="assets/images/hero/hero-img-2.png" alt="" />
+                  <img src="assets/images/hero/hero-img-2.webp" alt="" />
                   </div>
               </div>
             </div>

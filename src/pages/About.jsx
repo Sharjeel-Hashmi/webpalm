@@ -80,7 +80,7 @@ export default function About() {
         <section
           className="page_banner_section text-center"
           style={{
-            backgroundImage: `url(${"assets/images/shapes/bg_pattern_4.svg"})`,
+            backgroundImage: `url(${"assets/images/shapes/bg_pattern_3.svg"})`,
           }}
         >
           <div className="container">
@@ -100,7 +100,7 @@ export default function About() {
         {/* <!-- Intro About Section - Start
         ================================================== --> */}
         <section className="intro_about_section section_space bg-light">
-          <div className="intro_about_content">
+          {/* <div className="intro_about_content">
             <div className="container">
               <div className="row">
                 <div className="col-lg-8">
@@ -121,7 +121,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="container">
             <div className="heading_block mb-0">
               <div className="row justify-content-lg-between">
