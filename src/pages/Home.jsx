@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import EmailForm from "./EmailForm"; // Importing the new EmailForm component
 
 import emailjs from "@emailjs/browser";
@@ -15,6 +15,45 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import TypeWriter from "./TypeWriter";
 import { Helmet } from "react-helmet-async";
+import FluidBackground from "../Components/FluidBackground";
+
+const servicePriceMap = {
+  SEO: ["€200 - €400", "€400 - €800", "€800 - €1,500", "€1,500+"],
+  "Content Writing": ["€100 - €250", "€250 - €500", "€500 - €1,000", "€1,000+"],
+  "Digital Marketing": [
+    "€300 - €600",
+    "€600 - €1,200",
+    "€1,200 - €2,500",
+    "€2,500+",
+  ],
+  "Web Maintenance": ["€50 - €150", "€150 - €300", "€300 - €600", "€600+"],
+  "Social Media Graphics": [
+    "€100 - €200",
+    "€200 - €400",
+    "€400 - €700",
+    "€700+",
+  ],
+  "Web Development": [
+    "€500 - €1,000",
+    "€1,000 - €2,500",
+    "€2,500 - €5,000",
+    "€5,000+",
+  ],
+  "Social Media Management": [
+    "€150 - €300",
+    "€300 - €600",
+    "€600 - €1,200",
+    "€1,200+",
+  ],
+  "Social Media": ["€100 - €250", "€250 - €500", "€500 - €1,000", "€1,000+"],
+  "Graphic Designing": [
+    "€100 - €300",
+    "€300 - €600",
+    "€600 - €1,200",
+    "€1,200+",
+  ],
+  Other: ["€100 - €300", "€300 - €700", "€700 - €1,500", "€1,500+"],
+};
 
 export default function Home() {
   const swiperRef = useRef(null);
@@ -38,9 +77,14 @@ export default function Home() {
   };
 
   const form = useRef();
+  const [selectedService, setSelectedService] = useState("");
+
+  const handleServiceChange = (e) => {
+    setSelectedService(e.target.value);
+  };
 
   const publickey = "AuwyFfdV7So5IUKn5";
-  const serviceId = "service_ze2ns0r";
+  const serviceId = "service_q9qqwvk";
   const templateId = "template_1jwnsxc";
 
   const sendEmail = (e) => {
@@ -78,6 +122,7 @@ export default function Home() {
         }
       );
     e.target.reset();
+    setSelectedService("");
   };
 
   return (
@@ -143,33 +188,31 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
+          content="https://webpalm.ie/assets/images/site_logo/favicon-webpalm.png"
         />
       </Helmet>
       
+      
       <Header1 />
       <main className="page_content">
-        <section className="software_company_hero_section xb-hidden">
-          <div className="container">
+        <section className="software_company_hero_section xb-hidden" style={{ position: 'relative', overflow: 'hidden' }}>
+          <FluidBackground />
+          <div className="container" style={{ position: 'relative', zIndex: 1 }}>
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="content_wrap">
-                  <div
-                    className="heading_focus_text has_underline text-white d-inline-flex"
-                    style={{
-                      backgroundImage: `url(${"assets/images/shapes/shape_title_under_line.svg"})`,
-                    }}
-                  >
+                  <div className="heading_focus_text has_underline d-inline-flex"
+                   style={{ color: '#1e3a8a', backgroundImage: `url(${"assets/images/shapes/shape_title_under_line.svg"})` }}>
                     Business Automation & Software Solutions
                   </div>
-                  <h1 className="text-white">
+                  <h1 style={{ color: '#181919' }} className="text-white1">
                     We build custom web solutions to <mark>transform</mark>{" "}
                     businesses worldwide
                   </h1>
                   <TypeWriter />
-                  <ul className="step_list text-white unordered_list_block">
-                    <li> Quality is always first priority</li>
-                    <li>Get to the market on time</li>
+                  <ul className="step_list text-white unordered_list_block" >
+                    <li style={{ color: '#334155' }}> Quality is always first priority</li>
+                    <li style={{ color: '#334155' }}>Get to the market on time</li>
                   </ul>
                   <ul className="btns_group unordered_list p-0 justify-content-start">
                     <li>
@@ -191,7 +234,7 @@ export default function Home() {
                       </Link>
                     </li>
                     <li>
-                      <a className="hotline_block" href="tel:+353 894205316">
+                      <a className="hotline_block" href="tel:+353 899520026">
                         <span className="hotline_icon">
                           <i
                             className="fa-solid fa-phone-volume"
@@ -200,120 +243,20 @@ export default function Home() {
                         </span>
                         <span className="hotline_content">
                           <small>CONTACT US</small>
-                          <strong className="text-white">+353 894205316</strong>
+                          <strong className="text-black">+353 899520026</strong>
                         </span>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-4" style={{ marginTop: "50px" }}>
-                <div className="pricing_block myblock">
-                  <div class="best_plan">
-                    <img
-                      src="assets/images/icons/best_offer.svg.svg"
-                      alt="Best Offer"
-                    />
-                  </div>
-                  <div class="table_head tbl-hd flex-column">
-                    {/* <div
-                      class="pricing_price_value txtcolor"
-                    >
-                      <span class="pricing_annually">
-                        <h2 class="text-primary">Grab Offer</h2>
-                      </span>
-                    </div> */}
-                    <div class="pricing_block_title">
-                      <h2 class="heading_text">
-                        <mark>Best Offer Live Now</mark>
-                      </h2>
-                      <h5>Enhance Your Brand with a professional Web App</h5>
-                      {/* <p class="pricing_package_description mb-0">
-                        Step up your game with a dynamic, easy-to-manage
-                        website.
-                      </p> */}
-                    </div>
-                  </div>
-                  <ul class="icon_list unordered_list_block d-inline-flex myicon_list">
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Beautiful - Fully-responsive and optimized Web App
-                      </span>
-                    </li>
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Custom design with tailored branding
-                      </span>
-                    </li>
 
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Contact Form + Click-to-Call Integration
-                      </span>
-                    </li>
-                  </ul>
-
-                  <a class="btn btn-light" href="https://wa.me/353894205316">
-                    <span class="btn_label" data-text="Get Free Quote">
-                      Get Started Now
-                    </span>
-                    <span class="btn_icon">
-                      <i class="fa-solid fa-arrow-up-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-2 col-none">
-                <div className="engine_image">
-                  <div className="image_wrap_1">
-                    <img
-                      src="assets/images/hero/circle_engine_1.webp"
-                      alt="Engine"
-                    />
+              <div className="col-lg-6 col-none">
+                <div className="hero_image">
+                  <img src="assets/images/hero/hero-img-2.png" alt="" />
                   </div>
-                  <div className="image_wrap_2">
-                    <img
-                      src="assets/images/hero/circle_engine_2.webp"
-                      alt="Engine"
-                    />
-                  </div>
-                  <div className="image_wrap_3">
-                    <img
-                      src="assets/images/hero/circle_engine_3.webp"
-                      alt="Engine"
-                    />
-                  </div>
-                  <div className="image_wrap_4">
-                    <img
-                      src="assets/images/hero/circle_engine_4.png"
-                      alt="Engine"
-                    />
-                  </div>
-                </div>
               </div>
             </div>
-          </div>
-
-          <div className="shape_image_1">
-            <img src="assets/images/hero/shape_image_1.webp" alt="Engine" />
-          </div>
-          <div className="shape_image_2">
-            <img src="assets/images/hero/shape_image_2.webp" alt="Engine" />
-          </div>
-          <div className="shape_image_3">
-            <img src="assets/images/hero/shape_image_3.webp" alt="Engine" />
-          </div>
-          <div className="shape_image_4">
-            <img src="assets/images/hero/shape_image_4.webp" alt="Engine" />
           </div>
         </section>
 
@@ -617,202 +560,6 @@ export default function Home() {
                   role="group"
                   aria-label="21/28"
                   data-swiper-slide-index="20"
-                  style={{ width: "184.286px" }}
-                >
-                  <div className="client_logo_item">
-                    <img
-                      src="assets/images/clients/client_logo_7.webp"
-                      alt="Webpalm - Client Logo"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="swiper-slide"
-                  role="group"
-                  aria-label="22/28"
-                  data-swiper-slide-index="21"
-                  style={{ width: "184.286px" }}
-                >
-                  <div className="client_logo_item">
-                    <img
-                      src="assets/images/clients/client_logo_1.webp"
-                      alt="Webpalm - Client Logo"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="swiper-slide"
-                  role="group"
-                  aria-label="23/28"
-                  data-swiper-slide-index="22"
-                  style={{ width: "184.286px" }}
-                >
-                  <div className="client_logo_item">
-                    <img
-                      src="assets/images/clients/client_logo_2.webp"
-                      alt="Webpalm - Client Logo"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="swiper-slide"
-                  role="group"
-                  aria-label="24/28"
-                  data-swiper-slide-index="23"
-                  style={{ width: "184.286px" }}
-                >
-                  <div className="client_logo_item">
-                    <img
-                      src="assets/images/clients/client_logo_3.webp"
-                      alt="Webpalm - Client Logo"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="swiper-slide"
-                  role="group"
-                  aria-label="25/28"
-                  data-swiper-slide-index="24"
-                  style={{ width: "184.286px" }}
-                >
-                  <div className="client_logo_item">
-                    <img
-                      src="assets/images/clients/client_logo_4.webp"
-                      alt="Webpalm - Client Logo"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="swiper-slide"
-                  role="group"
-                  aria-label="26/28"
-                  data-swiper-slide-index="25"
-                  style={{ width: "184.286px" }}
-                >
-                  <div className="client_logo_item">
-                    <img
-                      src="assets/images/clients/client_logo_5.webp"
-                      alt="Webpalm - Client Logo"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="swiper-slide"
-                  role="group"
-                  aria-label="27/28"
-                  data-swiper-slide-index="26"
-                  style={{ width: "184.286px" }}
-                >
-                  <div className="client_logo_item">
-                    <img
-                      src="assets/images/clients/client_logo_6.webp"
-                      alt="Webpalm - Client Logo"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="swiper-slide"
-                  role="group"
-                  aria-label="28/28"
-                  data-swiper-slide-index="27"
-                  style={{ width: "184.286px" }}
-                >
-                  <div className="client_logo_item">
-                    <img
-                      src="assets/images/clients/client_logo_7.webp"
-                      alt="Webpalm - Client Logo"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="swiper-slide"
-                  role="group"
-                  aria-label="22/28"
-                  data-swiper-slide-index="21"
-                  style={{ width: "184.286px" }}
-                >
-                  <div className="client_logo_item">
-                    <img
-                      src="assets/images/clients/client_logo_1.webp"
-                      alt="Webpalm - Client Logo"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="swiper-slide"
-                  role="group"
-                  aria-label="23/28"
-                  data-swiper-slide-index="22"
-                  style={{ width: "184.286px" }}
-                >
-                  <div className="client_logo_item">
-                    <img
-                      src="assets/images/clients/client_logo_2.webp"
-                      alt="Webpalm - Client Logo"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="swiper-slide"
-                  role="group"
-                  aria-label="24/28"
-                  data-swiper-slide-index="23"
-                  style={{ width: "184.286px" }}
-                >
-                  <div className="client_logo_item">
-                    <img
-                      src="assets/images/clients/client_logo_3.webp"
-                      alt="Webpalm - Client Logo"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="swiper-slide"
-                  role="group"
-                  aria-label="25/28"
-                  data-swiper-slide-index="24"
-                  style={{ width: "184.286px" }}
-                >
-                  <div className="client_logo_item">
-                    <img
-                      src="assets/images/clients/client_logo_4.webp"
-                      alt="Webpalm - Client Logo"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="swiper-slide"
-                  role="group"
-                  aria-label="26/28"
-                  data-swiper-slide-index="25"
-                  style={{ width: "184.286px" }}
-                >
-                  <div className="client_logo_item">
-                    <img
-                      src="assets/images/clients/client_logo_5.webp"
-                      alt="Webpalm - Client Logo"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="swiper-slide"
-                  role="group"
-                  aria-label="27/28"
-                  data-swiper-slide-index="26"
-                  style={{ width: "184.286px" }}
-                >
-                  <div className="client_logo_item">
-                    <img
-                      src="assets/images/clients/client_logo_6.webp"
-                      alt="Webpalm - Client Logo"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="swiper-slide"
-                  role="group"
-                  aria-label="28/28"
-                  data-swiper-slide-index="27"
                   style={{ width: "184.286px" }}
                 >
                   <div className="client_logo_item">
@@ -1324,14 +1071,6 @@ export default function Home() {
                       <p className="mb-0"> Satisfied Clients</p>
                     </div>
                     <FunFactCounter /> {/* ========FUNFACTCOUNTER====== */}
-                    {/* <a className="btn btn-primary" href="#">
-                      <span className="btn_label" data-text="Learn More"
-                        >Learn More</span
-                      >
-                      <span className="btn_icon">
-                        <i className="fa-solid fa-arrow-up-right"></i>
-                      </span>
-                    </a> */}
                     <div className="icon_globe">
                       <img
                         src="assets/images/icons/icon_global.svg"
@@ -1366,193 +1105,6 @@ export default function Home() {
                       them with cutting-edge software solutions that improve
                       productivity, encourage expansion, and propel success.
                     </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="pt-170">
-              <div className="heading_block text-center text-white">
-                <div
-                  className="heading_focus_text has_underline d-inline-flex"
-                  style={{
-                    backgroundImage: `url(${"assets/images/shapes/shape_title_under_line.svg"})`,
-                  }}
-                >
-                  Work Showcase
-                </div>
-                <h2 className="heading_text mb-0">
-                  Our Most Recent <mark>Case</mark> Highlights
-                </h2>
-              </div>
-
-              <div className="case_studies_wrapper">
-                <div className="case_study_block">
-                  <div className="case_study_image">
-                    <img
-                      src="assets/images/case/propvista.jpg"
-                      alt="Propvista real estate dashboard with client tracking, 
-                            property sales metrics, and activity analytics"
-                    />
-                  </div>
-                  <div className="case_study_content">
-                    <ul className="category_list unordered_list text-uppercase"></ul>
-                    <h3 className="case_title">
-                      <h3>PropVista CRM</h3>
-                    </h3>
-                    <p>
-                      We Created a smart, scalable ReactJS platform specifically
-                      for real estate firms was part of the software development
-                      process for PropVista CRM. Agents may handle client
-                      communications, sales pipelines, and real estate listings
-                      in one location with the platform's assistance. In order
-                      to streamline the sales process and increase productivity,
-                      the project concentrated on developing an intuitive
-                      dashboard with real-time data on listings, viewing
-                      patterns, and transaction progress.
-                    </p>
-                    <ul className="icon_list unordered_list">
-                      <li>
-                        <span className="icon_list_text">
-                          <strong className="text-dark">Industry: </strong>
-                          Real Estate Software
-                        </span>
-                      </li>
-                      <li>
-                        <span className="icon_list_text">
-                          <strong className="text-dark">Country:</strong> United
-                          Arab Emirates,Dubai
-                        </span>
-                      </li>
-                    </ul>
-                    <ul
-                      className="case_technologies unordered_list"
-                      data-text="Core Technologies:"
-                    >
-                      <li>
-                        <img
-                          src="assets/images/icons/icon_javascript.svg"
-                          alt="JavaScript"
-                        />
-                      </li>
-                      <li>
-                        <img
-                          src="assets/images/icons/icon_react_js.svg"
-                          alt="RaectJS"
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="case_study_block">
-                  <div className="case_study_image">
-                    <img
-                      src="assets/images/case/fitflow.jpg"
-                      alt="Weshwe fitness app dashboard displaying weekly goals (75% achieved), live class schedules, activity metrics (Noga Beefuulizchert), and user profile sections with nutrition and workout tracking data"
-                    />
-                  </div>
-                  <div className="case_study_content">
-                    <ul className="category_list unordered_list text-uppercase"></ul>
-                    <h3 className="case_title">
-                      <h3>Fitflow</h3>
-                    </h3>
-                    <p>
-                      FitFlow is a dynamic online platform that offers wellness
-                      tracking, live virtual classes, and customized workout
-                      routines to empower users. It combines nutrition advice,
-                      workout personalization, and progress tracking into a
-                      single, seamless experience for gyms, trainers, and
-                      individuals.
-                    </p>
-                    <ul className="icon_list unordered_list">
-                      <li>
-                        <span className="icon_list_text">
-                          <strong className="text-dark">Industry: </strong>
-                          Fitness & Wellness
-                        </span>
-                      </li>
-                      <li>
-                        <span className="icon_list_text">
-                          <strong className="text-dark">Country: </strong>USA,
-                          California
-                        </span>
-                      </li>
-                    </ul>
-                    <ul
-                      className="case_technologies unordered_list"
-                      data-text="Core Technologies:"
-                    >
-                      <li>
-                        <img
-                          src="assets/images/icons/icon_laravel.svg"
-                          alt="Laravel"
-                          style={{ maxWidth: "40px" }}
-                        />
-                      </li>
-                      <li>
-                        <img
-                          src="assets/images/icons/icon_mysql.png"
-                          style={{ maxWidth: "40px" }}
-                          alt="MySql"
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="case_study_block">
-                  <div className="case_study_image">
-                    <img
-                      src="assets/images/case/Edunest.jpg"
-                      alt="Edunest e-learning dashboard with course progress tracking, upcoming classes, MySQL integration, and learning metrics"
-                    />
-                  </div>
-                  <div className="case_study_content">
-                    <ul className="category_list unordered_list text-uppercase"></ul>
-                    <h3 className="case_title">
-                      <h3>EduNest – Online Learning Platform</h3>
-                    </h3>
-                    <p>
-                      EduNest is an innovative online learning platform that
-                      redefines digital education and was developed using Python
-                      (Django). By offering a user-friendly interface for
-                      creating courses, engaging live sessions, and thorough
-                      progress tracking, the project empowers educators and
-                      students. EduNest seeks to revolutionize the conventional
-                      learning process into an effective, captivating digital
-                      journey with its sleek, contemporary style and flawless
-                      operation.
-                    </p>
-                    <ul className="icon_list unordered_list">
-                      <li>
-                        <span className="icon_list_text">
-                          <strong className="text-dark">Industry: </strong>
-                          Education & E-Learning
-                        </span>
-                      </li>
-                      <li>
-                        <span className="icon_list_text">
-                          <strong className="text-dark">Country: </strong>
-                          Ireland, Dublin
-                        </span>
-                      </li>
-                    </ul>
-                    <ul
-                      className="case_technologies unordered_list"
-                      data-text="Core Technologies:"
-                    >
-                      <li>
-                        <img
-                          src="assets/images/case/icon_python.svg"
-                          alt="Angular"
-                        />
-                      </li>
-                      <li>
-                        <img
-                          src="assets/images/icons/icon_django.png"
-                          alt="Elephent"
-                        />
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -1956,314 +1508,6 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="row">
-              <div className="col-lg-4">
-                <div className="deals_winner_customers">
-                  <h3 className="title_text">
-                    Webpalm wins deals with over <mark>50+</mark> clients.
-                  </h3>
-                  <div className="row">
-                    <div className="col-6">
-                      <div className="review_short_info">
-                        <div className="icon">
-                          <img
-                            src="assets/images/icons/icon_c.svg"
-                            alt="C SVG Icon"
-                          />
-                        </div>
-                        <ul className="rating_block unordered_list">
-                          <li>
-                            <i className="fa-solid fa-star fa-fw"></i>
-                          </li>
-                          <li>
-                            <i className="fa-solid fa-star fa-fw"></i>
-                          </li>
-                          <li>
-                            <i className="fa-solid fa-star fa-fw"></i>
-                          </li>
-                          <li>
-                            <i className="fa-solid fa-star fa-fw"></i>
-                          </li>
-                          <li>
-                            <i className="fa-solid fa-star fa-fw"></i>
-                          </li>
-                        </ul>
-                        <div className="review_counter">
-                          Out of more than <b>200+</b> reviews
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-6">
-                      <div className="review_short_info">
-                        <div className="icon">
-                          <img
-                            src="assets/images/icons/icon_g2.svg"
-                            alt="C SVG Icon"
-                          />
-                        </div>
-                        <ul className="rating_block unordered_list">
-                          <li>
-                            <i className="fa-solid fa-star fa-fw"></i>
-                          </li>
-                          <li>
-                            <i className="fa-solid fa-star fa-fw"></i>
-                          </li>
-                          <li>
-                            <i className="fa-solid fa-star fa-fw"></i>
-                          </li>
-                          <li>
-                            <i className="fa-solid fa-star fa-fw"></i>
-                          </li>
-                          <li>
-                            <i className="fa-solid fa-star fa-fw"></i>
-                          </li>
-                        </ul>
-                        <div className="review_counter">
-                          Out of more than <b>250+</b> reviews
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-8">
-                <div className="review_onecol_wrapper">
-                  <div className="review_onecol_carousel swiper  swiper-initialized swiper-horizontal swiper-backface-hidden">
-                    <div
-                      className="swiper-wrapper"
-                      id="swiper-wrapper-fff8a8a10382547d6"
-                      aria-live="off"
-                    >
-                      <div
-                        className="swiper-slide my-slider"
-                        role="group"
-                        aria-label="1 / 3"
-                      >
-                        <div className="review_block_2">
-                          <h3 className="review_title">
-                            “Doctor’s Appointment Booking System”
-                          </h3>
-                          <p className="review_commtent pb-3 px-2">
-                            "Incredible experience! with Webpalm built a
-                            seamless booking system for my clinic that’s cut
-                            no-shows by 30%. The design is clean, intuitive for
-                            patients, and integrates perfectly with our
-                            calendar. They delivered ahead of schedule and even
-                            added emergency slots last-minute. Highly recommend
-                            them to any medical practice!"
-                          </p>
-                          <div class="d-md-flex justify-content-md-between">
-                            <div class="review_admin">
-                              <div class="review_admin_info">
-                                <h4 class="review_admin_name">Nethan George</h4>
-                                <span class="review_admin_designation">
-                                  Doctor
-                                </span>
-                                <div class="review_admin_country">
-                                  <span class="country_flag">
-                                    <img
-                                      src="assets/images/flag/ireland_flag.png"
-                                      alt="Ireland Flag"
-                                    />
-                                  </span>
-                                  <span class="country_text">
-                                    Dublin, Ireland
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="swiper-slide my-slider"
-                        role="group"
-                        aria-label="2 / 3"
-                      >
-                        <div className="review_block_2">
-                          <h3 className="review_title">
-                            “Restaurant Online Ordering System”
-                          </h3>
-                          <p className="review_commtent pb-3 px-2">
-                            "AMAZING work! Our new ordering site (with table
-                            reservations + takeout) feels like it’s part of our
-                            restaurant’s vibe. Customers rave about how easy it
-                            is to customize meals. Sales doubled in 2 months!
-                            Webpalm is a joy to work with—patient, creative, and
-                            full of genius ideas. I look forward to hiring them
-                            again for future projects."
-                          </p>
-                          <div class="d-md-flex justify-content-md-between">
-                            <div class="review_admin">
-                              <div class="review_admin_info">
-                                <h4 class="review_admin_name">Bob Martin</h4>
-                                <span class="review_admin_designation">
-                                  Restaurant Owner
-                                </span>
-                                <div class="review_admin_country">
-                                  <span class="country_flag">
-                                    <img
-                                      src="assets/images/flag/uk_flag.png"
-                                      alt="United Kingdom Flag"
-                                    />
-                                  </span>
-                                  <span class="country_text">Bristol, UK</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="swiper-slide my-slider"
-                        role="group"
-                        aria-label="3 / 3"
-                      >
-                        <div className="review_block_2">
-                          <h3 className="review_title">
-                            “Job Posting Website”
-                          </h3>
-                          <p className="review_commtent pb-3 px-2">
-                            "Hiring Webpalm was the best decision for our
-                            recruitment startup. They created a dynamic,
-                            user-friendly site with smart filters and employer
-                            dashboards. Their attention to detail (like
-                            real-time application tracking) blew us away.
-                            Delivered on time, under budget—will refer them to
-                            everyone!"
-                          </p>
-                          <div class="d-md-flex justify-content-md-between">
-                            <div class="review_admin">
-                              <div class="review_admin_info">
-                                <h4 class="review_admin_name">Brody Finn</h4>
-                                <span class="review_admin_designation">
-                                  Recruiter for IT Companies
-                                </span>
-                                <div class="review_admin_country">
-                                  <span class="country_flag">
-                                    <img
-                                      src="assets/images/flag/ireland_flag.png"
-                                      alt="Ireland Flag"
-                                    />
-                                  </span>
-                                  <span class="country_text">
-                                    Cork, Ireland
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="swiper-slide my-slider"
-                        role="group"
-                        aria-label="1 / 3"
-                      >
-                        <div className="review_block_2">
-                          <h3 className="review_title">
-                            “Travel Agency Website”
-                          </h3>
-                          <p className="review_commtent pb-3 px-2">
-                            "Webpalm designed a travel site that’s as
-                            wanderlust-inducing as our tours. Features like
-                            instant itinerary downloads and mobile-friendly maps
-                            made our clients swoon. Delivered quality work fast,
-                            no stress. 100% refer them to anyone! and will hire
-                            them again for sure"
-                          </p>
-                          <div class="d-md-flex justify-content-md-between">
-                            <div class="review_admin">
-                              <div class="review_admin_info">
-                                <h4 class="review_admin_name">
-                                  Michael Anderson
-                                </h4>
-                                <span class="review_admin_designation">
-                                  Entrepreneur
-                                </span>
-                                <div class="review_admin_country">
-                                  <span class="country_flag">
-                                    <img
-                                      src="assets/images/flag/usa-flag.png"
-                                      alt="USA Flag"
-                                    />
-                                  </span>
-                                  <span class="country_text">Taxes, USA</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="swiper-slide my-slider"
-                        role="group"
-                        aria-label="2 / 3"
-                      >
-                        <div className="review_block_2">
-                          <h3 className="review_title">
-                            “Custom Online Store”
-                          </h3>
-                          <p className="review_commtent pb-3 px-2">
-                            "Same as Always! Great experience from start to
-                            finish! They built my clothing brand site with
-                            secure payments, wishlists, and SEO that actually
-                            works. The design? So chic it feels like shopping
-                            in-store. Projects always on time, communication
-                            flawless. If you want your business to shine online,
-                            hire them!"
-                          </p>
-                          <div class="d-md-flex justify-content-md-between">
-                            <div class="review_admin">
-                              <div class="review_admin_info">
-                                <h4 class="review_admin_name">Alannah Aran</h4>
-                                <span class="review_admin_designation">
-                                  Owner of Clothing Store
-                                </span>
-                                <div class="review_admin_country">
-                                  <span class="country_flag">
-                                    <img
-                                      src="assets/images/flag/ireland_flag.png"
-                                      alt="Ireland Flag"
-                                    />
-                                  </span>
-                                  <span class="country_text">
-                                    Dublin, Ireland
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      {/* <div
-                        className="swiper-slide my-slider"
-                        role="group"
-                        aria-label="3 / 3">
-                       
-                      </div> */}
-                    </div>
-                    <div className="carousel_arrows_nav">
-                      <button
-                        type="button"
-                        className="r1cc-swiper-button-prev"
-                        onClick={goPrev}
-                      >
-                        <i className="fa-solid fa-arrow-left"></i>
-                      </button>
-                      <button
-                        type="button"
-                        className="r1cc-swiper-button-next"
-                        onClick={goNext}
-                      >
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
           <div className="decoration_item shape_image_1">
@@ -2294,391 +1538,6 @@ export default function Home() {
         {/* <!-- Process Technology Review Section - End
         ================================================== --> */}
 
-        {/* <!-- Pricing Section - Start
-        ================================================== --> */}
-        <section class="pricing_section section_space  bg-light">
-          <div className="container margincontainer">
-            <h2 class="heading_text text-center mb-5"> Our Pricing Packages</h2>
-            <div class="row justify-content-center">
-              <div class="col-lg-4">
-                <div class="pricing_block text-center">
-                  <div class="table_head flex-column">
-                    <div class="pricing_block_title">
-                      <h3 class="pricing_package_title">Starter Plan</h3>
-                      <p class="pricing_package_description mb-0">
-                        Perfect for individuals and startups looking to
-                        establish a strong online presence.
-                      </p>
-                    </div>
-                    {/* <div class="pricing_price_value bg-primary-subtle text-primary">
-                      <span class="pricing_annually">
-                        <del>€250</del> <mark>€180</mark>
-                        <sub>
-                          You'll Save <u>€70</u>
-                        </sub>
-                      </span>
-                    </div> */}
-
-                      <Link to={"/contact"}>
-                        <a class="btn btn-primary">
-                         <span class="btn_label" data-text="Start Now">
-                          GET A FREE QUOTE
-                         </span>
-                        <span class="btn_icon">
-                        <i class="fa-solid fa-arrow-up-right"></i>
-                        </span>
-                       </a>
-                      </Link>
-
-                  </div>
-                  <ul class="icon_list unordered_list_block d-inline-flex">
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Beautifully designed static website (6 to 8 pages)
-                      </span>
-                    </li>
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Fully mobile-responsive and optimized for speed
-                      </span>
-                    </li>
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Clean, modern layout tailored to your brand
-                      </span>
-                    </li>
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        SEO-ready structure for better Google visibility
-                      </span>
-                    </li>
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Contact form setup included
-                      </span>
-                    </li>
-                    <li class="delete">
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Delivered within 5 days
-                      </span>
-                    </li>
-                    {/* <li class="delete">
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text"> Cloud Services. </span>
-                    </li> */}
-                  </ul>
-                  <p
-                    class="pricing_package_description mb-5"
-                    style={{ color: "black", fontSize: "18px" }}
-                  >
-                    Great For: Personal websites, resumes, or landing pages
-                  </p>
-
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="pricing_block text-center">
-                  <div class="table_head flex-column">
-                    <div class="pricing_block_title">
-                      <h3 class="pricing_package_title">Professional Plan</h3>
-                      <p class="pricing_package_description mb-0">
-                        Step up your game with a dynamic, easy-to-manage
-                        website.
-                      </p>
-                    </div>
-                    {/* <div class="pricing_price_value bg-primary-subtle text-primary">
-                      <span class="pricing_annually">
-                        <del>€400</del> <mark>€320</mark>
-                        <sub>
-                          You'll Save <u>€80</u>
-                        </sub>
-                      </span>
-                    </div> */}
-
-                     <Link to={"/contact"}>
-                        <a class="btn btn-primary">
-                         <span class="btn_label" data-text="Start Now">
-                          GET A FREE QUOTE
-                         </span>
-                        <span class="btn_icon">
-                        <i class="fa-solid fa-arrow-up-right"></i>
-                        </span>
-                       </a>
-                      </Link>
-                  </div>
-                  <ul class="icon_list unordered_list_block d-inline-flex">
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Beautiful Mobile-Responsive website (upto 12 pages)
-                      </span>
-                    </li>
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Custom design with tailored branding
-                      </span>
-                    </li>
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        SEO-ready structure for better Google visibility
-                      </span>
-                    </li>
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Blog or portfolio feature included
-                      </span>
-                    </li>
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Clean, modern layout tailored to your brand
-                      </span>
-                    </li>
-                    <li class="delete">
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Social media integration
-                      </span>
-                    </li>
-                    <li class="delete">
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Delivered within 10 days
-                      </span>
-                    </li>
-                  </ul>
-                  <p
-                    class="pricing_package_description mb-4"
-                    style={{ color: "black", fontSize: "18px" }}
-                  >
-                    Great For: Small businesses, bloggers, creatives, service
-                    providers
-                  </p>
-                  
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="pricing_block text-center">
-                  <div class="table_head flex-column">
-                    <div class="pricing_block_title">
-                      <h3 class="pricing_package_title">Premium Plan</h3>
-                      <p class="pricing_package_description mb-0">
-                        For those who need advanced functionality and full
-                        control.
-                      </p>
-                    </div>
-                    {/* <div class="pricing_price_value bg-primary-subtle text-primary">
-                      <span class="pricing_annually">
-                        <del>€700</del> <mark>€550</mark>
-                        <sub>
-                          You'll Save <u>€150</u>
-                        </sub>
-                      </span>
-                    </div> */}
-                     <Link to={"/contact"}>
-                        <a class="btn btn-primary">
-                         <span class="btn_label" data-text="Start Now">
-                          GET A FREE QUOTE
-                         </span>
-                        <span class="btn_icon">
-                        <i class="fa-solid fa-arrow-up-right"></i>
-                        </span>
-                       </a>
-                      </Link>
-                  </div>
-                  <ul class="icon_list unordered_list_block d-inline-flex">
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Fully-Custom Dynamic website Development
-                      </span>
-                    </li>
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Custom frontend + backend development
-                      </span>
-                    </li>
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        User login systems, role-based access, and admin panels
-                      </span>
-                    </li>
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        API integrations and dynamic data handling
-                      </span>
-                    </li>
-                    <li class="delete">
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Performance-optimized and scalable architecture
-                      </span>
-                    </li>
-                    <li class="delete">
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Delivered within 2–3 weeks
-                      </span>
-                    </li>
-                  </ul>
-                  <p
-                    class="pricing_package_description mb-4"
-                    style={{ color: "black", fontSize: "18px" }}
-                  >
-                    Great for: Internal tools, dashboards, simple portals (not
-                    full SaaS)
-                  </p>
-                  
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="pricing_block text-center">
-                  <div class="table_head flex-column">
-                    <div class="pricing_block_title">
-                      <h3 class="pricing_package_title">
-                        Elite Plan
-                      </h3>
-                      <p class="pricing_package_description mb-0">
-                        Full-scale, custom web apps built for performance,
-                        scalability, and growth.
-                      </p>
-                    </div>
-                    {/* <div class="pricing_price_value bg-primary-subtle text-primary">
-                      <span class="pricing_annually">
-                        <del>€1200</del> <mark>€900</mark>
-                        <sub>
-                          You'll Save <u>€300</u>
-                        </sub>
-                      </span>
-                    </div> */}
-                     <Link to={"/contact"}>
-                        <a class="btn btn-primary">
-                         <span class="btn_label" data-text="Start Now">
-                          GET A FREE QUOTE
-                         </span>
-                        <span class="btn_icon">
-                        <i class="fa-solid fa-arrow-up-right"></i>
-                        </span>
-                       </a>
-                      </Link>
-                  </div>
-                  <ul class="icon_list unordered_list_block d-inline-flex">
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Full-featured Web application advanced frameworks
-                      </span>
-                    </li>
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Complex dashboards, analytics, or custom features
-                      </span>
-                    </li>
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Secure authentication, role management, and APIs
-                      </span>
-                    </li>
-                    <li>
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Real-time features (chat, notifications, etc.)
-                      </span>
-                    </li>
-                    <li class="delete">
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Built for scalability and long-term growth
-                      </span>
-                    </li>
-                    <li class="delete">
-                      <span class="icon_list_icon">
-                        <i class="fa-regular fa-circle-check"></i>
-                      </span>
-                      <span class="icon_list_text">
-                        Timeline & pricing based on project scope
-                      </span>
-                    </li>
-                  </ul>
-                  <p
-                    class="pricing_package_description mb-3"
-                    style={{ color: "black", fontSize: "18px" }}
-                  >
-                    Great for: SaaS applications, enterprise tools, large-scale platforms
-                  </p>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section className="contact_section pb-80 bg-light section_decoration">
           <div className="container">
             <div className="row text-center mb-4">
@@ -2705,11 +1564,11 @@ export default function Home() {
                   </div>
                   <ul className="contact_method_list unordered_list_block">
                     <li>
-                      <a href="tel:+353  894205316">
+                      <a href="tel:+353899520026">
                         <span className="icon">
                           <i className="fa-solid fa-phone-volume"></i>
                         </span>
-                        <span className="text">+353 894205316</span>
+                        <span className="text">+353 899520026</span>
                       </a>
                     </li>
                     <li>
@@ -2767,7 +1626,7 @@ export default function Home() {
                     <form className="myform" ref={form} onSubmit={sendEmail}>
                       <div className="col-md-6">
                         <div className="form-group">
-                          <label className="input_title" for="input_name">
+                          <label className="input_title" htmlFor="input_name">
                             <i className="fa-regular fa-user"></i>
                           </label>
                           <input
@@ -2782,7 +1641,7 @@ export default function Home() {
                       </div>
                       <div className="col-md-6">
                         <div className="form-group">
-                          <label className="input_title" for="input_email">
+                          <label className="input_title" htmlFor="input_email">
                             <i className="fa-regular fa-envelope"></i>
                           </label>
                           <input
@@ -2797,7 +1656,7 @@ export default function Home() {
                       </div>
                       <div className="col-md-6">
                         <div className="form-group">
-                          <label className="input_title" for="input_phone">
+                          <label className="input_title" htmlFor="input_phone">
                             <i className="fa-regular fa-phone-volume"></i>
                           </label>
                           <input
@@ -2812,7 +1671,7 @@ export default function Home() {
                       </div>
                       <div className="col-md-6">
                         <div className="form-group">
-                          <label className="input_title" for="input_company">
+                          <label className="input_title" htmlFor="input_company">
                             <i className="fa-regular fa-globe"></i>
                           </label>
                           <input
@@ -2824,9 +1683,68 @@ export default function Home() {
                           />
                         </div>
                       </div>
+
+                      {/* Service dropdown - NEW */}
+                      <div className="col-md-6">
+                        <div className="form-group">
+                          <label className="input_title" htmlFor="input_service">
+                            <i className="fa-regular fa-list-alt"></i>
+                          </label>
+                          <select
+                            id="input_service"
+                            className="form-control"
+                            name="service"
+                            value={selectedService}
+                            onChange={handleServiceChange}
+                            required
+                          >
+                            <option value="">Choose Service</option>
+                            <option value="I Don't Know, Please Help Me">
+                              I Don't Know, Please Help Me
+                            </option>
+                            {Object.keys(servicePriceMap).map((service) => (
+                              <option key={service} value={service}>
+                                {service}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                      </div>
+
+                      {/* Price dropdown - NEW, depends on selectedService */}
+                      <div className="col-md-6">
+                        <div className="form-group">
+                          <label className="input_title" htmlFor="input_price">
+                            <i className="fa-regular fa-money-bill-1"></i>
+                          </label>
+                          <select
+                            id="input_price"
+                            className="form-control"
+                            name="price"
+                            disabled={!selectedService}
+                            required
+                          >
+                            <option value="">
+                              {selectedService
+                                ? "Choose Price Range"
+                                : "Select a service first"}
+                            </option>
+                            {selectedService === "I Don't Know, Please Help Me" && (
+                              <option value="Not Sure">Not Sure - Please Advise</option>
+                            )}
+                            {servicePriceMap[selectedService] &&
+                              servicePriceMap[selectedService].map((price) => (
+                                <option key={price} value={price}>
+                                  {price}
+                                </option>
+                              ))}
+                          </select>
+                        </div>
+                      </div>
+
                       <div className="col-12">
                         <div className="form-group">
-                          <label className="input_title" for="input_textarea">
+                          <label className="input_title" htmlFor="input_textarea">
                             <i className="fa-regular fa-comments"></i>
                           </label>
                           <textarea
@@ -2864,9 +1782,10 @@ export default function Home() {
             />
           </div>
         </section>
-        <a
+        
+          <a
           className="hotline_block"
-          href="https://wa.me/353894205316"
+          href="https://wa.me/353899520026"
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -2877,13 +1796,10 @@ export default function Home() {
           }}
         >
           <span className="hotline_icon">
-            <box-icon
-              name="whatsapp"
-              type="logo"
-              animation="tada"
-              color="white"
-              size="lg"
-            ></box-icon>
+            <i
+              class="fa-brands fa-whatsapp fa-beat fa-lg"
+              style={{ color: "rgb(235, 238, 244)" }}
+            ></i>
           </span>
         </a>
       </main>

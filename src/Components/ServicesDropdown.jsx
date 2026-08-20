@@ -14,7 +14,7 @@ const ServicesDropdown = () => {
     <li className="nav-item dropdown">
   <div className="nav-link-container">
     <Link>
-    <a style={{padding:'8px 12px'}} className="nav-link" id="services_submenu">
+    <a style={{padding:'10px 15px'}} className="nav-link" id="services_submenu">
     Services
     </a>
     </Link>
@@ -23,10 +23,12 @@ const ServicesDropdown = () => {
       className="dropdown-toggle-icon"
       aria-expanded={isOpen}
     >
-      <box-icon 
-        name={isOpen ? 'chevron-up' : 'chevron-down'}
-      ></box-icon>
+      <i
+        className={isOpen ? 'fa-solid fa-angle-up' : 'fa-solid fa-angle-down'}
+        style={{color: "black"}}
+      ></i>
     </button>
+    
   </div>
 
   <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`}>

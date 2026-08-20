@@ -1,0 +1,13 @@
+# WebPalm
+
+> WebPalm is a web and software development agency based in Dublin, Ireland, building custom web apps, business tools, and e-commerce solutions for Irish and global clients.
+
+## Company
+- [About WebPalm](https://webpalm.ie/about): Company overview and background
+- [Contact](https://webpalm.ie/contact): Get in touch with WebPalm
+- [Portfolio](https://webpalm.ie/portfolio): Selected client projects
+
+## Services
+- [Web Development](https://webpalm.ie/web-development): Custom web application and website development
+- [Graphic Designing](https://webpalm.ie/graphic-designing): Branding, marketing, and print design
+- [Search Engine Optimization](https://webpalm.ie/search-engine-optimization): SEO services to improve search visibility

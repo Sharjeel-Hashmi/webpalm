@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Header from "../Components/Header";
 import Footer2 from "../Components/Footer2";
@@ -6,15 +6,58 @@ import ParallaxSection from "./ParallaxSection";
 import { toast } from "react-toastify";
 import { Helmet } from "react-helmet-async";
 
+const servicePriceMap = {
+  SEO: ["€400 - €600", "€400 - €800", "€800 - €1,500", "€1,500+"],
+  "Content Writing": ["€100 - €250", "€250 - €500", "€500 - €1,000", "€1,000+"],
+  "Digital Marketing": [
+    "€300 - €600",
+    "€600 - €1,200",
+    "€1,200 - €2,500",
+    "€2,500+",
+  ],
+  "Web Maintenance": ["€50 - €150", "€150 - €300", "€300 - €600", "€600+"],
+  "Social Media Graphics": [
+    "€100 - €200",
+    "€200 - €400",
+    "€400 - €700",
+    "€700+",
+  ],
+  "Web Development": [
+    "€400 - €650",
+    "€1,000 - €2,500",
+    "€2,500 - €5,000",
+    "€5,000+",
+  ],
+  "Social Media Management": [
+    "€150 - €300",
+    "€300 - €600",
+    "€600 - €1,200",
+    "€1,200+",
+  ],
+  "Social Media": ["€100 - €250", "€250 - €500", "€500 - €1,000", "€1,000+"],
+  "Graphic Designing": [
+    "€100 - €300",
+    "€300 - €600",
+    "€600 - €1,200",
+    "€1,200+",
+  ],
+  Other: ["€100 - €300", "€300 - €700", "€700 - €1,500", "€1,500+"],
+};
+
 export default function Contact() {
   const mapUrl =
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.7764985156523!2d-6.408724024011781!3d53.38304837197765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867730d037a97e5%3A0x5df69a9dada95e17!2sPhysio%20Fast!5e0!3m2!1sen!2sus!4v1744552275405!5m2!1sen!2sus"; // Your provided URL
-
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.774893622402!2d-6.408440274406348!3d53.38307708601229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486773229a0a65f3%3A0x9e933ff7e7d24af2!2sWebpalm!5e0!3m2!1sen!2sus!4v1781003068872!5m2!1sen!2sus";
   const form = useRef();
 
+  const [selectedService, setSelectedService] = useState("");
+
   const publickey = "AuwyFfdV7So5IUKn5";
-  const serviceId = "service_ze2ns0r";
+  const serviceId = "service_q9qqwvk";
   const templateId = "template_1jwnsxc";
+
+  const handleServiceChange = (e) => {
+    setSelectedService(e.target.value);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -49,9 +92,10 @@ export default function Contact() {
             theme: "colored",
           });
           console.log("FAILED...", error.text);
-        }
+        },
       );
     e.target.reset();
+    setSelectedService("");
   };
 
   return (
@@ -180,7 +224,7 @@ export default function Contact() {
                   </div>
                   <div className="iconbox_content">
                     <h3 className="iconbox_title">Contact</h3>
-                    <p className="mb-0">+353 894205316</p>
+                    <p className="mb-0">+353 899520026</p>
                   </div>
                 </div>
               </div>
@@ -225,7 +269,7 @@ export default function Contact() {
 
             <div className="section_space pb-0">
               <div className="row justify-content-lg-between">
-                <div className="col-lg-7">
+                <div className="col-lg-6">
                   <div className="contact_form mb-0">
                     <h3 className="details_item_info_title mb-1">
                       Send Us A Message
@@ -237,7 +281,7 @@ export default function Contact() {
                       <form className="myform" ref={form} onSubmit={sendEmail}>
                         <div className="col-md-6">
                           <div className="form-group">
-                            <label className="input_title" for="input_name">
+                            <label className="input_title" htmlFor="input_name">
                               Full Name
                             </label>
                             <input
@@ -252,7 +296,10 @@ export default function Contact() {
                         </div>
                         <div className="col-md-6">
                           <div className="form-group">
-                            <label className="input_title" for="input_email">
+                            <label
+                              className="input_title"
+                              htmlFor="input_email"
+                            >
                               Your Email{" "}
                             </label>
                             <input
@@ -267,7 +314,10 @@ export default function Contact() {
                         </div>
                         <div className="col-md-6">
                           <div className="form-group">
-                            <label className="input_title" for="input_company">
+                            <label
+                              className="input_title"
+                              htmlFor="input_company"
+                            >
                               Your Company Name
                             </label>
                             <input
@@ -281,7 +331,10 @@ export default function Contact() {
                         </div>
                         <div className="col-md-6">
                           <div className="form-group">
-                            <label className="input_title" for="input_phone">
+                            <label
+                              className="input_title"
+                              htmlFor="input_phone"
+                            >
                               Your Phone
                             </label>
                             <input
@@ -294,16 +347,87 @@ export default function Contact() {
                           </div>
                         </div>
 
+                        <div className="col-md-6">
+                          <div className="form-group">
+                            <label
+                              className="input_title"
+                              htmlFor="input_service"
+                            >
+                              Service Interested In
+                            </label>
+                            <select
+                              id="input_service"
+                              className="form-control"
+                              name="service"
+                              value={selectedService}
+                              onChange={handleServiceChange}
+                              required
+                            >
+                              <option value="">Choose Service</option>
+                              <option value="I Don't Know, Please Help Me">
+                                I Don't Know, Please Help Me
+                              </option>
+                              {Object.keys(servicePriceMap).map((service) => (
+                                <option key={service} value={service}>
+                                  {service}
+                                </option>
+                              ))}
+                            </select>
+                          </div>
+                        </div>
+
+                        {/* Price dropdown */}
+                        <div className="col-md-6">
+                          <div className="form-group">
+                            <label
+                              className="input_title"
+                              htmlFor="input_price"
+                            >
+                              Your Price Range
+                            </label>
+                            <select
+                              id="input_price"
+                              className="form-control"
+                              name="price"
+                              disabled={!selectedService}
+                              required
+                            >
+                              <option value="">
+                                {selectedService
+                                  ? "Choose Price Range"
+                                  : "Select a service first"}
+                              </option>
+                              {selectedService ===
+                                "I Don't Know, Please Help Me" && (
+                                <option value="Not Sure">
+                                  Not Sure - Please Advise
+                                </option>
+                              )}
+                              {servicePriceMap[selectedService] &&
+                                servicePriceMap[selectedService].map(
+                                  (price) => (
+                                    <option key={price} value={price}>
+                                      {price}
+                                    </option>
+                                  ),
+                                )}
+                            </select>
+                          </div>
+                        </div>
+
                         <div className="col-12">
                           <div className="form-group">
-                            <label className="input_title" for="input_textarea">
-                              Message
+                            <label
+                              className="input_title"
+                              htmlFor="input_textarea"
+                            >
+                              What You Want To Discuss?
                             </label>
                             <textarea
                               id="input_textarea"
                               className="form-control"
                               name="message"
-                              placeholder="How can we help you?"
+                              placeholder="Describe Your Project or Message Briefly"
                             ></textarea>
                           </div>
                           <button type="submit" className="btn btn-primary">
@@ -323,16 +447,17 @@ export default function Contact() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-5">
+                <div className="col-lg-6">
                   <div className="gmap_canvas ps-lg-5">
                     <iframe
                       src={mapUrl}
-                      width="600" // Adjust as needed
-                      height="450" // Adjust as needed
+                      width="600"
+                      height="450"
                       style={{ border: 0 }}
                       allowFullScreen=""
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
+                      title="WebPalm Location Map"
                     ></iframe>
                   </div>
                 </div>
@@ -346,33 +471,11 @@ export default function Contact() {
         {/* <!-- Call To Action Section - Start
         ================================================== --> */}
         <ParallaxSection />
-        {/* <section
-          className="calltoaction_section parallaxie"
-         style= {{backgroundImage: `url(${'assets/images/backgrounds/bg_image_1.webp'})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center -22px', transformStyle:'preserve-3d'}}
-          >
-          <div className="container text-center" >
-            <div className="heading_block text-white">
-              <h2 className="heading_text">Ready to Work, Let's Chat</h2>
-              <p className="heading_description mb-0">
-                Our team of experts is ready to collaborate with you every step
-                of the way, from initial consultation to implementation.
-              </p>
-            </div>
-            <a className="btn btn-primary" href="contact.html">
-              <span className="btn_label" data-text="Contact Us Today!"
-                >Contact Us Today!</span
-              >
-              <span className="btn_icon">
-                <i className="fa-solid fa-arrow-up-right"></i>
-              </span>
-            </a>
-          </div>
-        </section>  */}
         {/* <!-- Call To Action Section - End
         ================================================== --> */}
         <a
           className="hotline_block"
-          href="https://wa.me/353894205316"
+          href="https://wa.me/353899520026"
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -383,13 +486,10 @@ export default function Contact() {
           }}
         >
           <span className="hotline_icon">
-            <box-icon
-              name="whatsapp"
-              type="logo"
-              animation="tada"
-              color="white"
-              size="lg"
-            ></box-icon>
+            <i
+              class="fa-brands fa-whatsapp fa-beat fa-lg"
+              style={{ color: "rgb(235, 238, 244)" }}
+            ></i>
           </span>
         </a>
       </main>

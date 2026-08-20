@@ -21,10 +21,10 @@ const ServicesDropdownHeader3 = () => {
           className="dropdown-toggle-icon-header2"
           aria-expanded={isOpen}
         >
-          <box-icon
-            name={isOpen ? 'chevron-up' : 'chevron-down'}
-            color="black"
-          ></box-icon>
+           <i
+        className={isOpen ? 'fa-solid fa-angle-up' : 'fa-solid fa-angle-down'}
+        style={{color: "black"}}
+      ></i>
         </button>
         </a>
         </Link>

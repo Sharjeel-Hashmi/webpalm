@@ -1,3 +1,6 @@
+
+
+
 /* /* *
  * Swiper 10.2.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -797,3 +800,33 @@ button.swiper-pagination-bullet {
 .feature_partners_section .client_logo_item img {
   max-width: 90px;
 } */ 
+
+
+
+
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.cursor-follower {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9998;
+}

@@ -82,8 +82,8 @@ export default function Footer2() {
                 </div>
                 <div class="iconbox_content">
                   <h3 class="iconbox_title">Call Us</h3>
-                  <a href="tel:+353 894205316">
-                    <p class="mb-0">+353 894205316</p>
+                  <a href="tel:+353 899520026">
+                    <p class="mb-0">+353 899520026</p>
                   </a>
                 </div>
               </div>

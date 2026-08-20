@@ -480,7 +480,7 @@ export default function GraphicDesign() {
         </section>
         <a
           className="hotline_block"
-          href="https://wa.me/353862359495"
+          href="https://wa.me/353899520026"
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -491,13 +491,7 @@ export default function GraphicDesign() {
           }}
         >
           <span className="hotline_icon">
-            <box-icon
-              name="whatsapp"
-              type="logo"
-              animation="tada"
-              color="white"
-              size="lg"
-            ></box-icon>
+            <i class="fa-brands fa-whatsapp fa-beat fa-lg" style={{color: "rgb(235, 238, 244)" , }}></i>
           </span>
         </a>
       </main>

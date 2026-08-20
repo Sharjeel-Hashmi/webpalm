@@ -34,7 +34,7 @@ export default function Header() {
           </p>
         </div>
       </div>
-      {/* <!-- SITE LOGO  TECHCO --> */}
+      {/* <!-- SITE LOGO --> */}
       <div className="header_bottom stricky original">
         <div className="container">
           <div className="row align-items-center">

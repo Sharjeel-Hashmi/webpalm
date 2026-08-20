@@ -37,11 +37,11 @@ export default function Header1() {
                 <div className="site_logo">
                   <a href="https://webpalm.ie/" className='site_link'>
                     <img style={{maxWidth:'180px'}}
-                      src="./assets/images/site_logo/site_logo_001.png"
+                      src="./assets/images/site_logo/site_logo_002.png"
                       alt="Software Company – WebPalm – IT Solutions & Technology, Business Consulting"
                     />
                     <img
-                      src="./assets/images/site_logo/site_logo_001.png"  
+                      src="./assets/images/site_logo/site_logo_002.png"  
                       alt="Software Company – WebPalm – IT Solutions & Technology, Business Consulting"
                     />
                   </a>
