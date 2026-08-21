@@ -546,11 +546,13 @@ export default function WebDevelopment() {
                       <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                         <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
                           <div className="iconbox_icon">
-                            <img
-                              style={{ maxWidth: "80px" }}
-                              src="assets/images/icons/icon_nextjs.webp"
-                              alt="React Js SVG Icon"
-                            />
+                               <img
+                                  style={{ maxWidth: "80px" }}
+                                  width="80"
+                                  height="54"
+                                  src="assets/images/icons/icon_nextjs.webp"
+                                  alt="React Js SVG Icon"
+                                />
                           </div>
                           <div className="iconbox_content">
                             <h3 className="iconbox_title mb-0">Next Js</h3>

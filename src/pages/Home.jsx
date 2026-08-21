@@ -10,7 +10,6 @@ import "./Home.css";
 import Header1 from "../Components/Header1";
 import Footer from "../Components/Footer";
 import FunFactCounter from "./FunFactCounter";
-import ImageSlider from "./ImageSlider";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import TypeWriter from "./TypeWriter";
@@ -1237,8 +1236,10 @@ export default function Home() {
                       <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                         <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
                           <div className="iconbox_icon">
-                            <img
+                           <img
                               style={{ maxWidth: "80px" }}
+                              width="80"
+                              height="54"
                               src="assets/images/icons/icon_nextjs.webp"
                               alt="React Js SVG Icon"
                             />
