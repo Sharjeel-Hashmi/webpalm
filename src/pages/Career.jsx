@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import ParallaxSection3 from "./ParallaxSection3";
 import { Helmet } from "react-helmet-async";
+import WhatsAppButton from "../Components/WhatsAppButton";
 
 export default function Career() {
   return (
@@ -671,6 +672,7 @@ export default function Career() {
           </div>
         </div>
         <ParallaxSection3 />
+        <WhatsAppButton />
       </main>
       <Footer2 />
     </div>

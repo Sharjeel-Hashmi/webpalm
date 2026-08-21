@@ -5,6 +5,7 @@ import Footer2 from "../Components/Footer2";
 import ParallaxSection from "./ParallaxSection";
 import { toast } from "react-toastify";
 import { Helmet } from "react-helmet-async";
+import WhatsAppButton from "../Components/WhatsAppButton";
 
 const servicePriceMap = {
   SEO: ["€400 - €600", "€400 - €800", "€800 - €1,500", "€1,500+"],
@@ -362,8 +363,9 @@ export default function Contact() {
                               value={selectedService}
                               onChange={handleServiceChange}
                               required
+                              aria-label="Select a Service"
                             >
-                              <option value="">Choose Service</option>
+                              <option value="">Select a Service</option>
                               <option value="I Don't Know, Please Help Me">
                                 I Don't Know, Please Help Me
                               </option>
@@ -391,6 +393,7 @@ export default function Contact() {
                               name="price"
                               disabled={!selectedService}
                               required
+                              aria-label="Select a Price Range"
                             >
                               <option value="">
                                 {selectedService
@@ -473,25 +476,7 @@ export default function Contact() {
         <ParallaxSection />
         {/* <!-- Call To Action Section - End
         ================================================== --> */}
-        <a
-          className="hotline_block"
-          href="https://wa.me/353899520026"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            position: "fixed",
-            bottom: "50px",
-            right: "20px",
-            zIndex: "1000",
-          }}
-        >
-          <span className="hotline_icon">
-            <i
-              class="fa-brands fa-whatsapp fa-beat fa-lg"
-              style={{ color: "rgb(235, 238, 244)" }}
-            ></i>
-          </span>
-        </a>
+        <WhatsAppButton />
       </main>
       <Footer2 />
     </>

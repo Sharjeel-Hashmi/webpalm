@@ -5,6 +5,7 @@ import Footer2 from "../Components/Footer2";
 import ParallaxSection4 from "./ParallaxSection4";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import WhatsAppButton from "../Components/WhatsAppButton";
 
 export default function Seo() {
   return (
@@ -365,22 +366,7 @@ export default function Seo() {
           </div>
         </section>
         <ParallaxSection4 />
-        <a
-          className="hotline_block"
-          href="https://wa.me/353899520026"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            position: "fixed",
-            bottom: "50px",
-            right: "20px",
-            zIndex: "1000",
-          }}
-        >
-          <span className="hotline_icon">
-            <i class="fa-brands fa-whatsapp fa-beat fa-lg" style={{color: "rgb(235, 238, 244)" , }}></i>
-          </span>
-        </a>
+        <WhatsAppButton />
       </main>
       <Footer2 />
     </div>

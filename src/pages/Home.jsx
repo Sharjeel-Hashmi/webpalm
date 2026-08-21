@@ -16,6 +16,7 @@ import { toast } from "react-toastify";
 import TypeWriter from "./TypeWriter";
 import { Helmet } from "react-helmet-async";
 import FluidBackground from "../Components/FluidBackground";
+import WhatsAppButton from "../Components/WhatsAppButton";
 
 const servicePriceMap = {
   SEO: ["€200 - €400", "€400 - €800", "€800 - €1,500", "€1,500+"],
@@ -1238,7 +1239,7 @@ export default function Home() {
                           <div className="iconbox_icon">
                             <img
                               style={{ maxWidth: "80px" }}
-                              src="assets/images/icons/icon_nextjs.png"
+                              src="assets/images/icons/icon_nextjs.webp"
                               alt="React Js SVG Icon"
                             />
                           </div>
@@ -1783,25 +1784,7 @@ export default function Home() {
           </div>
         </section>
         
-          <a
-          className="hotline_block"
-          href="https://wa.me/353899520026"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            position: "fixed",
-            bottom: "50px",
-            right: "20px",
-            zIndex: "1000",
-          }}
-        >
-          <span className="hotline_icon">
-            <i
-              class="fa-brands fa-whatsapp fa-beat fa-lg"
-              style={{ color: "rgb(235, 238, 244)" }}
-            ></i>
-          </span>
-        </a>
+        <WhatsAppButton />
       </main>
       <Footer />
     </>

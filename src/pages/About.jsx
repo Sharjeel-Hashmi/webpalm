@@ -4,6 +4,7 @@ import Footer2 from "../Components/Footer2";
 import FunfactSection from "./FunfactSection";
 import ParallaxSection from "./ParallaxSection";
 import { Helmet } from "react-helmet-async";
+import WhatsAppButton from "../Components/WhatsAppButton";
 
 export default function About() {
   return (
@@ -1308,22 +1309,7 @@ export default function About() {
         </section>  */}
         {/* <!-- Call To Action Section - End
         ================================================== --> */}
-        <a
-          className="hotline_block"
-          href="https://wa.me/353899520026"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            position: "fixed",
-            bottom: "50px",
-            right: "20px",
-            zIndex: "1000",
-          }}
-        >
-          <span className="hotline_icon">
-            <i class="fa-brands fa-whatsapp fa-beat fa-lg" style={{color: "rgb(235, 238, 244)" , }}></i>
-          </span>
-        </a>
+        <WhatsAppButton />
       </main>
       <Footer2 />
     </>
