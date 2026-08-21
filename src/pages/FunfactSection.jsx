@@ -167,7 +167,6 @@ const FunfactSection = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log("Intersecting:", entry.isIntersecting); // Debug
         if (entry.isIntersecting && !hasAnimated) {
           setHasAnimated(true);
           startCounting();
@@ -186,7 +185,6 @@ const FunfactSection = () => {
     // Fallback if observer doesn't trigger (esp. on mobile)
     const fallback = setTimeout(() => {
       if (!hasAnimated) {
-        console.log("Fallback triggered");
         setHasAnimated(true);
         startCounting();
       }

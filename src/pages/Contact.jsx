@@ -80,6 +80,8 @@ export default function Contact() {
             theme: "colored",
           });
           console.log("SUCCESS!");
+          e.target.reset();
+          setSelectedService("");
         },
         (error) => {
           toast.error("FAILED...", error.text, {
@@ -95,8 +97,6 @@ export default function Contact() {
           console.log("FAILED...", error.text);
         },
       );
-    e.target.reset();
-    setSelectedService("");
   };
 
   return (

@@ -27,6 +27,7 @@ const EmailForm = () => {
             progress: undefined,
             theme: "colored",
           });
+          e.target.reset();
         },
         (error) => {
           toast.error("FAILED...", error.text, {
@@ -42,7 +43,6 @@ const EmailForm = () => {
           console.log("FAILED...", error.text);
         }
       );
-    e.target.reset();
   };
 
   return (

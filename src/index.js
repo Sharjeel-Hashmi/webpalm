@@ -17,7 +17,6 @@ import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 import Pricing from './pages/Pricing';
 import Career from './pages/Career';
-import RequestForm from './pages/RequestForm';
 
 
 

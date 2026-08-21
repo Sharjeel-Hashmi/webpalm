@@ -29,7 +29,8 @@ export default function Footer2() {
             progress: undefined,
             theme: "colored",
           });
-          console.log("SUCCESS!");
+                    console.log("SUCCESS!");
+          e.target.reset();
         },
         (error) => {
           toast.error("FAILED...", error.text, {
@@ -45,7 +46,6 @@ export default function Footer2() {
           console.log("FAILED...", error.text);
         }
       );
-      e.target.reset();
   };
 
   return (

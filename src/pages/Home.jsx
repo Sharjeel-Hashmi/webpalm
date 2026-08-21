@@ -1,11 +1,7 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import EmailForm from "./EmailForm"; // Importing the new EmailForm component
 
 import emailjs from "@emailjs/browser";
-import Swiper, { Navigation, Pagination } from "swiper/bundle";
-import "swiper/css/bundle";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import "./Home.css";
 import Header1 from "../Components/Header1";
 import Footer from "../Components/Footer";
@@ -56,26 +52,7 @@ const servicePriceMap = {
 };
 
 export default function Home() {
-  const swiperRef = useRef(null);
-
-  useEffect(() => {
-    swiperRef.current = new Swiper(".review_onecol_carousel", {
-      loop: true,
-    });
-  }, []);
-
-  const goPrev = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slidePrev();
-    }
-  };
-
-  const goNext = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slideNext();
-    }
-  };
-
+ 
   const form = useRef();
   const [selectedService, setSelectedService] = useState("");
 
@@ -106,6 +83,8 @@ export default function Home() {
             progress: undefined,
             theme: "colored",
           });
+          e.target.reset();
+          setSelectedService("");
         },
         (error) => {
           toast.error("FAILED...", error.text, {
@@ -121,8 +100,6 @@ export default function Home() {
           console.log("FAILED...", error.text);
         }
       );
-    e.target.reset();
-    setSelectedService("");
   };
 
   return (
@@ -1699,8 +1676,9 @@ export default function Home() {
                             value={selectedService}
                             onChange={handleServiceChange}
                             required
+                            aria-label="Select a Service"
                           >
-                            <option value="">Choose Service</option>
+                            <option value="">Select a Service</option>
                             <option value="I Don't Know, Please Help Me">
                               I Don't Know, Please Help Me
                             </option>
@@ -1725,6 +1703,7 @@ export default function Home() {
                             name="price"
                             disabled={!selectedService}
                             required
+                            aria-label="Select a Price Range"
                           >
                             <option value="">
                               {selectedService
