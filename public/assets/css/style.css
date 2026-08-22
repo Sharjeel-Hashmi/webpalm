@@ -108,28 +108,28 @@
   src: url("../fonts/Axiforma-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 @font-face {
   font-family: "Axiforma Medium";
   src: url("../fonts/Axiforma-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 @font-face {
   font-family: "Axiforma SemiBold";
   src: url("../fonts/Axiforma-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 @font-face {
   font-family: "Axiforma Bold";
   src: url("../fonts/Axiforma-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 /* 1.1 - Template Fonts - End
 ================================================== */
@@ -3655,6 +3655,10 @@ input[type="search"]::-webkit-search-results-decoration {
   /* background-color: var(--bs-dark); */
   /* background: radial-gradient( ellipse at 10% 50%, #d4e6ff 10%, #fff 40%, #ffffff 70%, #b7d6ff 100% ); */
 }
+.software_company_hero_section .row {
+  min-height: 540px;
+}
+
 .software_company_hero_section h1 {
   font-size: 55px;
   line-height: 70px;
