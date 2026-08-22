@@ -230,7 +230,7 @@ export default function Home() {
 
               <div className="col-lg-6 col-none">
                 <div className="hero_image">
-                  <img src="assets/images/hero/hero-img-2.webp" alt="" />
+                  <img src="assets/images/hero/hero-img-2.webp" alt="" width="1335" height="1081" />
                   </div>
               </div>
             </div>

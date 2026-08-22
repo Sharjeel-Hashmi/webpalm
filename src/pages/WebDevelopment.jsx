@@ -264,7 +264,6 @@ export default function WebDevelopment() {
                 <div
                   class="iconbox_block mycon"
                   style={{
-                    height: "300px",
                     padding: "36px 55px",
                     boxShadow: "0 20px 30px 0 rgba(174, 191, 210, 0.3)",
                   }}
@@ -288,7 +287,7 @@ export default function WebDevelopment() {
                 <div
                   class="iconbox_block mycon"
                   style={{
-                    height: "300px",
+                   
                     padding: "36px 55px",
                     boxShadow: "0 20px 30px 0 rgba(174, 191, 210, 0.3)",
                   }}
@@ -312,7 +311,7 @@ export default function WebDevelopment() {
                 <div
                   class="iconbox_block mycon"
                   style={{
-                    height: "300px",
+                   
                     padding: "36px 55px",
                     boxShadow: "0 20px 30px 0 rgba(174, 191, 210, 0.3)",
                   }}
@@ -336,7 +335,7 @@ export default function WebDevelopment() {
                 <div
                   class="iconbox_block mycon"
                   style={{
-                    height: "300px",
+                   
                     padding: "36px 55px",
                     boxShadow: "0 20px 30px 0 rgba(174, 191, 210, 0.3)",
                   }}
@@ -360,7 +359,7 @@ export default function WebDevelopment() {
                 <div
                   class="iconbox_block mycon"
                   style={{
-                    height: "300px",
+                   
                     padding: "36px 55px",
                     boxShadow: "0 20px 30px 0 rgba(174, 191, 210, 0.3)",
                   }}
@@ -385,7 +384,7 @@ export default function WebDevelopment() {
                 <div
                   class="iconbox_block mycon"
                   style={{
-                    height: "300px",
+                   
                     padding: "36px 55px",
                     boxShadow: "0 20px 30px 0 rgba(174, 191, 210, 0.3)",
                   }}
@@ -409,7 +408,7 @@ export default function WebDevelopment() {
                 <div
                   class="iconbox_block mycon"
                   style={{
-                    height: "300px",
+                   
                     padding: "36px 55px",
                     boxShadow: "0 20px 30px 0 rgba(174, 191, 210, 0.3)",
                   }}
