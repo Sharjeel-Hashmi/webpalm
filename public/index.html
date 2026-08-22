@@ -43,6 +43,11 @@
     <link rel="shortcut icon" href="assets/images/site_logo/favicon-webpalm.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
+        <!-- Preload critical fonts to prevent layout shift on swap -->
+    <link rel="preload" href="assets/fonts/Axiforma-Medium.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="assets/fonts/Axiforma-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="assets/fonts/fa-brands-400.ttf" as="font" type="font/ttf" crossorigin>
+
     <!-- Framework & Style CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css" />
