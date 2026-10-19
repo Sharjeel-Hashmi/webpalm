@@ -329,7 +329,8 @@ export default function Services() {
                     <span className="icon_list_icon">
                       <img
                         src="assets/images/icons/icon_check_3.svg"
-                        
+                        alt=""
+                        aria-hidden="true"
                       />
                     </span>
                     <span className="icon_list_text">
@@ -340,7 +341,8 @@ export default function Services() {
                     <span className="icon_list_icon">
                       <img
                         src="assets/images/icons/icon_check_3.svg"
-                       
+                        alt=""
+                        aria-hidden="true"
                       />
                     </span>
                     <span className="icon_list_text">
@@ -351,7 +353,8 @@ export default function Services() {
                     <span className="icon_list_icon">
                       <img
                         src="assets/images/icons/icon_check_3.svg"
-                        
+                        alt=""
+                        aria-hidden="true"
                       />
                     </span>
                     <span className="icon_list_text">
@@ -366,6 +369,8 @@ export default function Services() {
                     <span className="icon_list_icon">
                       <img
                         src="assets/images/icons/icon_check_3.svg"
+                        alt=""
+                        aria-hidden="true"
                       />
                     </span>
                     <span className="icon_list_text">Experience of the User </span>
@@ -374,7 +379,8 @@ export default function Services() {
                     <span className="icon_list_icon">
                       <img
                         src="assets/images/icons/icon_check_3.svg"
-                       
+                        alt=""
+                        aria-hidden="true"
                       />
                     </span>
                     <span className="icon_list_text">
@@ -385,7 +391,8 @@ export default function Services() {
                     <span className="icon_list_icon">
                       <img
                         src="assets/images/icons/icon_check_3.svg"
-                         
+                        alt=""
+                        aria-hidden="true"
                       />
                     </span>
                     <span className="icon_list_text"> Education and Training </span>
@@ -398,7 +405,7 @@ export default function Services() {
                 <div className="details_item_image m-0">
                   <img
                     src="assets/images/services/service_details_image_2.webp"
-                    alt="Service Details Image"
+                    alt="Cloud infrastructure engineering and system architecture"
                   />
                 </div>
               </div>
@@ -406,7 +413,7 @@ export default function Services() {
                 <div className="details_item_image m-0">
                   <img
                     src="assets/images/services/service_details_image_3.webp"
-                    alt="Service Details Image"
+                    alt="Full stack web and enterprise software development"
                   />
                 </div>
               </div>
@@ -414,7 +421,7 @@ export default function Services() {
                 <div className="details_item_image m-0">
                   <img
                     src="assets/images/services/service_details_image_4.webp"
-                    alt="Service Details Image"
+                    alt="Digital transformation consulting and implementation"
                   />
                 </div>
               </div>

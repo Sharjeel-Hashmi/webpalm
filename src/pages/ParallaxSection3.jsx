@@ -46,15 +46,13 @@ function ParallaxSection3() {
           From the first consultation until implementation, our team of professionals is prepared to work with you at every stage.
           </p>
         </div>
-        <Link to={"/contact"}>
-        <a className="btn btn-primary">
+        <Link to="/contact" className="btn btn-primary">
           <span className="btn_label" data-text="Contact Us Today!">
             Contact Us TODAY!
           </span>
           <span className="btn_icon">
             <i className="fa-solid fa-arrow-up-right"></i>
           </span>
-        </a>
         </Link>
       </div>
     </section>

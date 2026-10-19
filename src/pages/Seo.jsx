@@ -218,30 +218,35 @@ export default function Seo() {
                     <img
                       className="seoimg px-2"
                       src="assets/images/seo/bing.webp"
+                      alt="Bing Search Engine Optimization"
                     />
                   </div>
                   <div className="col-lg-2 col-md-4 seodiv col-sm-6">
                     <img
                       className="seoimg px-2"
                       src="assets/images/seo/google.webp"
+                      alt="Google SEO and Analytics"
                     />
                   </div>
                   <div className="col-lg-2 col-md-4 seodiv col-sm-6">
                     <img
                       className="seoimg px-2"
                       src="assets/images/seo/ubersuggest.webp"
+                      alt="Ubersuggest Keyword Intelligence"
                     />
                   </div>
                   <div className="col-lg-2 col-md-4 seodiv col-sm-6">
                     <img
                       className="seoimg px-2"
                       src="assets/images/seo/hubspot.webp"
+                      alt="HubSpot Inbound Marketing Software"
                     />
                   </div>
                   <div className="col-lg-2 col-md-4 seodiv col-sm-6">
                     <img
                       className="seoimg px-2"
                       src="assets/images/seo/yahoo.webp"
+                      alt="Yahoo Search Engine Network"
                     />
                   </div>
                 </div>
@@ -260,6 +265,7 @@ export default function Seo() {
                   <img
                     style={{ borderRadius: "25px" }}
                     src="assets/images/backgrounds/bg-seo_img_11.jpg"
+                    alt="WebPalm SEO Strategy and Organic Search Marketing Solutions"
                   />
                 </div>
               </div>
@@ -290,15 +296,13 @@ export default function Seo() {
                       scale sustainably and stay ahead of competitors.
                     </p>
                   </div>
-                  <Link to={"/contact"}>
-                    <a className="btn btn-primary">
-                      <span className="btn_label" data-text="Contact Us Today!">
-                        Contact Us TODAY!
-                      </span>
-                      <span className="btn_icon">
-                        <i className="fa-solid fa-arrow-up-right"></i>
-                      </span>
-                    </a>
+                  <Link to="/contact" className="btn btn-primary">
+                    <span className="btn_label" data-text="Contact Us Today!">
+                      Contact Us TODAY!
+                    </span>
+                    <span className="btn_icon">
+                      <i className="fa-solid fa-arrow-up-right"></i>
+                    </span>
                   </Link>
                 </div>
               </div>

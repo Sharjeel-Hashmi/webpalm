@@ -316,7 +316,7 @@ export default function Career() {
                             <ul className="icon_list unordered_list_block">
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   Strong skills in Microsoft O365 / Exchange
@@ -324,7 +324,7 @@ export default function Career() {
                               </li>
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   Knowledge of networking and network equipment.
@@ -332,7 +332,7 @@ export default function Career() {
                               </li>
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   {" "}
@@ -342,7 +342,7 @@ export default function Career() {
                               </li>
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   Industry qualifications (CCNA, MSCE, MS
@@ -376,6 +376,7 @@ export default function Career() {
                         <div className="col-md-4 noblock">
                           <img
                             src="assets/images/careers/career_img_2.png"
+                            alt="IT Systems Administrator Career"
                             className="img-fluid position-static img-border"
                           />
                         </div>
@@ -421,7 +422,7 @@ export default function Career() {
                             <ul className="icon_list unordered_list_block">
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   Computer Knowledge
@@ -429,7 +430,7 @@ export default function Career() {
                               </li>
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   Time Management
@@ -437,7 +438,7 @@ export default function Career() {
                               </li>
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   Social Media Handling
@@ -445,7 +446,7 @@ export default function Career() {
                               </li>
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   Social Media Optimization
@@ -478,6 +479,7 @@ export default function Career() {
                         <div className="col-md-4">
                           <img
                             src="assets/images/careers/web manager.jpg"
+                            alt="Web Manager Career Opportunity"
                             className="img-fluid position-static img-border"
                           />
                         </div>
@@ -524,7 +526,7 @@ export default function Career() {
                             <ul className="icon_list unordered_list_block">
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   Digital Marketing qualification.
@@ -535,7 +537,7 @@ export default function Career() {
                               </li>
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   Familiarity with HTML, CSS, and SEO best
@@ -547,7 +549,7 @@ export default function Career() {
                               </li>
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   Strong writing skills and attention to detail.
@@ -583,6 +585,7 @@ export default function Career() {
                         <div className="col-md-4">
                           <img
                             src="assets/images/careers/graphic.jpg"
+                            alt="Graphic Designer Career Opportunity"
                             className="img-fluid position-static img-border"
                           />
                         </div>
@@ -621,7 +624,7 @@ export default function Career() {
                             <ul className="icon_list unordered_list_block">
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   Develop visually captivating and on-brand
@@ -634,7 +637,7 @@ export default function Career() {
                               </li>
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   Collaborate closely with the marketing team to
@@ -646,13 +649,13 @@ export default function Career() {
                               </li>
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 2D or 3D animation
                               </li>
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 3D CAD design
                               </li>
@@ -663,7 +666,7 @@ export default function Career() {
                             <ul className="icon_list unordered_list_block">
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   Dynamic personality who adapts well to change
@@ -677,7 +680,7 @@ export default function Career() {
                               </li>
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   Driven, enthusiastic, with ambitions to grow
@@ -686,7 +689,7 @@ export default function Career() {
                               </li>
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   Top-tier skills as illustrated in a design
@@ -695,7 +698,7 @@ export default function Career() {
                               </li>
                               <li>
                                 <span className="icon_list_icon">
-                                  <img src="assets/images/icons/icon_check_3.svg" />
+                                  <img src="assets/images/icons/icon_check_3.svg" alt="" aria-hidden="true" />
                                 </span>
                                 <span className="icon_list_text">
                                   Expert knowledge of Adobe creative suite and

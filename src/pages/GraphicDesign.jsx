@@ -304,6 +304,7 @@ export default function GraphicDesign() {
                   <img
                     style={{ borderRadius: "25px" }}
                     src="assets/images/graphicDesigning/graphic_img_1.jpg"
+                    alt="Creative graphic design and brand identity showcase by WebPalm"
                   />
                 </div>
               </div>
@@ -350,6 +351,7 @@ export default function GraphicDesign() {
                   <img
                     style={{ borderRadius: "25px" }}
                     src="assets/images/graphicDesigning/graphic_img_10.webp"
+                    alt="Visual branding, typography, and marketing collateral design"
                   />
                 </div>
               </div>
@@ -397,6 +399,7 @@ export default function GraphicDesign() {
                   <img
                     style={{ borderRadius: "25px" }}
                     src="assets/images/graphicDesigning/graphic_img_12.webp"
+                    alt="Video editing, motion graphics, and digital media production"
                   />
                 </div>
               </div>

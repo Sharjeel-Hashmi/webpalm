@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Header from "../Components/Header";
 import Footer2 from "../Components/Footer2";
 import FunfactSection from "./FunfactSection";
@@ -345,7 +344,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_1.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -359,7 +358,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_2.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -373,7 +372,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_3.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -387,7 +386,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_4.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -401,7 +400,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_5.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -415,7 +414,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_6.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -429,7 +428,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_7.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -443,7 +442,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_1.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -457,7 +456,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_2.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -471,7 +470,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_3.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -485,7 +484,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_4.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -499,7 +498,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_5.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -513,7 +512,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_6.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -527,7 +526,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_7.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -541,7 +540,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_1.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -555,7 +554,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_2.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -569,7 +568,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_3.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -583,7 +582,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_4.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -597,7 +596,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_5.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -611,7 +610,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_6.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -625,7 +624,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_7.webp"
-                        alt="WebPalm - Client Logo Image"
+                        alt="WebPalm Client Partner"
                       />
                     </div>
                   </div>
@@ -955,7 +954,7 @@ export default function About() {
                 <div className="image_wrap">
                   <img
                     src="assets/images/about/about_image_5.webp"
-                    alt="WebPalm - About Image"
+                    alt="WebPalm Dublin digital agency team collaborating on software architecture"
                   />
                 </div>
               </div>

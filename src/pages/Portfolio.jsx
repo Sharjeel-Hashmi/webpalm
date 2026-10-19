@@ -138,47 +138,45 @@ export default function Portfolio() {
                     "name": "Flour Bakery - Online Ordering & Delivery Platform",
                     "url": "https://www.flourbakery.com/"
                   },
-                    "url": "https://www.flourbakery.com/"
-                  },
                   {
                     "@type": "ListItem",
-                    "position": 2,
+                    "position": 5,
                     "name": "HCRS - Healthcare Recruitment & Job Board Portal",
                     "url": "https://hcrs.ie/"
                   },
                   {
                     "@type": "ListItem",
-                    "position": 3,
+                    "position": 6,
                     "name": "PhysioFast - Patient Dashboard & Appointment Booking",
                     "url": "https://physiofast.ie/"
                   },
                   {
                     "@type": "ListItem",
-                    "position": 4,
+                    "position": 7,
                     "name": "EstateWay - Real Estate Property Showcase & Management",
                     "url": "https://estateway.in/"
                   },
                   {
                     "@type": "ListItem",
-                    "position": 5,
+                    "position": 8,
                     "name": "Saral Diagnostics - Diagnostic Centre Booking & Report Portal",
                     "url": "https://saraldiagnostics.com/"
                   },
                   {
                     "@type": "ListItem",
-                    "position": 6,
+                    "position": 9,
                     "name": "Camelo - Custom Sprinter Van & Adventure Vehicle Builder",
                     "url": "https://camelo.com/"
                   },
                   {
                     "@type": "ListItem",
-                    "position": 7,
+                    "position": 10,
                     "name": "Boss Cash Cars - Automotive Valuation & Fast Quote Portal",
                     "url": "https://bosscashcars.com/"
                   },
                   {
                     "@type": "ListItem",
-                    "position": 8,
+                    "position": 11,
                     "name": "The Fabric Store - E-Commerce Fashion & Clothing Boutique",
                     "url": "https://www.thefabricstore.pk/"
                   }
@@ -321,7 +319,7 @@ export default function Portfolio() {
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_24.png"
-                        alt="Image of a bakery website homepage with Easter specials, catering options, online ordering buttons, and a recipe book promo section"
+                        alt="Bakery website homepage with Easter specials, catering options, online ordering buttons, and a recipe book promo section"
                       />
                     </a>
                   </div>
@@ -353,7 +351,7 @@ export default function Portfolio() {
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_16.png"
-                        alt="Image of a clean job board website design with search fields, category filters, and candidate login interface"
+                        alt="Clean job board website design with search fields, category filters, and candidate login interface"
                       />
                     </a>
                   </div>
@@ -420,7 +418,7 @@ export default function Portfolio() {
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_26.png"
-                        alt="Image of a real estate website homepage displaying featured luxury properties with pricing, locations, and sales inquiry contact details"
+                        alt="Real estate website homepage displaying featured luxury properties with pricing, locations, and sales inquiry contact details"
                       />
                     </a>
                   </div>
@@ -454,7 +452,7 @@ export default function Portfolio() {
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_20.png"
-                        alt="Image of a diagnostic center website homepage featuring service listings (MRI, CT scans), online booking, and home sample collection options"
+                        alt="Diagnostic center website homepage featuring service listings (MRI, CT scans), online booking, and home sample collection options"
                       />
                     </a>
                   </div>
@@ -524,7 +522,7 @@ export default function Portfolio() {
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_13.png"
-                        alt="Image of a junk car removal website homepage featuring a vehicle selection form, service highlights, and instant contact options"
+                        alt="Junk car removal website homepage featuring a vehicle selection form, service highlights, and instant contact options"
                       />
                     </a>
                   </div>
@@ -558,7 +556,7 @@ export default function Portfolio() {
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_21.png"
-                        alt="Image of a modern clothing store website homepage featuring new arrivals, unstitched outfits, formal wear categories, and product price listings"
+                        alt="Modern clothing store website homepage featuring new arrivals, unstitched outfits, formal wear categories, and product price listings"
                       />
                     </a>
                   </div>
@@ -606,15 +604,13 @@ export default function Portfolio() {
                 of the way, from initial consultation to implementation.
               </p>
             </div>
-            <Link to={"/contact"}>
-              <a className="btn btn-primary">
-                <span className="btn_label" data-text="Contact Us Today!">
-                  Contact Us TODAY!
-                </span>
-                <span className="btn_icon">
-                  <i className="fa-solid fa-arrow-up-right"></i>
-                </span>
-              </a>
+            <Link to="/contact" className="btn btn-primary">
+              <span className="btn_label" data-text="Contact Us Today!">
+                Contact Us TODAY!
+              </span>
+              <span className="btn_icon">
+                <i className="fa-solid fa-arrow-up-right"></i>
+              </span>
             </Link>
           </div>
         </section>
