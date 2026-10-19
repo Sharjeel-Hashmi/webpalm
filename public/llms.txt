@@ -1,13 +1,38 @@
 # WebPalm
 
-> WebPalm is a web and software development agency based in Dublin, Ireland, building custom web apps, business tools, and e-commerce solutions for Irish and global clients.
+> WebPalm is a premier web application and custom software development agency headquartered in Dublin, Ireland. We design and engineer scalable web applications, business automation platforms, e-commerce solutions, and digital growth strategies for Irish SMEs and global enterprises.
 
-## Company
-- [About WebPalm](https://webpalm.ie/about): Company overview and background
-- [Contact](https://webpalm.ie/contact): Get in touch with WebPalm
-- [Portfolio](https://webpalm.ie/portfolio): Selected client projects
+## Primary Entity Information
+- **Organization**: WebPalm
+- **Headquarters**: 9 Limelawn Row, Coolmine, Dublin 15, D15 V6PW, Ireland
+- **Primary Website**: https://webpalm.ie
+- **Direct Phone**: +353 899520026 / +353 894205316
+- **General Inquiries**: info@webpalm.ie
+- **Geographic Focus**: Dublin, Cork, Galway, Limerick, wider Ireland, UK, and European Union.
 
-## Services
-- [Web Development](https://webpalm.ie/web-development): Custom web application and website development
-- [Graphic Designing](https://webpalm.ie/graphic-designing): Branding, marketing, and print design
-- [Search Engine Optimization](https://webpalm.ie/search-engine-optimization): SEO services to improve search visibility
+## Core Services & Regional Hubs
+- [Web Development Dublin](https://webpalm.ie/web-development-dublin): Local Dublin engineering hub for bespoke websites, React/Next.js portals, and software engineering for Irish businesses.
+- [Web Development](https://webpalm.ie/web-development): Custom web applications, enterprise software architectures, API development, and responsive website builds using React, Next.js, Node.js, Python, and Laravel.
+- [Graphic Designing & Video Editing](https://webpalm.ie/graphic-designing): Comprehensive UI/UX interface design, branding systems, social media visual assets, motion graphics, and video production.
+- [Search Engine Optimization (SEO)](https://webpalm.ie/search-engine-optimization): Technical SEO audits, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), keyword strategy, link building, and conversion rate optimization (CRO).
+- [Services Hub](https://webpalm.ie/services): Overview of all digital engineering, cloud migration, and consulting capabilities.
+
+## Featured Case Studies
+- [EduNest Case Study](https://webpalm.ie/portfolio/edunest): Cloud-native LMS platform delivering +210% course enrollment growth and 0.8s load times.
+- [FitFlow Case Study](https://webpalm.ie/portfolio/fitflow): High-concurrency gym booking engine and member portal delivering +180% active member retention.
+- [PropVista Case Study](https://webpalm.ie/portfolio/propvista): Geospatial real estate discovery marketplace generating +240% qualified valuation leads.
+
+## Pricing & Commercial Engagements
+- [Pricing Plans](https://webpalm.ie/pricing): Transparent tiers for startups, small businesses, and enterprises ranging from Starter websites to bespoke enterprise web platforms.
+
+## Trust & Verification
+- [About WebPalm](https://webpalm.ie/about): Company background, engineering philosophy, and values.
+- [Client Portfolio](https://webpalm.ie/portfolio): Case studies and selected client deliveries across healthcare, real estate, education, and e-commerce.
+- [Careers](https://webpalm.ie/career): Open engineering and design positions in Dublin.
+- [Contact WebPalm](https://webpalm.ie/contact): Direct consultation booking, office address, and quote requests.
+- [Privacy Policy](https://webpalm.ie/privacy-policy): GDPR compliance statement under the Irish Data Protection Act 2018.
+- [Terms of Service](https://webpalm.ie/terms-of-service): Commercial conditions governed by the laws of Ireland.
+- [Cookie Policy](https://webpalm.ie/cookie-policy): Transparency under EU ePrivacy regulations.
+
+## Full Documentation for AI Systems
+For exhaustive technical capabilities, detailed case histories, and complete corporate disclosures, see [llms-full.txt](https://webpalm.ie/llms-full.txt).

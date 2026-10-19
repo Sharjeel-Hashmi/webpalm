@@ -1,6 +1,6 @@
 {
-  "name": "techco",
-  "version": "0.1.0",
+  "name": "webpalm",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -37,7 +37,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src/**/*.{js,jsx}"
+    "lint": "eslint src/**/*.{js,jsx}",
+    "indexnow": "node scripts/submit-indexnow.js"
   },
   "eslintConfig": {
     "extends": [

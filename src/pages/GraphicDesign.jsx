@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import Footer2 from "../Components/Footer2";
 import ParallaxSection2 from "./ParallaxSection2";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import WhatsAppButton from "../Components/WhatsAppButton";
 
 export default function GraphicDesign() {
@@ -29,9 +30,10 @@ export default function GraphicDesign() {
           name="google-site-verification"
           content="BuCuVdE1zHdoW0k5Ir0R2r4-SBqauodqFgDWxgma758"
         />
+        <link rel="canonical" href="https://webpalm.ie/graphic-designing" />
         <meta
           name="thumbnail"
-          content="assets/images/Techco_page_thumbnail.webp"
+          content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
 
         {/* <!-- Open Graph Tags --> */}
@@ -74,6 +76,92 @@ export default function GraphicDesign() {
           name="twitter:image"
           content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
+
+        {/* Schema.org Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Service",
+                "@id": "https://webpalm.ie/graphic-designing#service",
+                "name": "Graphic Design, Branding & Video Editing",
+                "serviceType": "Graphic Design",
+                "provider": {
+                  "@id": "https://webpalm.ie/#organization"
+                },
+                "areaServed": [
+                  { "@type": "Country", "name": "Ireland" },
+                  { "@type": "City", "name": "Dublin" }
+                ],
+                "description": "Professional graphic design, corporate branding, logo design, visual identity, and video editing services in Dublin, Ireland.",
+                "url": "https://webpalm.ie/graphic-designing"
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://webpalm.ie/graphic-designing#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://webpalm.ie/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://webpalm.ie/services"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Graphic Design & Video Editing",
+                    "item": "https://webpalm.ie/graphic-designing"
+                  }
+                ]
+              },
+              {
+                "@type": "FAQPage",
+                "@id": "https://webpalm.ie/graphic-designing#faq",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What graphic design services does WebPalm provide?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "WebPalm provides comprehensive visual design services including brand identity and logo design, marketing collateral, social media creatives, UI/UX mockups, motion graphics, and corporate video editing."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What deliverables do I receive with a branding package?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Clients receive complete brand identity packages including high-resolution vector logos (AI, EPS, SVG), raster files (PNG, JPG), brand typography guidelines, color palettes (HEX, RGB, CMYK), and social media kit assets."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How long does a logo design or branding project take?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Initial logo concepts are typically presented within 3 to 5 business days. Full brand identity guidelines and collateral design usually take 1 to 2 weeks, with revisions included."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can WebPalm edit marketing videos and social reels?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, our creative team provides end-to-end video editing, color grading, sound design, animated titles, and motion graphics tailored for YouTube, Instagram Reels, TikTok, and corporate presentations."
+                    }
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Header />
       <main className="page_content">
@@ -336,9 +424,9 @@ export default function GraphicDesign() {
                   </div>
                   <ul className="service_facilities_group unordered_list">
                     <li>
-                      <a
+                      <Link
                         className="iconbox_block layout_icon_left"
-                        href="service_details.html"
+                        to="/contact"
                       >
                         <span className="iconbox_icon">
                           <img
@@ -351,12 +439,12 @@ export default function GraphicDesign() {
                             Logo, Intro & CTAs Animations
                           </strong>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="iconbox_block layout_icon_left"
-                        href="service_details.html"
+                        to="/contact"
                       >
                         <span className="iconbox_icon">
                           <img
@@ -369,12 +457,12 @@ export default function GraphicDesign() {
                             YouTube Editing & Optimization
                           </strong>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="iconbox_block layout_icon_left"
-                        href="service_details.html"
+                        to="/contact"
                       >
                         <span className="iconbox_icon">
                           <img
@@ -387,12 +475,12 @@ export default function GraphicDesign() {
                             Social Shorts & Reels Editng 
                           </strong>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="iconbox_block layout_icon_left"
-                        href="service_details.html"
+                        to="/contact"
                       >
                         <span className="iconbox_icon">
                           <img
@@ -405,12 +493,12 @@ export default function GraphicDesign() {
                             Promo & Product Videos Editing
                           </strong>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="iconbox_block layout_icon_left"
-                        href="service_details.html"
+                        to="/contact"
                       >
                         <span className="iconbox_icon">
                           <img
@@ -423,12 +511,12 @@ export default function GraphicDesign() {
                             Scene Transitions & Cut Polishing
                           </strong>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="iconbox_block layout_icon_left"
-                        href="service_details.html">
+                        to="/contact">
                         <span className="iconbox_icon">
                           <img
                             src="assets/images/icons/icon_check_2.svg"
@@ -439,12 +527,12 @@ export default function GraphicDesign() {
                             Color Grading & Sound Design
                           </strong>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="iconbox_block layout_icon_left"
-                        href="service_details.html">
+                        to="/contact">
                         <span className="iconbox_icon">
                           <img
                             src="assets/images/icons/icon_check_2.svg"
@@ -455,12 +543,12 @@ export default function GraphicDesign() {
                             Motion Graphics Visuals & Titles
                           </strong>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="iconbox_block layout_icon_left"
-                        href="service_details.html">
+                        to="/contact">
                         <span className="iconbox_icon">
                           <img
                             src="assets/images/icons/icon_check_2.svg"
@@ -471,7 +559,7 @@ export default function GraphicDesign() {
                             Educational & Training Sessions
                           </strong>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -479,6 +567,134 @@ export default function GraphicDesign() {
             </div>
           </div>
         </section>
+
+        {/* <!-- FAQ Section - Start
+        ================================================== --> */}
+        <section className="faq_section section_decoration section_space">
+          <div className="container">
+            <div className="heading_block text-center">
+              <div
+                className="heading_focus_text has_underline d-inline-flex"
+                style={{
+                  backgroundImage: `url(${"assets/images/shapes/shape_title_under_line.svg"})`,
+                }}
+              >
+                F.A.Q.
+              </div>
+              <h2 className="heading_text mb-0">
+                Frequently Asked <mark>Questions</mark>
+              </h2>
+              <p className="heading_description mb-0 mt-2">
+                Common questions about our graphic design packages, brand identity assets, and video editing services in Dublin.
+              </p>
+            </div>
+
+            <div className="faq_accordion accordion" id="graphic_faq_accordion">
+              <div className="accordion-item">
+                <div
+                  className="accordion-button"
+                  role="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse_gd_one"
+                  aria-expanded="true"
+                  aria-controls="collapse_gd_one"
+                >
+                  Q. What graphic design services does WebPalm provide?
+                </div>
+                <div
+                  id="collapse_gd_one"
+                  className="accordion-collapse collapse show"
+                  data-bs-parent="#graphic_faq_accordion"
+                >
+                  <div className="accordion-body">
+                    <div className="text_a">A.</div>
+                    <p>
+                      WebPalm provides comprehensive visual design services including brand identity and logo design, marketing collateral, social media creatives, UI/UX mockups, motion graphics, and corporate video editing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="accordion-item">
+                <div
+                  className="accordion-button collapsed"
+                  role="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse_gd_two"
+                  aria-expanded="false"
+                  aria-controls="collapse_gd_two"
+                >
+                  Q. What deliverables do I receive with a branding package?
+                </div>
+                <div
+                  id="collapse_gd_two"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#graphic_faq_accordion"
+                >
+                  <div className="accordion-body">
+                    <div className="text_a">A.</div>
+                    <p>
+                      Clients receive complete brand identity packages including high-resolution vector logos (AI, EPS, SVG), raster files (PNG, JPG), brand typography guidelines, color palettes (HEX, RGB, CMYK), and social media kit assets.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="accordion-item">
+                <div
+                  className="accordion-button collapsed"
+                  role="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse_gd_three"
+                  aria-expanded="false"
+                  aria-controls="collapse_gd_three"
+                >
+                  Q. How long does a logo design or branding project take?
+                </div>
+                <div
+                  id="collapse_gd_three"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#graphic_faq_accordion"
+                >
+                  <div className="accordion-body">
+                    <div className="text_a">A.</div>
+                    <p>
+                      Initial logo concepts are typically presented within 3 to 5 business days. Full brand identity guidelines and collateral design usually take 1 to 2 weeks, with revisions included.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="accordion-item">
+                <div
+                  className="accordion-button collapsed"
+                  role="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse_gd_four"
+                  aria-expanded="false"
+                  aria-controls="collapse_gd_four"
+                >
+                  Q. Can WebPalm edit marketing videos and social reels?
+                </div>
+                <div
+                  id="collapse_gd_four"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#graphic_faq_accordion"
+                >
+                  <div className="accordion-body">
+                    <div className="text_a">A.</div>
+                    <p>
+                      Yes, our creative team provides end-to-end video editing, color grading, sound design, animated titles, and motion graphics tailored for YouTube, Instagram Reels, TikTok, and corporate presentations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <!-- FAQ Section - End
+        ================================================== --> */}
+
         <WhatsAppButton />
       </main>
       <ParallaxSection2 />

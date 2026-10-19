@@ -1,24 +1,141 @@
-import React from 'react'
-import './Home.css'
-import Footer2 from '../Components/Footer2'
-import Header from '../Components/Header'
-import ParallaxSection from './ParallaxSection'
-
+import React from 'react';
+import './Home.css';
+import Footer2 from '../Components/Footer2';
+import Header from '../Components/Header';
+import ParallaxSection from './ParallaxSection';
+import { Helmet } from 'react-helmet-async';
+import WhatsAppButton from '../Components/WhatsAppButton';
 
 export default function Services() {
   return (
-   <>
-   <Header/>
-   <main className="page_content">
+    <>
+      <Helmet>
+        <title>Our Services | Custom Web, Software & Digital Solutions | WebPalm</title>
+        <meta
+          name="description"
+          content="Explore WebPalm's full suite of digital solutions including custom web application development, graphic design, branding, and search engine optimization in Dublin, Ireland."
+        />
+        <meta
+          name="keywords"
+          content="web services Dublin, custom software Ireland, web app development, graphic design services, SEO agency Dublin, digital marketing Ireland, WebPalm services"
+        />
+        <meta name="author" content="WebPalm" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://webpalm.ie/services" />
+        <meta
+          name="thumbnail"
+          content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://webpalm.ie/services" />
+        <meta
+          property="og:title"
+          content="Our Services | Custom Web, Software & Digital Solutions | WebPalm"
+        />
+        <meta
+          property="og:description"
+          content="Explore WebPalm's full suite of digital solutions including custom web application development, graphic design, branding, and search engine optimization in Dublin, Ireland."
+        />
+        <meta property="og:site_name" content="WebPalm" />
+        <meta
+          property="og:image"
+          content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Our Services | Custom Web, Software & Digital Solutions | WebPalm"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore WebPalm's full suite of digital solutions including custom web application development, graphic design, branding, and search engine optimization in Dublin, Ireland."
+        />
+        <meta
+          name="twitter:image"
+          content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
+        />
+      
+        {/* Schema.org Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "CollectionPage",
+                "@id": "https://webpalm.ie/services#webpage",
+                "url": "https://webpalm.ie/services",
+                "name": "Our Services | Custom Web, Software & Digital Solutions | WebPalm",
+                "description": "Explore WebPalm's full suite of digital solutions including custom web application development, graphic design, branding, and search engine optimization in Dublin, Ireland.",
+                "isPartOf": {
+                  "@id": "https://webpalm.ie/#website"
+                },
+                "breadcrumb": {
+                  "@id": "https://webpalm.ie/services#breadcrumb"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://webpalm.ie/services#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://webpalm.ie/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://webpalm.ie/services"
+                  }
+                ]
+              },
+              {
+                "@type": "ItemList",
+                "@id": "https://webpalm.ie/services#list",
+                "name": "WebPalm Digital Services",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Custom Web Application & Software Development",
+                    "url": "https://webpalm.ie/web-development"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Graphic Design, Branding & Video Editing",
+                    "url": "https://webpalm.ie/graphic-designing"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Search Engine Optimization (SEO), AEO & GEO",
+                    "url": "https://webpalm.ie/search-engine-optimization"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
+      <Header />
+      <main className="page_content">
         {/* <!-- Page Banner Section - Start
         ================================================== --> */}
         <section
           className="page_banner_section text-center"
-          style={{backgroundImage: `url(${'assets/images/site_logo/site_logo_01.jpg'})`,backgroundBlendMode:'overlay'}}
+          style={{
+            backgroundImage: `url(${'assets/images/site_logo/site_logo_01.jpg'})`,
+            backgroundBlendMode: 'overlay',
+          }}
         >
           <div className="container">
-            <h1 className="page_title mb-0 text-white">Services Details</h1>
-            <p className="text-white mt-2 myText">Use innovative software development to spur innovation in your business. Resolve corporate issues to produce noteworthy outcomes.</p>
+            <h1 className="page_title mb-0 text-white">Our Services</h1>
+            <p className="text-white mt-2 myText">
+              Empowering businesses with custom web apps, brand design, and data-driven SEO strategies in Dublin and beyond.
+            </p>
           </div>
         </section>
         {/* <!-- Page Banner Section - End
@@ -31,11 +148,14 @@ export default function Services() {
             <div className="details_item_image position-relative">
               <img
                 src="assets/images/services/service_details_image_1.webp"
-                alt="Service Details Image"
+                alt="WebPalm Services Overview"
               />
               <a
                 className="video_btn ripple_effect"
                 href="https://www.youtube.com/watch?v=7e90gBu4pas"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Watch video"
               >
                 <span className="btn_icon">
                   <i className="fa-solid fa-play"></i>
@@ -43,13 +163,13 @@ export default function Services() {
               </a>
             </div>
             <h2 className="details_item_title">
-              Network Infrastructure and Design
+              End-to-End Digital Engineering & Growth
             </h2>
             <p>
-            Modern businesses are built on network infrastructure and design, which forms the basis for all digital operations. Our IT solution company specialises in creating dependable and strong network designs that are customised to each individual client's demands. We know how crucial a well-designed network infrastructure is to promoting scalability, security, and efficiency in all sizes of businesses. Our team of seasoned experts collaborates directly with customers.
+              Modern businesses rely on resilient infrastructure, engaging web applications, and high-visibility search performance. At WebPalm, we specialize in delivering tailored web, software, and design solutions that empower organizations of all sizes across Ireland and internationally.
             </p>
             <p>
-            We approach network architecture holistically, taking into account elements like future expansion potential, scalability, security protocols, and bandwidth requirements. Using cutting-edge technologies and industry best practices,
+              We approach each project holistically, considering scalability, search engine visibility, UI/UX aesthetics, and long-term security. Using cutting-edge technologies and industry best practices, we ensure your systems achieve peak performance and quantifiable business ROI.
             </p>
 
             <h3 className="details_item_info_title">Service Process</h3>
@@ -74,9 +194,7 @@ export default function Services() {
                     >
                       <div className="accordion-body">
                         <p className="m-0">
-                          Data - driven diagnostic and predictive app for
-                          improving outcomes Data driven diagnostic and
-                          predictive app for improving.
+                          We conduct an in-depth discovery session to analyze your technical requirements, brand objectives, audience demographics, and project scope.
                         </p>
                       </div>
                     </div>
@@ -99,9 +217,7 @@ export default function Services() {
                     >
                       <div className="accordion-body">
                         <p className="m-0">
-                          Data - driven diagnostic and predictive app for
-                          improving outcomes Data driven diagnostic and
-                          predictive app for improving.
+                          Our engineers and designers architect bespoke solutions, interactive wireframes, technology stack recommendations, and milestone delivery plans.
                         </p>
                       </div>
                     </div>
@@ -124,9 +240,7 @@ export default function Services() {
                     >
                       <div className="accordion-body">
                         <p className="m-0">
-                          Data - driven diagnostic and predictive app for
-                          improving outcomes Data driven diagnostic and
-                          predictive app for improving.
+                          Agile development sprints, rigorous code reviews, automated CI/CD pipelines, and active client collaboration ensure seamless project progression.
                         </p>
                       </div>
                     </div>
@@ -149,9 +263,7 @@ export default function Services() {
                     >
                       <div className="accordion-body">
                         <p className="m-0">
-                          Data - driven diagnostic and predictive app for
-                          improving outcomes Data driven diagnostic and
-                          predictive app for improving.
+                          We launch thoroughly tested, secure, and Core Web Vitals-optimized digital platforms backed by continuous support and quantifiable ROI.
                         </p>
                       </div>
                     </div>
@@ -315,32 +427,12 @@ export default function Services() {
         {/* <!-- Call To Action Section - Start
         ================================================== --> */}
         <ParallaxSection/>
-         {/* <section
-          className="calltoaction_section parallaxie"
-         style= {{backgroundImage: `url(${'assets/images/backgrounds/bg_image_1.webp'})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center -22px', transformStyle:'preserve-3d'}}
-          >
-          <div className="container text-center" >
-            <div className="heading_block text-white">
-              <h2 className="heading_text">Ready to Work, Let's Chat</h2>
-              <p className="heading_description mb-0">
-                Our team of experts is ready to collaborate with you every step
-                of the way, from initial consultation to implementation.
-              </p>
-            </div>
-            <a className="btn btn-primary" href="contact.html">
-              <span className="btn_label" data-text="Contact Us Today!"
-                >Contact Us Today!</span
-              >
-              <span className="btn_icon">
-                <i className="fa-solid fa-arrow-up-right"></i>
-              </span>
-            </a>
-          </div>
-        </section> 
-        */}
+        {/* <!-- Call To Action Section - End
+        ================================================== --> */}
 
         {/* <!-- Call To Action Section - End
         ================================================== --> */}
+        <WhatsAppButton />
       </main>
       <Footer2/>
    </>

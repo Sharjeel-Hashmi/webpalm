@@ -29,9 +29,10 @@ export default function Portfolio() {
           name="google-site-verification"
           content="BuCuVdE1zHdoW0k5Ir0R2r4-SBqauodqFgDWxgma758"
         />
+        <link rel="canonical" href="https://webpalm.ie/portfolio" />
         <meta
           name="thumbnail"
-          content="assets/images/Techco_page_thumbnail.webp"
+          content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
 
         {/* <!-- Open Graph Tags --> */}
@@ -71,6 +72,121 @@ export default function Portfolio() {
           name="twitter:image"
           content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
+      
+        {/* Schema.org Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "CollectionPage",
+                "@id": "https://webpalm.ie/portfolio#webpage",
+                "url": "https://webpalm.ie/portfolio",
+                "name": "Portfolio | Web Design & Development Projects by WebPalm",
+                "description": "Explore WebPalm's portfolio of web design and development projects including e-commerce platforms, booking portals, and custom web applications.",
+                "isPartOf": {
+                  "@id": "https://webpalm.ie/#website"
+                },
+                "breadcrumb": {
+                  "@id": "https://webpalm.ie/portfolio#breadcrumb"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://webpalm.ie/portfolio#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://webpalm.ie/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Portfolio",
+                    "item": "https://webpalm.ie/portfolio"
+                  }
+                ]
+              },
+              {
+                "@type": "ItemList",
+                "@id": "https://webpalm.ie/portfolio#projects",
+                "name": "Featured Client Web Projects",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "EduNest - EdTech Learning Management & Student Portal",
+                    "url": "https://webpalm.ie/portfolio/edunest"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "FitFlow - Health & Gym Member Management Platform",
+                    "url": "https://webpalm.ie/portfolio/fitflow"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "PropVista - Real Estate Platform & Automated Property Listings",
+                    "url": "https://webpalm.ie/portfolio/propvista"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Flour Bakery - Online Ordering & Delivery Platform",
+                    "url": "https://www.flourbakery.com/"
+                  },
+                    "url": "https://www.flourbakery.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "HCRS - Healthcare Recruitment & Job Board Portal",
+                    "url": "https://hcrs.ie/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "PhysioFast - Patient Dashboard & Appointment Booking",
+                    "url": "https://physiofast.ie/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "EstateWay - Real Estate Property Showcase & Management",
+                    "url": "https://estateway.in/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "name": "Saral Diagnostics - Diagnostic Centre Booking & Report Portal",
+                    "url": "https://saraldiagnostics.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "name": "Camelo - Custom Sprinter Van & Adventure Vehicle Builder",
+                    "url": "https://camelo.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 7,
+                    "name": "Boss Cash Cars - Automotive Valuation & Fast Quote Portal",
+                    "url": "https://bosscashcars.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 8,
+                    "name": "The Fabric Store - E-Commerce Fashion & Clothing Boutique",
+                    "url": "https://www.thefabricstore.pk/"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Header />
       <main className="page_content">
@@ -98,8 +214,92 @@ export default function Portfolio() {
 
         {/* <!-- Portfolio Section - Start
         ================================================== --> */}
-        <section className="portfolio_section section_space bg-light">
+                <section className="portfolio_section section_space bg-light">
           <div className="container">
+            {/* Featured Case Studies */}
+            <div className="heading_block text-center mb-5">
+              <div
+                className="heading_focus_text has_underline d-inline-flex"
+                style={{
+                  backgroundImage: `url(${"assets/images/shapes/shape_title_under_line.svg"})`,
+                }}
+              >
+                Featured Stories
+              </div>
+              <h2 className="heading_text mb-0">
+                Client Success <mark>Case Studies</mark>
+              </h2>
+              <p className="heading_description mb-0 mt-2">
+                Explore in-depth technical breakdowns and measurable business outcomes from our custom web solutions.
+              </p>
+            </div>
+
+            <div className="row g-4 mb-5">
+              <div className="col-lg-4 col-md-6">
+                <div className="card h-100 border-0 shadow-sm rounded overflow-hidden">
+                  <img
+                    src="assets/images/case/Edunest.jpg"
+                    alt="EduNest LMS Platform"
+                    className="card-img-top"
+                    style={{ height: "200px", objectFit: "cover" }}
+                  />
+                  <div className="card-body p-4 d-flex flex-column">
+                    <span className="badge bg-primary text-white mb-2 align-self-start">EdTech & E-Learning</span>
+                    <h3 className="h5 card-title text-dark">EduNest Learning Platform</h3>
+                    <p className="card-text text-muted small flex-grow-1">
+                      Engineered a cloud-native student LMS achieving +210% course enrollments and sub-second page latency.
+                    </p>
+                    <Link to="/portfolio/edunest" className="btn btn-outline-primary btn-sm mt-3">
+                      Read Full Case Study &rarr;
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6">
+                <div className="card h-100 border-0 shadow-sm rounded overflow-hidden">
+                  <img
+                    src="assets/images/case/fitflow.jpg"
+                    alt="FitFlow Fitness Platform"
+                    className="card-img-top"
+                    style={{ height: "200px", objectFit: "cover" }}
+                  />
+                  <div className="card-body p-4 d-flex flex-column">
+                    <span className="badge bg-primary text-white mb-2 align-self-start">Health & Gym Tech</span>
+                    <h3 className="h5 card-title text-dark">FitFlow Booking Engine</h3>
+                    <p className="card-text text-muted small flex-grow-1">
+                      Built real-time class reservation and membership management delivering +180% active member retention.
+                    </p>
+                    <Link to="/portfolio/fitflow" className="btn btn-outline-primary btn-sm mt-3">
+                      Read Full Case Study &rarr;
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6">
+                <div className="card h-100 border-0 shadow-sm rounded overflow-hidden">
+                  <img
+                    src="assets/images/case/propvista.jpg"
+                    alt="PropVista Real Estate Portal"
+                    className="card-img-top"
+                    style={{ height: "200px", objectFit: "cover" }}
+                  />
+                  <div className="card-body p-4 d-flex flex-column">
+                    <span className="badge bg-primary text-white mb-2 align-self-start">Real Estate PropTech</span>
+                    <h3 className="h5 card-title text-dark">PropVista Property Portal</h3>
+                    <p className="card-text text-muted small flex-grow-1">
+                      Designed interactive geospatial map search with instant valuation tools yielding +240% qualified leads.
+                    </p>
+                    <Link to="/portfolio/propvista" className="btn btn-outline-primary btn-sm mt-3">
+                      Read Full Case Study &rarr;
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr className="my-5" />
             <div className="filter_elements_nav">
               <ul className="unordered_list justify-content-center">
                 <li className="active" data-filter="all">
@@ -117,8 +317,7 @@ export default function Portfolio() {
                   <div className="portfolio_image">
                     <a
                       href="https://www.flourbakery.com/"
-                      target="_blank"
-                      className="portfolio_image_wrap bg-light"
+                      target="_blank" rel="noopener noreferrer" className="portfolio_image_wrap bg-light"
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_24.png"
@@ -128,20 +327,18 @@ export default function Portfolio() {
                   </div>
                   <div className="portfolio_content">
                     <h3 className="portfolio_title">
-                      <a>
                         Bakery Website Design | Ordering & Delivery Features
-                      </a>
-                    </h3>
+                      </h3>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-tags"></i>React App Design
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-pie"></i>Bakery
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -152,8 +349,7 @@ export default function Portfolio() {
                   <div className="portfolio_image">
                     <a
                       href="https://hcrs.ie/"
-                      target="_blank"
-                      className="portfolio_image_wrap bg-light"
+                      target="_blank" rel="noopener noreferrer" className="portfolio_image_wrap bg-light"
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_16.png"
@@ -163,21 +359,19 @@ export default function Portfolio() {
                   </div>
                   <div className="portfolio_content">
                     <h3 className="portfolio_title">
-                      <a>
                         Explore Our Job Website Design for Modern Recruitment
-                      </a>
-                    </h3>
+                      </h3>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-tags"></i>Laravel Website
                           Design
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-regular fa-users"></i> Job Site
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -188,8 +382,7 @@ export default function Portfolio() {
                   <div className="portfolio_image">
                     <a
                       href="https://physiofast.ie/"
-                      target="_blank"
-                      className="portfolio_image_wrap bg-light"
+                      target="_blank" rel="noopener noreferrer" className="portfolio_image_wrap bg-light"
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_25.png"
@@ -199,22 +392,20 @@ export default function Portfolio() {
                   </div>
                   <div className="portfolio_content">
                     <h3 className="portfolio_title">
-                      <a>
                         Physio Appointment Website | Patient Dashboard & Booking
                         Management
-                      </a>
-                    </h3>
+                      </h3>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-tags"></i>Laravel Website
                           Design
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-user-doctor"></i> Doctors
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -225,8 +416,7 @@ export default function Portfolio() {
                   <div className="portfolio_image">
                     <a
                       href="https://estateway.in/"
-                      target="_blank"
-                      className="portfolio_image_wrap bg-light"
+                      target="_blank" rel="noopener noreferrer" className="portfolio_image_wrap bg-light"
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_26.png"
@@ -236,22 +426,20 @@ export default function Portfolio() {
                   </div>
                   <div className="portfolio_content">
                     <h3 className="portfolio_title">
-                      <a>
                         Real Estate Website Design | Showcase Properties &
                         Listings
-                      </a>
-                    </h3>
+                      </h3>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-tags"></i>Laravel Website
                           Design
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-building"></i> Real Estate
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -262,8 +450,7 @@ export default function Portfolio() {
                   <div className="portfolio_image">
                     <a
                       href="https://saraldiagnostics.com/"
-                      target="_blank"
-                      className="portfolio_image_wrap bg-light"
+                      target="_blank" rel="noopener noreferrer" className="portfolio_image_wrap bg-light"
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_20.png"
@@ -273,23 +460,21 @@ export default function Portfolio() {
                   </div>
                   <div className="portfolio_content">
                     <h3 className="portfolio_title">
-                      <a>
                         Diagnostic Center Website Design | Easy Booking & Report
                         Access
-                      </a>
-                    </h3>
+                      </h3>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-tags"></i> Laravel Website
                           Design
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-hospital"></i> Diagnostic
                           Centre
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -300,8 +485,7 @@ export default function Portfolio() {
                   <div className="portfolio_image">
                     <a
                       href="https://camelo.com/"
-                      target="_blank"
-                      className="portfolio_image_wrap bg-light"
+                      target="_blank" rel="noopener noreferrer" className="portfolio_image_wrap bg-light"
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_22.png"
@@ -311,23 +495,21 @@ export default function Portfolio() {
                   </div>
                   <div className="portfolio_content">
                     <h3 className="portfolio_title">
-                      <a>
                         Bespoke Car Builder Website Design | Custom SUVs &
                         Adventure Crafted
-                      </a>
-                    </h3>
+                      </h3>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-tags"></i> WordPress Website
                           Design
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-car-wrench"></i> Custom
                           Build Sprinter
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -338,8 +520,7 @@ export default function Portfolio() {
                   <div className="portfolio_image">
                     <a
                       href="https://bosscashcars.com/"
-                      target="_blank"
-                      className="portfolio_image_wrap bg-light"
+                      target="_blank" rel="noopener noreferrer" className="portfolio_image_wrap bg-light"
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_13.png"
@@ -349,22 +530,20 @@ export default function Portfolio() {
                   </div>
                   <div className="portfolio_content">
                     <h3 className="portfolio_title">
-                      <a>
                         Junk Car Removal Website Design | Fast Quotes &
                         Hassle-Free Process
-                      </a>
-                    </h3>
+                      </h3>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-tags"></i> WordPress Website
                           Design
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-building"></i> Automobile
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -375,8 +554,7 @@ export default function Portfolio() {
                   <div className="portfolio_image">
                     <a
                       href="https://www.thefabricstore.pk/"
-                      target="_blank"
-                      className="portfolio_image_wrap bg-light"
+                      target="_blank" rel="noopener noreferrer" className="portfolio_image_wrap bg-light"
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_21.png"
@@ -386,23 +564,21 @@ export default function Portfolio() {
                   </div>
                   <div className="portfolio_content">
                     <h3 className="portfolio_title">
-                      <a>
                         Clothing Store Design | Trendy Collections & Seamless
                         Shopping
-                      </a>
-                    </h3>
+                      </h3>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-tags"></i> Shopify Store
                           Design
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-building"></i> Clothing
                           Brand
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>

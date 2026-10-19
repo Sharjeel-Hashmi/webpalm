@@ -17,8 +17,14 @@ import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 import Pricing from './pages/Pricing';
 import Career from './pages/Career';
-
-
+import NotFound from './pages/NotFound';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import CookiePolicy from './pages/CookiePolicy';
+import CaseStudyEduNest from './pages/CaseStudyEduNest';
+import CaseStudyFitFlow from './pages/CaseStudyFitFlow';
+import CaseStudyPropVista from './pages/CaseStudyPropVista';
+import WebDevelopmentDublin from './pages/WebDevelopmentDublin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let allRoutes = createBrowserRouter(
@@ -48,6 +54,10 @@ let allRoutes = createBrowserRouter(
       element:<WebDevelopment/>
     },
     {
+      path:'web-development-dublin',
+      element:<WebDevelopmentDublin/>
+    },
+    {
       path:'search-engine-optimization',
       element:<Seo/>
     },
@@ -56,20 +66,51 @@ let allRoutes = createBrowserRouter(
       element:<Portfolio/>
     },
     {
+      path:'portfolio/edunest',
+      element:<CaseStudyEduNest/>
+    },
+    {
+      path:'portfolio/fitflow',
+      element:<CaseStudyFitFlow/>
+    },
+    {
+      path:'portfolio/propvista',
+      element:<CaseStudyPropVista/>
+    },
+    {
       path:'contact',
       element:<Contact/>
     },
     {
       path:'career',
       element:<Career/>
+    },
+    {
+      path:'privacy-policy',
+      element:<PrivacyPolicy/>
+    },
+    {
+      path:'terms-of-service',
+      element:<TermsOfService/>
+    },
+    {
+      path:'cookie-policy',
+      element:<CookiePolicy/>
+    },
+    {
+      path:'404',
+      element:<NotFound/>
+    },
+    {
+      path:'*',
+      element:<NotFound/>
     }
   ]
 )
 root.render(
   <React.StrictMode>
     <HelmetProvider>
-    <App/>
-   <RouterProvider router={allRoutes}/>
+      <RouterProvider router={allRoutes}/>
    <ToastContainer
 position="top-right"
 autoClose={5000}

@@ -33,9 +33,10 @@ export default function Career() {
           name="google-site-verification"
           content="BuCuVdE1zHdoW0k5Ir0R2r4-SBqauodqFgDWxgma758"
         />
+        <link rel="canonical" href="https://webpalm.ie/career" />
         <meta
           name="thumbnail"
-          content="assets/images/Techco_page_thumbnail.webp"
+          content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
 
         {/* <!-- Open Graph Tags --> */}
@@ -72,6 +73,68 @@ export default function Career() {
           name="twitter:image"
           content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
+      
+        {/* Schema.org Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": "https://webpalm.ie/career#webpage",
+                "url": "https://webpalm.ie/career",
+                "name": "Careers at WebPalm | Web Development & Digital Design Jobs in Dublin",
+                "description": "Explore exciting career opportunities at WebPalm in web development, IT support, graphic design, and digital strategy in Dublin.",
+                "isPartOf": {
+                  "@id": "https://webpalm.ie/#website"
+                },
+                "breadcrumb": {
+                  "@id": "https://webpalm.ie/career#breadcrumb"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://webpalm.ie/career#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://webpalm.ie/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Careers",
+                    "item": "https://webpalm.ie/career"
+                  }
+                ]
+              },
+              {
+                "@type": "JobPosting",
+                "@id": "https://webpalm.ie/career#it-support-engineer",
+                "title": "IT Support Engineer CCNA (ICT)",
+                "description": "WebPalm is seeking an IT Support Engineer for a permanent role with our growing team in Dublin city centre. Work within an Office 365 environment supporting client infrastructure, networking, Active Directory, and web deployments.",
+                "datePosted": "2025-01-15",
+                "validThrough": "2026-12-31T23:59:59Z",
+                "employmentType": "FULL_TIME",
+                "hiringOrganization": {
+                  "@id": "https://webpalm.ie/#organization"
+                },
+                "jobLocation": {
+                  "@type": "Place",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "9 Limelawn Row, Coolmine",
+                    "addressLocality": "Dublin 15",
+                    "postalCode": "D15 V6PW",
+                    "addressCountry": "IE"
+                  }
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Header />
       <main className="page_content">
@@ -213,14 +276,15 @@ export default function Career() {
                         <div className="col-md-4">
                           <img
                             src="assets/images/careers/career_img_1.jpg"
+                            alt="IT Support Engineer Role at WebPalm Dublin"
                             className="img-fluid position-static img-border"
                           />
                         </div>
                         <div className="col-md-8 text-start">
                           <div className="row">
-                            <h1 className="heading_description mb-5">
+                            <h2 className="heading_description mb-5">
                               Job Details
-                            </h1>
+                            </h2>
                           </div>
                           <div className="row mb-3">
                             <h5>Job Type</h5>
@@ -231,22 +295,20 @@ export default function Career() {
                             <p>Dublin, Ireland</p>
                           </div>
                           <div className="row mb-3">
-                            <h5>Catagory</h5>
+                            <h5>Category</h5>
                             <p>Information Technology</p>
                           </div>
                           <div className="row mb-3">
                             <h4>Full Job Description</h4>
                             <p>
-                              Our client NetSole is seeking an{" "}
+                              WebPalm is seeking an{" "}
                               <b>IT Support Engineer</b> for a permanent role
-                              with a market-leading Professional Services client
-                              in Dublin city centre. As an IT Support Engineer
-                              you will work within an{" "}
-                              <b>Office 365 environment</b> as part of a small
-                              team supporting internal users and IT
-                              projects.This is an <b>onsite role</b> that will
-                              suit someone who wants to learn and develop
-                              skills.
+                              with our growing team in Dublin city centre. As an
+                              IT Support Engineer you will work within an{" "}
+                              <b>Office 365 environment</b> supporting client
+                              infrastructure and web projects. This is an{" "}
+                              <b>onsite role</b> that will suit someone who
+                              wants to learn and develop skills.
                             </p>
                           </div>
                           <div className="row mb-3">
@@ -289,15 +351,13 @@ export default function Career() {
                               </li>
                             </ul>
                           </div>
-                          <Link to={"/contact"}>
-                            <a class="btn btn-light">
-                              <span class="btn_label" data-text="Apply Now">
-                                Apply Now
-                              </span>
-                              <span class="btn_icon">
-                                <i class="fa-solid fa-arrow-up-right"></i>
-                              </span>
-                            </a>
+                          <Link to="/contact" className="btn btn-light">
+                            <span className="btn_label" data-text="Apply Now">
+                              Apply Now
+                            </span>
+                            <span className="btn_icon">
+                              <i className="fa-solid fa-arrow-up-right"></i>
+                            </span>
                           </Link>
                         </div>
                       </div>
@@ -393,15 +453,13 @@ export default function Career() {
                               </li>
                             </ul>
                           </div>
-                          <Link to={"/contact"}>
-                            <a class="btn btn-light">
-                              <span class="btn_label" data-text="Apply Now">
-                                Apply Now
-                              </span>
-                              <span class="btn_icon">
-                                <i class="fa-solid fa-arrow-up-right"></i>
-                              </span>
-                            </a>
+                          <Link to="/contact" className="btn btn-light">
+                            <span className="btn_label" data-text="Apply Now">
+                              Apply Now
+                            </span>
+                            <span className="btn_icon">
+                              <i className="fa-solid fa-arrow-up-right"></i>
+                            </span>
                           </Link>
                         </div>
                       </div>
@@ -500,15 +558,13 @@ export default function Career() {
                               </li>
                             </ul>
                           </div>
-                          <Link to={"/contact"}>
-                            <a class="btn btn-light">
-                              <span class="btn_label" data-text="Apply Now">
-                                Apply Now
-                              </span>
-                              <span class="btn_icon">
-                                <i class="fa-solid fa-arrow-up-right"></i>
-                              </span>
-                            </a>
+                          <Link to="/contact" className="btn btn-light">
+                            <span className="btn_label" data-text="Apply Now">
+                              Apply Now
+                            </span>
+                            <span className="btn_icon">
+                              <i className="fa-solid fa-arrow-up-right"></i>
+                            </span>
                           </Link>
                         </div>
                       </div>
@@ -652,15 +708,13 @@ export default function Career() {
                               </li>
                             </ul>
                           </div>
-                          <Link to={"/contact"}>
-                            <a class="btn btn-light">
-                              <span class="btn_label" data-text="Apply Now">
-                                Apply Now
-                              </span>
-                              <span class="btn_icon">
-                                <i class="fa-solid fa-arrow-up-right"></i>
-                              </span>
-                            </a>
+                          <Link to="/contact" className="btn btn-light">
+                            <span className="btn_label" data-text="Apply Now">
+                              Apply Now
+                            </span>
+                            <span className="btn_icon">
+                              <i className="fa-solid fa-arrow-up-right"></i>
+                            </span>
                           </Link>
                         </div>
                       </div>

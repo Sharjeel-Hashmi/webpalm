@@ -131,7 +131,7 @@
 //                   <div className="image_wrap">
 //                     <img
 //                       src="assets/images/about/about_image_1.webp"
-//                       alt="Techco - Employees Guoup Image"
+//                       alt="WebPalm - Team Image"
 //                     />
 //                   </div>
 //                   <div className="content_wrap">
@@ -297,7 +297,7 @@ const FunfactSection = () => {
           <div className="image_wrap">
             <img
               src="assets/images/about/about_image_1.webp"
-              alt="Techco - Employees Group Image"
+              alt="WebPalm - Team Image"
             />
           </div>
           <div className="content_wrap">

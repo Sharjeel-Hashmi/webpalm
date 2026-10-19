@@ -30,9 +30,10 @@ export default function WebDevelopment() {
           name="google-site-verification"
           content="BuCuVdE1zHdoW0k5Ir0R2r4-SBqauodqFgDWxgma758"
         />
+        <link rel="canonical" href="https://webpalm.ie/web-development" />
         <meta
           name="thumbnail"
-          content="assets/images/Techco_page_thumbnail.webp"
+          content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
 
         {/* <!-- Open Graph Tags --> */}
@@ -72,6 +73,92 @@ export default function WebDevelopment() {
           name="twitter:image"
           content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
+
+        {/* Schema.org Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Service",
+                "@id": "https://webpalm.ie/web-development#service",
+                "name": "Custom Web Application & Software Development",
+                "serviceType": "Web Development",
+                "provider": {
+                  "@id": "https://webpalm.ie/#organization"
+                },
+                "areaServed": [
+                  { "@type": "Country", "name": "Ireland" },
+                  { "@type": "City", "name": "Dublin" }
+                ],
+                "description": "Professional web development and custom software engineering services in Dublin specializing in React, Next.js, Node.js, Python, and Laravel.",
+                "url": "https://webpalm.ie/web-development"
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://webpalm.ie/web-development#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://webpalm.ie/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://webpalm.ie/services"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Web Development",
+                    "item": "https://webpalm.ie/web-development"
+                  }
+                ]
+              },
+              {
+                "@type": "FAQPage",
+                "@id": "https://webpalm.ie/web-development#faq",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What frameworks and programming languages does WebPalm specialize in?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "WebPalm specializes in modern JavaScript frameworks including React 19, Next.js, and TypeScript for frontend interfaces, alongside Python (Django, FastAPI), Node.js, and PHP (Laravel) for robust backend engineering and RESTful APIs."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How long does it take to develop a custom web application?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Typical custom web applications require between 4 to 12 weeks depending on feature complexity, third-party integrations, and testing requirements. Standard business websites and MVPs can be launched in 2 to 4 weeks."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Are WebPalm websites optimized for SEO and mobile devices?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, every website and application engineered by WebPalm is built mobile-first, follows strict Core Web Vitals standards, and includes on-page SEO metadata, semantic HTML5, and Schema.org structured data out of the box."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Does WebPalm provide ongoing website maintenance and support in Ireland?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, WebPalm provides dedicated monthly SLA-backed maintenance, security patching, performance monitoring, cloud backups, and feature enhancements for businesses in Dublin and throughout Ireland."
+                    }
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Header />
       <main className="page_content">
@@ -691,7 +778,7 @@ export default function WebDevelopment() {
                             <img
                               style={{ maxWidth: "65px" }}
                               src="assets/images/icons/icon_mysql.png"
-                              alt="Laraval SVG Icon"
+                              alt="MySQL Database Icon"
                             />
                           </div>
                           <div className="iconbox_content">
@@ -704,7 +791,7 @@ export default function WebDevelopment() {
                           <div className="iconbox_icon">
                             <img
                               src="assets/images/icons/icon_mongodb.png"
-                              alt="Laraval SVG Icon"
+                              alt="MongoDB Database Icon"
                             />
                           </div>
                           <div className="iconbox_content">
@@ -727,7 +814,7 @@ export default function WebDevelopment() {
                             <img
                               style={{ maxWidth: "55px" }}
                               src="assets/images/icons/icon_shopify.png"
-                              alt="Laraval SVG Icon"
+                              alt="Shopify E-Commerce Icon"
                             />
                           </div>
                           <div className="iconbox_content">
@@ -741,7 +828,7 @@ export default function WebDevelopment() {
                             <img
                               style={{ maxWidth: "55px" }}
                               src="assets/images/icons/icon_wordpress.png"
-                              alt="Laraval SVG Icon"
+                              alt="WordPress CMS Icon"
                             />
                           </div>
                           <div className="iconbox_content">
@@ -756,6 +843,134 @@ export default function WebDevelopment() {
             </div>
           </div>
         </section>
+
+        {/* <!-- FAQ Section - Start
+        ================================================== --> */}
+        <section className="faq_section section_decoration section_space">
+          <div className="container">
+            <div className="heading_block text-center">
+              <div
+                className="heading_focus_text has_underline d-inline-flex"
+                style={{
+                  backgroundImage: `url(${"assets/images/shapes/shape_title_under_line.svg"})`,
+                }}
+              >
+                F.A.Q.
+              </div>
+              <h2 className="heading_text mb-0">
+                Frequently Asked <mark>Questions</mark>
+              </h2>
+              <p className="heading_description mb-0 mt-2">
+                Everything you need to know about our web development process, tech stack, and delivery in Dublin.
+              </p>
+            </div>
+
+            <div className="faq_accordion accordion" id="webdev_faq_accordion">
+              <div className="accordion-item">
+                <div
+                  className="accordion-button"
+                  role="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse_wd_one"
+                  aria-expanded="true"
+                  aria-controls="collapse_wd_one"
+                >
+                  Q. What frameworks and programming languages does WebPalm specialize in?
+                </div>
+                <div
+                  id="collapse_wd_one"
+                  className="accordion-collapse collapse show"
+                  data-bs-parent="#webdev_faq_accordion"
+                >
+                  <div className="accordion-body">
+                    <div className="text_a">A.</div>
+                    <p>
+                      WebPalm specializes in modern JavaScript frameworks including React 19, Next.js, and TypeScript for frontend interfaces, alongside Python (Django, FastAPI), Node.js, and PHP (Laravel) for robust backend engineering and RESTful APIs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="accordion-item">
+                <div
+                  className="accordion-button collapsed"
+                  role="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse_wd_two"
+                  aria-expanded="false"
+                  aria-controls="collapse_wd_two"
+                >
+                  Q. How long does it take to develop a custom web application?
+                </div>
+                <div
+                  id="collapse_wd_two"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#webdev_faq_accordion"
+                >
+                  <div className="accordion-body">
+                    <div className="text_a">A.</div>
+                    <p>
+                      Typical custom web applications require between 4 to 12 weeks depending on feature complexity, third-party integrations, and testing requirements. Standard business websites and MVPs can be launched in 2 to 4 weeks.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="accordion-item">
+                <div
+                  className="accordion-button collapsed"
+                  role="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse_wd_three"
+                  aria-expanded="false"
+                  aria-controls="collapse_wd_three"
+                >
+                  Q. Are WebPalm websites optimized for SEO and mobile devices?
+                </div>
+                <div
+                  id="collapse_wd_three"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#webdev_faq_accordion"
+                >
+                  <div className="accordion-body">
+                    <div className="text_a">A.</div>
+                    <p>
+                      Yes, every website and application engineered by WebPalm is built mobile-first, follows strict Core Web Vitals standards, and includes on-page SEO metadata, semantic HTML5, and Schema.org structured data out of the box.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="accordion-item">
+                <div
+                  className="accordion-button collapsed"
+                  role="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse_wd_four"
+                  aria-expanded="false"
+                  aria-controls="collapse_wd_four"
+                >
+                  Q. Does WebPalm provide ongoing website maintenance and support in Ireland?
+                </div>
+                <div
+                  id="collapse_wd_four"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#webdev_faq_accordion"
+                >
+                  <div className="accordion-body">
+                    <div className="text_a">A.</div>
+                    <p>
+                      Yes, WebPalm provides dedicated monthly SLA-backed maintenance, security patching, performance monitoring, cloud backups, and feature enhancements for businesses in Dublin and throughout Ireland.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <!-- FAQ Section - End
+        ================================================== --> */}
+
         <ParallaxSection3 />
         <WhatsAppButton />
       </main>
