@@ -138,47 +138,45 @@ export default function Portfolio() {
                     "name": "Flour Bakery - Online Ordering & Delivery Platform",
                     "url": "https://www.flourbakery.com/"
                   },
-                    "url": "https://www.flourbakery.com/"
-                  },
                   {
                     "@type": "ListItem",
-                    "position": 2,
+                    "position": 5,
                     "name": "HCRS - Healthcare Recruitment & Job Board Portal",
                     "url": "https://hcrs.ie/"
                   },
                   {
                     "@type": "ListItem",
-                    "position": 3,
+                    "position": 6,
                     "name": "PhysioFast - Patient Dashboard & Appointment Booking",
                     "url": "https://physiofast.ie/"
                   },
                   {
                     "@type": "ListItem",
-                    "position": 4,
+                    "position": 7,
                     "name": "EstateWay - Real Estate Property Showcase & Management",
                     "url": "https://estateway.in/"
                   },
                   {
                     "@type": "ListItem",
-                    "position": 5,
+                    "position": 8,
                     "name": "Saral Diagnostics - Diagnostic Centre Booking & Report Portal",
                     "url": "https://saraldiagnostics.com/"
                   },
                   {
                     "@type": "ListItem",
-                    "position": 6,
+                    "position": 9,
                     "name": "Camelo - Custom Sprinter Van & Adventure Vehicle Builder",
                     "url": "https://camelo.com/"
                   },
                   {
                     "@type": "ListItem",
-                    "position": 7,
+                    "position": 10,
                     "name": "Boss Cash Cars - Automotive Valuation & Fast Quote Portal",
                     "url": "https://bosscashcars.com/"
                   },
                   {
                     "@type": "ListItem",
-                    "position": 8,
+                    "position": 11,
                     "name": "The Fabric Store - E-Commerce Fashion & Clothing Boutique",
                     "url": "https://www.thefabricstore.pk/"
                   }
