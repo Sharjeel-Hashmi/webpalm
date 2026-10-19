@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import EmailForm from "./EmailForm"; // Importing the new EmailForm component
 
 import emailjs from "@emailjs/browser";
 import "./Home.css";
@@ -1070,7 +1069,7 @@ export default function Home() {
                   <div className="image_wrap">
                     <img
                       src="assets/images/about/about_image_6.webp"
-                      alt="Image of a man working at WebPalm About"
+                      alt="WebPalm engineering team member collaborating in Dublin office"
                     />
                   </div>
                   <div

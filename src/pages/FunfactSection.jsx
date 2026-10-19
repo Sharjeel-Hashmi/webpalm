@@ -297,7 +297,7 @@ const FunfactSection = () => {
           <div className="image_wrap">
             <img
               src="assets/images/about/about_image_1.webp"
-              alt="WebPalm - Team Image"
+              alt="WebPalm Dublin engineering and leadership team"
             />
           </div>
           <div className="content_wrap">

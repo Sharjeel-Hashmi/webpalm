@@ -21,7 +21,11 @@ const TypeWriter = () => {
     };
   }, []);
 
-  return <h2 style={{color:"#0044EB"}} className="type-heading" ref={el}></h2>;
+  return (
+    <h2 style={{ color: "#0044EB" }} className="type-heading">
+      <span ref={el}>Web Development</span>
+    </h2>
+  );
 };
 
 export default TypeWriter;

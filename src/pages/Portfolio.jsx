@@ -319,7 +319,7 @@ export default function Portfolio() {
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_24.png"
-                        alt="Image of a bakery website homepage with Easter specials, catering options, online ordering buttons, and a recipe book promo section"
+                        alt="Bakery website homepage with Easter specials, catering options, online ordering buttons, and a recipe book promo section"
                       />
                     </a>
                   </div>
@@ -351,7 +351,7 @@ export default function Portfolio() {
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_16.png"
-                        alt="Image of a clean job board website design with search fields, category filters, and candidate login interface"
+                        alt="Clean job board website design with search fields, category filters, and candidate login interface"
                       />
                     </a>
                   </div>
@@ -418,7 +418,7 @@ export default function Portfolio() {
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_26.png"
-                        alt="Image of a real estate website homepage displaying featured luxury properties with pricing, locations, and sales inquiry contact details"
+                        alt="Real estate website homepage displaying featured luxury properties with pricing, locations, and sales inquiry contact details"
                       />
                     </a>
                   </div>
@@ -452,7 +452,7 @@ export default function Portfolio() {
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_20.png"
-                        alt="Image of a diagnostic center website homepage featuring service listings (MRI, CT scans), online booking, and home sample collection options"
+                        alt="Diagnostic center website homepage featuring service listings (MRI, CT scans), online booking, and home sample collection options"
                       />
                     </a>
                   </div>
@@ -522,7 +522,7 @@ export default function Portfolio() {
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_13.png"
-                        alt="Image of a junk car removal website homepage featuring a vehicle selection form, service highlights, and instant contact options"
+                        alt="Junk car removal website homepage featuring a vehicle selection form, service highlights, and instant contact options"
                       />
                     </a>
                   </div>
@@ -556,7 +556,7 @@ export default function Portfolio() {
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_21.png"
-                        alt="Image of a modern clothing store website homepage featuring new arrivals, unstitched outfits, formal wear categories, and product price listings"
+                        alt="Modern clothing store website homepage featuring new arrivals, unstitched outfits, formal wear categories, and product price listings"
                       />
                     </a>
                   </div>
@@ -604,15 +604,13 @@ export default function Portfolio() {
                 of the way, from initial consultation to implementation.
               </p>
             </div>
-            <Link to={"/contact"}>
-              <a className="btn btn-primary">
-                <span className="btn_label" data-text="Contact Us Today!">
-                  Contact Us TODAY!
-                </span>
-                <span className="btn_icon">
-                  <i className="fa-solid fa-arrow-up-right"></i>
-                </span>
-              </a>
+            <Link to="/contact" className="btn btn-primary">
+              <span className="btn_label" data-text="Contact Us Today!">
+                Contact Us TODAY!
+              </span>
+              <span className="btn_icon">
+                <i className="fa-solid fa-arrow-up-right"></i>
+              </span>
             </Link>
           </div>
         </section>

@@ -210,7 +210,7 @@ export default function WebDevelopment() {
                   <img
                     class="rounded"
                     src="assets/images/backgrounds/web.jpg"
-                    alt="Webpalm Image of a software development directory structure with debugging tools, project files, and documentation listings"
+                    alt="WebPalm software development directory structure with debugging tools, project files, and documentation listings"
                   />
                 </div>
               </div>
@@ -333,9 +333,9 @@ export default function WebDevelopment() {
                   </div> */}
                   <div class="iconbox_content">
                     <h3 class="iconbox_title">
-                      <a href="#" style={{ color: "navy" }}>
+                      <span style={{ color: "navy" }}>
                         JavaScript Development
-                      </a>
+                      </span>
                     </h3>
                     <p class="mb-0 myconPara">
                       We master JavaScript to craft dynamic interactive web
@@ -357,9 +357,9 @@ export default function WebDevelopment() {
                 >
                   <div class="iconbox_content">
                     <h3 class="iconbox_title">
-                      <a href="#" style={{ color: "navy" }}>
+                      <span style={{ color: "navy" }}>
                         React JS Development
-                      </a>
+                      </span>
                     </h3>
                     <p class="mb-0 myconPara">
                       We utilize React.js to build interactive, modular user
@@ -381,9 +381,9 @@ export default function WebDevelopment() {
                 >
                   <div class="iconbox_content">
                     <h3 class="iconbox_title">
-                      <a href="#" style={{ color: "navy" }}>
+                      <span style={{ color: "navy" }}>
                         Next JS Development
-                      </a>
+                      </span>
                     </h3>
                     <p class="mb-0 myconPara">
                       We employ Next.js to enhance React with server rendering
@@ -405,9 +405,9 @@ export default function WebDevelopment() {
                 >
                   <div class="iconbox_content">
                     <h3 class="iconbox_title">
-                      <a href="#" style={{ color: "navy" }}>
+                      <span style={{ color: "navy" }}>
                         Angular JS Development
-                      </a>
+                      </span>
                     </h3>
                     <p class="mb-0 myconPara">
                       We leverage Angular to create dynamic, single-page web
@@ -429,9 +429,9 @@ export default function WebDevelopment() {
                 >
                   <div class="iconbox_content">
                     <h3 class="iconbox_title">
-                      <a href="#" style={{ color: "navy" }}>
+                      <span style={{ color: "navy" }}>
                         Python Development
-                      </a>
+                      </span>
                     </h3>
                     <p class="mb-0 myconPara">
                       We use Python for versatile solutions and efficient web
@@ -453,9 +453,9 @@ export default function WebDevelopment() {
                 >
                   <div class="iconbox_content">
                     <h3 class="iconbox_title">
-                      <a href="#" style={{ color: "navy" }}>
+                      <span style={{ color: "navy" }}>
                         PHP Development
-                      </a>
+                      </span>
                     </h3>
                     <p class="mb-0 myconPara">
                       We employ PHP to build dynamic server-side web
@@ -478,9 +478,9 @@ export default function WebDevelopment() {
                 >
                   <div class="iconbox_content">
                     <h3 class="iconbox_title">
-                      <a href="#" style={{ color: "navy" }}>
-                        Laraval Development
-                      </a>
+                      <span style={{ color: "navy" }}>
+                        Laravel Development
+                      </span>
                     </h3>
                     <p class="mb-0 myconPara">
                       We choose Laravel to build elegant, organized PHP web
@@ -502,9 +502,9 @@ export default function WebDevelopment() {
                 >
                   <div class="iconbox_content">
                     <h3 class="iconbox_title">
-                      <a href="#" style={{ color: "navy" }}>
+                      <span style={{ color: "navy" }}>
                         Node JS Development
-                      </a>
+                      </span>
                     </h3>
                     <p class="mb-0 myconPara">
                       We harness Node.js to execute JavaScript for scalable
