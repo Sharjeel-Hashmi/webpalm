@@ -533,6 +533,14 @@ export default function Footer() {
                   <span className="icon_list_text"> Privacy Policy </span>
                 </Link>
               </li>
+              <li>
+                <Link to="/cookie-policy">
+                  <span className="icon_list_icon">
+                    <i className="fa-solid fa-circle"></i>
+                  </span>
+                  <span className="icon_list_text"> Cookie Policy </span>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

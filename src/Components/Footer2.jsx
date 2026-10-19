@@ -201,6 +201,11 @@ export default function Footer2() {
                         </Link>
                       </li>
                       <li>
+                        <Link to="/web-development-dublin" style={{ fontSize: "20px" }}>
+                          <span className="icon_list_text">Web Development Dublin</span>
+                        </Link>
+                      </li>
+                      <li>
                         <Link to="/services" style={{ fontSize: "20px" }}>
                           <span className="icon_list_text">All Services</span>
                         </Link>

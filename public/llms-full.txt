@@ -47,17 +47,25 @@ WebPalm offers transparent, value-oriented pricing packages tailored to project 
 ## 4. Key Pages & Resource Directory
 
 - **Homepage**: https://webpalm.ie/
+- **Dublin Regional Hub**: https://webpalm.ie/web-development-dublin
 - **About Us**: https://webpalm.ie/about
 - **All Services Hub**: https://webpalm.ie/services
 - **Web Development**: https://webpalm.ie/web-development
 - **Graphic Design & Video Editing**: https://webpalm.ie/graphic-designing
 - **Search Engine Optimization**: https://webpalm.ie/search-engine-optimization
 - **Pricing Plans**: https://webpalm.ie/pricing
-- **Portfolio & Case Studies**: https://webpalm.ie/portfolio
+- **Portfolio Overview**: https://webpalm.ie/portfolio
+- **Case Study - EduNest**: https://webpalm.ie/portfolio/edunest
+- **Case Study - FitFlow**: https://webpalm.ie/portfolio/fitflow
+- **Case Study - PropVista**: https://webpalm.ie/portfolio/propvista
 - **Careers & Employment**: https://webpalm.ie/career
 - **Contact & Consultation**: https://webpalm.ie/contact
+- **Privacy Policy (GDPR)**: https://webpalm.ie/privacy-policy
+- **Terms of Service**: https://webpalm.ie/terms-of-service
+- **Cookie Policy**: https://webpalm.ie/cookie-policy
 
 ---
 
 ## 5. Verification & Grounding
 For inquiries, partnership evaluations, or technical quotations, contact the WebPalm team via email at info@webpalm.ie or visit https://webpalm.ie/contact.
+

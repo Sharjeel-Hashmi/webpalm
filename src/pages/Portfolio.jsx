@@ -117,7 +117,27 @@ export default function Portfolio() {
                   {
                     "@type": "ListItem",
                     "position": 1,
+                    "name": "EduNest - EdTech Learning Management & Student Portal",
+                    "url": "https://webpalm.ie/portfolio/edunest"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "FitFlow - Health & Gym Member Management Platform",
+                    "url": "https://webpalm.ie/portfolio/fitflow"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "PropVista - Real Estate Platform & Automated Property Listings",
+                    "url": "https://webpalm.ie/portfolio/propvista"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
                     "name": "Flour Bakery - Online Ordering & Delivery Platform",
+                    "url": "https://www.flourbakery.com/"
+                  },
                     "url": "https://www.flourbakery.com/"
                   },
                   {
@@ -194,8 +214,92 @@ export default function Portfolio() {
 
         {/* <!-- Portfolio Section - Start
         ================================================== --> */}
-        <section className="portfolio_section section_space bg-light">
+                <section className="portfolio_section section_space bg-light">
           <div className="container">
+            {/* Featured Case Studies */}
+            <div className="heading_block text-center mb-5">
+              <div
+                className="heading_focus_text has_underline d-inline-flex"
+                style={{
+                  backgroundImage: `url(${"assets/images/shapes/shape_title_under_line.svg"})`,
+                }}
+              >
+                Featured Stories
+              </div>
+              <h2 className="heading_text mb-0">
+                Client Success <mark>Case Studies</mark>
+              </h2>
+              <p className="heading_description mb-0 mt-2">
+                Explore in-depth technical breakdowns and measurable business outcomes from our custom web solutions.
+              </p>
+            </div>
+
+            <div className="row g-4 mb-5">
+              <div className="col-lg-4 col-md-6">
+                <div className="card h-100 border-0 shadow-sm rounded overflow-hidden">
+                  <img
+                    src="assets/images/case/Edunest.jpg"
+                    alt="EduNest LMS Platform"
+                    className="card-img-top"
+                    style={{ height: "200px", objectFit: "cover" }}
+                  />
+                  <div className="card-body p-4 d-flex flex-column">
+                    <span className="badge bg-primary text-white mb-2 align-self-start">EdTech & E-Learning</span>
+                    <h3 className="h5 card-title text-dark">EduNest Learning Platform</h3>
+                    <p className="card-text text-muted small flex-grow-1">
+                      Engineered a cloud-native student LMS achieving +210% course enrollments and sub-second page latency.
+                    </p>
+                    <Link to="/portfolio/edunest" className="btn btn-outline-primary btn-sm mt-3">
+                      Read Full Case Study &rarr;
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6">
+                <div className="card h-100 border-0 shadow-sm rounded overflow-hidden">
+                  <img
+                    src="assets/images/case/fitflow.jpg"
+                    alt="FitFlow Fitness Platform"
+                    className="card-img-top"
+                    style={{ height: "200px", objectFit: "cover" }}
+                  />
+                  <div className="card-body p-4 d-flex flex-column">
+                    <span className="badge bg-primary text-white mb-2 align-self-start">Health & Gym Tech</span>
+                    <h3 className="h5 card-title text-dark">FitFlow Booking Engine</h3>
+                    <p className="card-text text-muted small flex-grow-1">
+                      Built real-time class reservation and membership management delivering +180% active member retention.
+                    </p>
+                    <Link to="/portfolio/fitflow" className="btn btn-outline-primary btn-sm mt-3">
+                      Read Full Case Study &rarr;
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6">
+                <div className="card h-100 border-0 shadow-sm rounded overflow-hidden">
+                  <img
+                    src="assets/images/case/propvista.jpg"
+                    alt="PropVista Real Estate Portal"
+                    className="card-img-top"
+                    style={{ height: "200px", objectFit: "cover" }}
+                  />
+                  <div className="card-body p-4 d-flex flex-column">
+                    <span className="badge bg-primary text-white mb-2 align-self-start">Real Estate PropTech</span>
+                    <h3 className="h5 card-title text-dark">PropVista Property Portal</h3>
+                    <p className="card-text text-muted small flex-grow-1">
+                      Designed interactive geospatial map search with instant valuation tools yielding +240% qualified leads.
+                    </p>
+                    <Link to="/portfolio/propvista" className="btn btn-outline-primary btn-sm mt-3">
+                      Read Full Case Study &rarr;
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr className="my-5" />
             <div className="filter_elements_nav">
               <ul className="unordered_list justify-content-center">
                 <li className="active" data-filter="all">
