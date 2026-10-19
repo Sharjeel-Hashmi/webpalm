@@ -73,6 +73,68 @@ export default function Career() {
           name="twitter:image"
           content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
+      
+        {/* Schema.org Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": "https://webpalm.ie/career#webpage",
+                "url": "https://webpalm.ie/career",
+                "name": "Careers at WebPalm | Web Development & Digital Design Jobs in Dublin",
+                "description": "Explore exciting career opportunities at WebPalm in web development, IT support, graphic design, and digital strategy in Dublin.",
+                "isPartOf": {
+                  "@id": "https://webpalm.ie/#website"
+                },
+                "breadcrumb": {
+                  "@id": "https://webpalm.ie/career#breadcrumb"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://webpalm.ie/career#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://webpalm.ie/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Careers",
+                    "item": "https://webpalm.ie/career"
+                  }
+                ]
+              },
+              {
+                "@type": "JobPosting",
+                "@id": "https://webpalm.ie/career#it-support-engineer",
+                "title": "IT Support Engineer CCNA (ICT)",
+                "description": "WebPalm is seeking an IT Support Engineer for a permanent role with our growing team in Dublin city centre. Work within an Office 365 environment supporting client infrastructure, networking, Active Directory, and web deployments.",
+                "datePosted": "2025-01-15",
+                "validThrough": "2026-12-31T23:59:59Z",
+                "employmentType": "FULL_TIME",
+                "hiringOrganization": {
+                  "@id": "https://webpalm.ie/#organization"
+                },
+                "jobLocation": {
+                  "@type": "Place",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "9 Limelawn Row, Coolmine",
+                    "addressLocality": "Dublin 15",
+                    "postalCode": "D15 V6PW",
+                    "addressCountry": "IE"
+                  }
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Header />
       <main className="page_content">
@@ -289,15 +351,13 @@ export default function Career() {
                               </li>
                             </ul>
                           </div>
-                          <Link to={"/contact"}>
-                            <a class="btn btn-light">
-                              <span class="btn_label" data-text="Apply Now">
-                                Apply Now
-                              </span>
-                              <span class="btn_icon">
-                                <i class="fa-solid fa-arrow-up-right"></i>
-                              </span>
-                            </a>
+                          <Link to="/contact" className="btn btn-light">
+                            <span className="btn_label" data-text="Apply Now">
+                              Apply Now
+                            </span>
+                            <span className="btn_icon">
+                              <i className="fa-solid fa-arrow-up-right"></i>
+                            </span>
                           </Link>
                         </div>
                       </div>
@@ -393,15 +453,13 @@ export default function Career() {
                               </li>
                             </ul>
                           </div>
-                          <Link to={"/contact"}>
-                            <a class="btn btn-light">
-                              <span class="btn_label" data-text="Apply Now">
-                                Apply Now
-                              </span>
-                              <span class="btn_icon">
-                                <i class="fa-solid fa-arrow-up-right"></i>
-                              </span>
-                            </a>
+                          <Link to="/contact" className="btn btn-light">
+                            <span className="btn_label" data-text="Apply Now">
+                              Apply Now
+                            </span>
+                            <span className="btn_icon">
+                              <i className="fa-solid fa-arrow-up-right"></i>
+                            </span>
                           </Link>
                         </div>
                       </div>
@@ -500,15 +558,13 @@ export default function Career() {
                               </li>
                             </ul>
                           </div>
-                          <Link to={"/contact"}>
-                            <a class="btn btn-light">
-                              <span class="btn_label" data-text="Apply Now">
-                                Apply Now
-                              </span>
-                              <span class="btn_icon">
-                                <i class="fa-solid fa-arrow-up-right"></i>
-                              </span>
-                            </a>
+                          <Link to="/contact" className="btn btn-light">
+                            <span className="btn_label" data-text="Apply Now">
+                              Apply Now
+                            </span>
+                            <span className="btn_icon">
+                              <i className="fa-solid fa-arrow-up-right"></i>
+                            </span>
                           </Link>
                         </div>
                       </div>
@@ -652,15 +708,13 @@ export default function Career() {
                               </li>
                             </ul>
                           </div>
-                          <Link to={"/contact"}>
-                            <a class="btn btn-light">
-                              <span class="btn_label" data-text="Apply Now">
-                                Apply Now
-                              </span>
-                              <span class="btn_icon">
-                                <i class="fa-solid fa-arrow-up-right"></i>
-                              </span>
-                            </a>
+                          <Link to="/contact" className="btn btn-light">
+                            <span className="btn_label" data-text="Apply Now">
+                              Apply Now
+                            </span>
+                            <span className="btn_icon">
+                              <i className="fa-solid fa-arrow-up-right"></i>
+                            </span>
                           </Link>
                         </div>
                       </div>

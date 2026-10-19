@@ -76,6 +76,92 @@ export default function Seo() {
           name="twitter:image"
           content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
+
+        {/* Schema.org Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Service",
+                "@id": "https://webpalm.ie/search-engine-optimization#service",
+                "name": "Search Engine Optimization (SEO), AEO & GEO Services",
+                "serviceType": "Search Engine Optimization",
+                "provider": {
+                  "@id": "https://webpalm.ie/#organization"
+                },
+                "areaServed": [
+                  { "@type": "Country", "name": "Ireland" },
+                  { "@type": "City", "name": "Dublin" }
+                ],
+                "description": "Comprehensive SEO, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), technical audits, and local Dublin search marketing.",
+                "url": "https://webpalm.ie/search-engine-optimization"
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://webpalm.ie/search-engine-optimization#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://webpalm.ie/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://webpalm.ie/services"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Search Engine Optimization",
+                    "item": "https://webpalm.ie/search-engine-optimization"
+                  }
+                ]
+              },
+              {
+                "@type": "FAQPage",
+                "@id": "https://webpalm.ie/search-engine-optimization#faq",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What SEO, AEO, and GEO services does WebPalm provide?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "WebPalm delivers technical SEO audits, on-page optimization, Schema.org structured data engineering, Answer Engine Optimization (AEO) for AI overviews, Generative Engine Optimization (GEO) for ChatGPT and Perplexity, local Dublin SEO, and high-authority link acquisition."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How long does it take to see organic rankings and traffic improvements?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Most technical SEO fixes and indexation improvements show measurable results within 4 to 8 weeks. Competitive keyword ranking gains, organic traffic growth, and AI answer engine citations typically accelerate between 3 to 6 months of active optimization."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What is Answer Engine Optimization (AEO) and why does it matter?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "AEO optimizes your web content for direct AI answers, voice search, and AI search engines like ChatGPT Search, Perplexity, and Google AI Overviews. It ensures your business is cited as the definitive answer for queries related to your products or services."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Do you provide Local SEO for Dublin and Irish businesses?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, WebPalm specializes in Irish local SEO, optimizing Google Business Profiles, local NAP citations, geo-targeted landing pages, and localized Dublin structured data to capture high-intent regional searches."
+                    }
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Header />
       <main className="page_content">
@@ -96,9 +182,9 @@ export default function Seo() {
               Search Engine Optimization
             </h1>
             <p className="text-white mt-2 myPara">
-              Web development involves creating and maintaining websites and web
-              applications. It requires a mix of design, development, and
-              deployment skills across various technologies.
+              Maximize your organic reach across Google, Bing, and AI search engines.
+              WebPalm engineers technical SEO, Answer Engine Optimization (AEO), and
+              localized Dublin ranking campaigns that turn searches into revenue.
             </p>
           </div>
         </section>
@@ -357,8 +443,9 @@ export default function Seo() {
                       rankings. By earning links through guest blogging,
                       industry directories, and content sharing, WebPalm boosts
                       the credibility of its services like web development,
-                      graphic designing, and SEO. These backlinks act as votes
-                      of confidence, signaling to search engines that WebPalm.
+                      These backlinks act as votes
+                      of confidence, signaling to search engines that WebPalm is
+                      a trusted, authoritative provider of digital services in Ireland.
                     </p>
                   </div>
                 </div>
@@ -366,6 +453,134 @@ export default function Seo() {
             </div>
           </div>
         </section>
+
+        {/* <!-- FAQ Section - Start
+        ================================================== --> */}
+        <section className="faq_section section_decoration section_space">
+          <div className="container">
+            <div className="heading_block text-center">
+              <div
+                className="heading_focus_text has_underline d-inline-flex"
+                style={{
+                  backgroundImage: `url(${"assets/images/shapes/shape_title_under_line.svg"})`,
+                }}
+              >
+                F.A.Q.
+              </div>
+              <h2 className="heading_text mb-0">
+                Frequently Asked <mark>Questions</mark>
+              </h2>
+              <p className="heading_description mb-0 mt-2">
+                Learn more about our search engine optimization (SEO), answer engine optimization (AEO), and local Dublin ranking services.
+              </p>
+            </div>
+
+            <div className="faq_accordion accordion" id="seo_faq_accordion">
+              <div className="accordion-item">
+                <div
+                  className="accordion-button"
+                  role="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse_seo_one"
+                  aria-expanded="true"
+                  aria-controls="collapse_seo_one"
+                >
+                  Q. What SEO, AEO, and GEO services does WebPalm provide?
+                </div>
+                <div
+                  id="collapse_seo_one"
+                  className="accordion-collapse collapse show"
+                  data-bs-parent="#seo_faq_accordion"
+                >
+                  <div className="accordion-body">
+                    <div className="text_a">A.</div>
+                    <p>
+                      WebPalm delivers technical SEO audits, on-page optimization, Schema.org structured data engineering, Answer Engine Optimization (AEO) for AI overviews, Generative Engine Optimization (GEO) for ChatGPT and Perplexity, local Dublin SEO, and high-authority link acquisition.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="accordion-item">
+                <div
+                  className="accordion-button collapsed"
+                  role="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse_seo_two"
+                  aria-expanded="false"
+                  aria-controls="collapse_seo_two"
+                >
+                  Q. How long does it take to see organic rankings and traffic improvements?
+                </div>
+                <div
+                  id="collapse_seo_two"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#seo_faq_accordion"
+                >
+                  <div className="accordion-body">
+                    <div className="text_a">A.</div>
+                    <p>
+                      Most technical SEO fixes and indexation improvements show measurable results within 4 to 8 weeks. Competitive keyword ranking gains, organic traffic growth, and AI answer engine citations typically accelerate between 3 to 6 months of active optimization.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="accordion-item">
+                <div
+                  className="accordion-button collapsed"
+                  role="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse_seo_three"
+                  aria-expanded="false"
+                  aria-controls="collapse_seo_three"
+                >
+                  Q. What is Answer Engine Optimization (AEO) and why does it matter?
+                </div>
+                <div
+                  id="collapse_seo_three"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#seo_faq_accordion"
+                >
+                  <div className="accordion-body">
+                    <div className="text_a">A.</div>
+                    <p>
+                      AEO optimizes your web content for direct AI answers, voice search, and AI search engines like ChatGPT Search, Perplexity, and Google AI Overviews. It ensures your business is cited as the definitive answer for queries related to your products or services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="accordion-item">
+                <div
+                  className="accordion-button collapsed"
+                  role="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse_seo_four"
+                  aria-expanded="false"
+                  aria-controls="collapse_seo_four"
+                >
+                  Q. Do you provide Local SEO for Dublin and Irish businesses?
+                </div>
+                <div
+                  id="collapse_seo_four"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#seo_faq_accordion"
+                >
+                  <div className="accordion-body">
+                    <div className="text_a">A.</div>
+                    <p>
+                      Yes, WebPalm specializes in Irish local SEO, optimizing Google Business Profiles, local NAP citations, geo-targeted landing pages, and localized Dublin structured data to capture high-intent regional searches.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <!-- FAQ Section - End
+        ================================================== --> */}
+
         <ParallaxSection4 />
         <WhatsAppButton />
       </main>

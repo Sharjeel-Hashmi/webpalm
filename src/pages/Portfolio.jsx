@@ -72,6 +72,101 @@ export default function Portfolio() {
           name="twitter:image"
           content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
+      
+        {/* Schema.org Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "CollectionPage",
+                "@id": "https://webpalm.ie/portfolio#webpage",
+                "url": "https://webpalm.ie/portfolio",
+                "name": "Portfolio | Web Design & Development Projects by WebPalm",
+                "description": "Explore WebPalm's portfolio of web design and development projects including e-commerce platforms, booking portals, and custom web applications.",
+                "isPartOf": {
+                  "@id": "https://webpalm.ie/#website"
+                },
+                "breadcrumb": {
+                  "@id": "https://webpalm.ie/portfolio#breadcrumb"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://webpalm.ie/portfolio#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://webpalm.ie/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Portfolio",
+                    "item": "https://webpalm.ie/portfolio"
+                  }
+                ]
+              },
+              {
+                "@type": "ItemList",
+                "@id": "https://webpalm.ie/portfolio#projects",
+                "name": "Featured Client Web Projects",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Flour Bakery - Online Ordering & Delivery Platform",
+                    "url": "https://www.flourbakery.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "HCRS - Healthcare Recruitment & Job Board Portal",
+                    "url": "https://hcrs.ie/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "PhysioFast - Patient Dashboard & Appointment Booking",
+                    "url": "https://physiofast.ie/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "EstateWay - Real Estate Property Showcase & Management",
+                    "url": "https://estateway.in/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "name": "Saral Diagnostics - Diagnostic Centre Booking & Report Portal",
+                    "url": "https://saraldiagnostics.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "name": "Camelo - Custom Sprinter Van & Adventure Vehicle Builder",
+                    "url": "https://camelo.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 7,
+                    "name": "Boss Cash Cars - Automotive Valuation & Fast Quote Portal",
+                    "url": "https://bosscashcars.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 8,
+                    "name": "The Fabric Store - E-Commerce Fashion & Clothing Boutique",
+                    "url": "https://www.thefabricstore.pk/"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Header />
       <main className="page_content">
@@ -118,8 +213,7 @@ export default function Portfolio() {
                   <div className="portfolio_image">
                     <a
                       href="https://www.flourbakery.com/"
-                      target="_blank"
-                      className="portfolio_image_wrap bg-light"
+                      target="_blank" rel="noopener noreferrer" className="portfolio_image_wrap bg-light"
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_24.png"
@@ -129,20 +223,18 @@ export default function Portfolio() {
                   </div>
                   <div className="portfolio_content">
                     <h3 className="portfolio_title">
-                      <a>
                         Bakery Website Design | Ordering & Delivery Features
-                      </a>
-                    </h3>
+                      </h3>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-tags"></i>React App Design
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-pie"></i>Bakery
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -153,8 +245,7 @@ export default function Portfolio() {
                   <div className="portfolio_image">
                     <a
                       href="https://hcrs.ie/"
-                      target="_blank"
-                      className="portfolio_image_wrap bg-light"
+                      target="_blank" rel="noopener noreferrer" className="portfolio_image_wrap bg-light"
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_16.png"
@@ -164,21 +255,19 @@ export default function Portfolio() {
                   </div>
                   <div className="portfolio_content">
                     <h3 className="portfolio_title">
-                      <a>
                         Explore Our Job Website Design for Modern Recruitment
-                      </a>
-                    </h3>
+                      </h3>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-tags"></i>Laravel Website
                           Design
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-regular fa-users"></i> Job Site
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -189,8 +278,7 @@ export default function Portfolio() {
                   <div className="portfolio_image">
                     <a
                       href="https://physiofast.ie/"
-                      target="_blank"
-                      className="portfolio_image_wrap bg-light"
+                      target="_blank" rel="noopener noreferrer" className="portfolio_image_wrap bg-light"
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_25.png"
@@ -200,22 +288,20 @@ export default function Portfolio() {
                   </div>
                   <div className="portfolio_content">
                     <h3 className="portfolio_title">
-                      <a>
                         Physio Appointment Website | Patient Dashboard & Booking
                         Management
-                      </a>
-                    </h3>
+                      </h3>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-tags"></i>Laravel Website
                           Design
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-user-doctor"></i> Doctors
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -226,8 +312,7 @@ export default function Portfolio() {
                   <div className="portfolio_image">
                     <a
                       href="https://estateway.in/"
-                      target="_blank"
-                      className="portfolio_image_wrap bg-light"
+                      target="_blank" rel="noopener noreferrer" className="portfolio_image_wrap bg-light"
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_26.png"
@@ -237,22 +322,20 @@ export default function Portfolio() {
                   </div>
                   <div className="portfolio_content">
                     <h3 className="portfolio_title">
-                      <a>
                         Real Estate Website Design | Showcase Properties &
                         Listings
-                      </a>
-                    </h3>
+                      </h3>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-tags"></i>Laravel Website
                           Design
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-building"></i> Real Estate
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -263,8 +346,7 @@ export default function Portfolio() {
                   <div className="portfolio_image">
                     <a
                       href="https://saraldiagnostics.com/"
-                      target="_blank"
-                      className="portfolio_image_wrap bg-light"
+                      target="_blank" rel="noopener noreferrer" className="portfolio_image_wrap bg-light"
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_20.png"
@@ -274,23 +356,21 @@ export default function Portfolio() {
                   </div>
                   <div className="portfolio_content">
                     <h3 className="portfolio_title">
-                      <a>
                         Diagnostic Center Website Design | Easy Booking & Report
                         Access
-                      </a>
-                    </h3>
+                      </h3>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-tags"></i> Laravel Website
                           Design
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-hospital"></i> Diagnostic
                           Centre
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -301,8 +381,7 @@ export default function Portfolio() {
                   <div className="portfolio_image">
                     <a
                       href="https://camelo.com/"
-                      target="_blank"
-                      className="portfolio_image_wrap bg-light"
+                      target="_blank" rel="noopener noreferrer" className="portfolio_image_wrap bg-light"
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_22.png"
@@ -312,23 +391,21 @@ export default function Portfolio() {
                   </div>
                   <div className="portfolio_content">
                     <h3 className="portfolio_title">
-                      <a>
                         Bespoke Car Builder Website Design | Custom SUVs &
                         Adventure Crafted
-                      </a>
-                    </h3>
+                      </h3>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-tags"></i> WordPress Website
                           Design
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-car-wrench"></i> Custom
                           Build Sprinter
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -339,8 +416,7 @@ export default function Portfolio() {
                   <div className="portfolio_image">
                     <a
                       href="https://bosscashcars.com/"
-                      target="_blank"
-                      className="portfolio_image_wrap bg-light"
+                      target="_blank" rel="noopener noreferrer" className="portfolio_image_wrap bg-light"
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_13.png"
@@ -350,22 +426,20 @@ export default function Portfolio() {
                   </div>
                   <div className="portfolio_content">
                     <h3 className="portfolio_title">
-                      <a>
                         Junk Car Removal Website Design | Fast Quotes &
                         Hassle-Free Process
-                      </a>
-                    </h3>
+                      </h3>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-tags"></i> WordPress Website
                           Design
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-building"></i> Automobile
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -376,8 +450,7 @@ export default function Portfolio() {
                   <div className="portfolio_image">
                     <a
                       href="https://www.thefabricstore.pk/"
-                      target="_blank"
-                      className="portfolio_image_wrap bg-light"
+                      target="_blank" rel="noopener noreferrer" className="portfolio_image_wrap bg-light"
                     >
                       <img
                         src="assets/images/portfolio/portfolio_item_image_21.png"
@@ -387,23 +460,21 @@ export default function Portfolio() {
                   </div>
                   <div className="portfolio_content">
                     <h3 className="portfolio_title">
-                      <a>
                         Clothing Store Design | Trendy Collections & Seamless
                         Shopping
-                      </a>
-                    </h3>
+                      </h3>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-tags"></i> Shopify Store
                           Design
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a>
+                        <span>
                           <i className="fa-solid fa-building"></i> Clothing
                           Brand
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>

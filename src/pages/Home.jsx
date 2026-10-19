@@ -168,6 +168,66 @@ export default function Home() {
           name="twitter:image"
           content="https://webpalm.ie/assets/images/site_logo/favicon-webpalm.png"
         />
+
+        {/* Schema.org Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": ["ProfessionalService", "LocalBusiness"],
+                "@id": "https://webpalm.ie/#organization",
+                "name": "WebPalm",
+                "alternateName": "WebPalm Technologies",
+                "url": "https://webpalm.ie/",
+                "logo": "https://webpalm.ie/assets/images/site_logo/site_logo_002.png",
+                "image": "https://webpalm.ie/assets/images/site_logo/site_logo_002.png",
+                "description": "WebPalm is a premier web application and software development agency in Dublin, Ireland, delivering custom software, responsive websites, UI/UX design, and SEO services.",
+                "telephone": "+353899520026",
+                "email": "info@webpalm.ie",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "9 Limelawn Row, Coolmine",
+                  "addressLocality": "Dublin",
+                  "postalCode": "D15 V6PW",
+                  "addressCountry": "IE"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "53.3830452",
+                  "longitude": "-6.4061491"
+                },
+                "openingHoursSpecification": {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "09:00",
+                  "closes": "18:00"
+                },
+                "priceRange": "€€",
+                "sameAs": [
+                  "https://www.linkedin.com/company/webpalm/",
+                  "https://www.facebook.com/people/Webpalm-Technologies/61587374273329/",
+                  "https://www.instagram.com/webpalm.tech",
+                  "https://www.tiktok.com/@webpalm.tech"
+                ],
+                "areaServed": [
+                  { "@type": "Country", "name": "Ireland" },
+                  { "@type": "City", "name": "Dublin" }
+                ]
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://webpalm.ie/#website",
+                "url": "https://webpalm.ie/",
+                "name": "WebPalm",
+                "description": "Custom Web Application & Software Development in Dublin, Ireland",
+                "publisher": {
+                  "@id": "https://webpalm.ie/#organization"
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       
       

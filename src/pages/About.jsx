@@ -73,6 +73,92 @@ export default function About() {
           name="twitter:image"
           content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
+
+        {/* Schema.org Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "AboutPage",
+                "@id": "https://webpalm.ie/about#webpage",
+                "url": "https://webpalm.ie/about",
+                "name": "About Us | WebPalm - Innovative Web Development in Dublin",
+                "description": "Learn about WebPalm, a trusted Dublin-based web development company delivering innovative, scalable, and cost-effective digital solutions.",
+                "isPartOf": {
+                  "@id": "https://webpalm.ie/#website"
+                },
+                "about": {
+                  "@id": "https://webpalm.ie/#organization"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://webpalm.ie/about#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://webpalm.ie/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "About Us",
+                    "item": "https://webpalm.ie/about"
+                  }
+                ]
+              },
+              {
+                "@type": "FAQPage",
+                "@id": "https://webpalm.ie/about#faq",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "How do I pick a software development firm?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Start by evaluating their expertise in your industry, portfolio of past work, and client testimonials. Look for a firm that balances technical skill with clear communication, transparency about timelines, costs, and scalability. Ensure they offer post-launch support and prioritize security best practices."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Why is Website necessary for businesses?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "A professional website is your 24/7 digital storefront. Over 70% of customers research a company online before engaging, and a well-designed site builds credibility, generates leads, and expands reach. SEO-optimized sites help you rank higher on search engines like Google."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How long does it take to develop a custom website?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Custom website development timelines depend on project complexity and features. Brochure sites typically take 4-6 weeks, while e-commerce platforms or web apps with advanced functionality can require 8-16 weeks with milestone testing."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What makes your web design services different?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Our web design services blend aesthetics with purpose. Rather than using generic templates, we craft custom sites tailored to your brand's voice and goals—ensuring seamless UX, mobile responsiveness, fast load times, and SEO readiness."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Do you offer website maintenance after launch?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, our post-launch support includes regular backups, security patches, plugin updates, and performance monitoring. We offer flexible monthly maintenance plans to keep your digital assets secure and high-performing."
+                    }
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Header />
       <main className="page_content">

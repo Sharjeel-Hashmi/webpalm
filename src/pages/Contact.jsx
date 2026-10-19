@@ -165,6 +165,43 @@ export default function Contact() {
           name="twitter:image"
           content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
+
+        {/* Schema.org Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "ContactPage",
+                "@id": "https://webpalm.ie/contact#webpage",
+                "url": "https://webpalm.ie/contact",
+                "name": "Contact Us | WebPalm - Web Development in Dublin, Ireland",
+                "description": "Reach out to WebPalm for custom web development, graphic design, and SEO services in Dublin, Ireland.",
+                "isPartOf": {
+                  "@id": "https://webpalm.ie/#website"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://webpalm.ie/contact#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://webpalm.ie/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Contact Us",
+                    "item": "https://webpalm.ie/contact"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Header />
       <main className="page_content">

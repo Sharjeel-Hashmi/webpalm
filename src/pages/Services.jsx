@@ -4,6 +4,7 @@ import Footer2 from '../Components/Footer2';
 import Header from '../Components/Header';
 import ParallaxSection from './ParallaxSection';
 import { Helmet } from 'react-helmet-async';
+import WhatsAppButton from '../Components/WhatsAppButton';
 
 export default function Services() {
   return (
@@ -53,6 +54,71 @@ export default function Services() {
           name="twitter:image"
           content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
+      
+        {/* Schema.org Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "CollectionPage",
+                "@id": "https://webpalm.ie/services#webpage",
+                "url": "https://webpalm.ie/services",
+                "name": "Our Services | Custom Web, Software & Digital Solutions | WebPalm",
+                "description": "Explore WebPalm's full suite of digital solutions including custom web application development, graphic design, branding, and search engine optimization in Dublin, Ireland.",
+                "isPartOf": {
+                  "@id": "https://webpalm.ie/#website"
+                },
+                "breadcrumb": {
+                  "@id": "https://webpalm.ie/services#breadcrumb"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://webpalm.ie/services#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://webpalm.ie/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://webpalm.ie/services"
+                  }
+                ]
+              },
+              {
+                "@type": "ItemList",
+                "@id": "https://webpalm.ie/services#list",
+                "name": "WebPalm Digital Services",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Custom Web Application & Software Development",
+                    "url": "https://webpalm.ie/web-development"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Graphic Design, Branding & Video Editing",
+                    "url": "https://webpalm.ie/graphic-designing"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Search Engine Optimization (SEO), AEO & GEO",
+                    "url": "https://webpalm.ie/search-engine-optimization"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Header />
       <main className="page_content">
@@ -128,9 +194,7 @@ export default function Services() {
                     >
                       <div className="accordion-body">
                         <p className="m-0">
-                          Data - driven diagnostic and predictive app for
-                          improving outcomes Data driven diagnostic and
-                          predictive app for improving.
+                          We conduct an in-depth discovery session to analyze your technical requirements, brand objectives, audience demographics, and project scope.
                         </p>
                       </div>
                     </div>
@@ -153,9 +217,7 @@ export default function Services() {
                     >
                       <div className="accordion-body">
                         <p className="m-0">
-                          Data - driven diagnostic and predictive app for
-                          improving outcomes Data driven diagnostic and
-                          predictive app for improving.
+                          Our engineers and designers architect bespoke solutions, interactive wireframes, technology stack recommendations, and milestone delivery plans.
                         </p>
                       </div>
                     </div>
@@ -178,9 +240,7 @@ export default function Services() {
                     >
                       <div className="accordion-body">
                         <p className="m-0">
-                          Data - driven diagnostic and predictive app for
-                          improving outcomes Data driven diagnostic and
-                          predictive app for improving.
+                          Agile development sprints, rigorous code reviews, automated CI/CD pipelines, and active client collaboration ensure seamless project progression.
                         </p>
                       </div>
                     </div>
@@ -203,9 +263,7 @@ export default function Services() {
                     >
                       <div className="accordion-body">
                         <p className="m-0">
-                          Data - driven diagnostic and predictive app for
-                          improving outcomes Data driven diagnostic and
-                          predictive app for improving.
+                          We launch thoroughly tested, secure, and Core Web Vitals-optimized digital platforms backed by continuous support and quantifiable ROI.
                         </p>
                       </div>
                     </div>
@@ -374,6 +432,7 @@ export default function Services() {
 
         {/* <!-- Call To Action Section - End
         ================================================== --> */}
+        <WhatsAppButton />
       </main>
       <Footer2/>
    </>
