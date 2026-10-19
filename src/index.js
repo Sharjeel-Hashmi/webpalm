@@ -17,8 +17,7 @@ import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 import Pricing from './pages/Pricing';
 import Career from './pages/Career';
-
-
+import NotFound from './pages/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let allRoutes = createBrowserRouter(
@@ -62,14 +61,21 @@ let allRoutes = createBrowserRouter(
     {
       path:'career',
       element:<Career/>
+    },
+    {
+      path:'404',
+      element:<NotFound/>
+    },
+    {
+      path:'*',
+      element:<NotFound/>
     }
   ]
 )
 root.render(
   <React.StrictMode>
     <HelmetProvider>
-    <App/>
-   <RouterProvider router={allRoutes}/>
+      <RouterProvider router={allRoutes}/>
    <ToastContainer
 position="top-right"
 autoClose={5000}

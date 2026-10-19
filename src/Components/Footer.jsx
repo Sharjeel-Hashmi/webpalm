@@ -60,7 +60,7 @@ export default function Footer() {
         <div className="decoration_item shape_image_1">
           <img
             src="assets/images/shapes/shape_space_2.svg"
-            alt="Techco Shape"
+            alt="WebPalm Decorative Shape"
           />
         </div>
         <div className="container">
@@ -81,7 +81,7 @@ export default function Footer() {
                 data-swiper-slide-index="0"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Custom Web Apps</span>
                 </a>
@@ -93,7 +93,7 @@ export default function Footer() {
                 data-swiper-slide-index="1"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>App Development</span>
                 </a>
@@ -105,7 +105,7 @@ export default function Footer() {
                 data-swiper-slide-index="2"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Web Development</span>
                 </a>
@@ -117,7 +117,7 @@ export default function Footer() {
                 data-swiper-slide-index="3"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Software Solution</span>
                 </a>
@@ -129,7 +129,7 @@ export default function Footer() {
                 data-swiper-slide-index="4"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Digital Marketing</span>
                 </a>
@@ -141,7 +141,7 @@ export default function Footer() {
                 data-swiper-slide-index="5"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Video Editing</span>
                 </a>
@@ -153,7 +153,7 @@ export default function Footer() {
                 data-swiper-slide-index="6"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Custom Web Apps</span>
                 </a>
@@ -165,7 +165,7 @@ export default function Footer() {
                 data-swiper-slide-index="7"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Web App Development</span>
                 </a>
@@ -177,7 +177,7 @@ export default function Footer() {
                 data-swiper-slide-index="8"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Graphic Designing</span>
                 </a>
@@ -189,7 +189,7 @@ export default function Footer() {
                 data-swiper-slide-index="9"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Software Solution</span>
                 </a>
@@ -201,7 +201,7 @@ export default function Footer() {
                 data-swiper-slide-index="10"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Enterprise Solution</span>
                 </a>
@@ -213,7 +213,7 @@ export default function Footer() {
                 data-swiper-slide-index="11"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Video Promotion</span>
                 </a>
@@ -225,7 +225,7 @@ export default function Footer() {
                 data-swiper-slide-index="12"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Custom Web Apps</span>
                 </a>
@@ -237,7 +237,7 @@ export default function Footer() {
                 data-swiper-slide-index="13"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>App Development</span>
                 </a>
@@ -249,7 +249,7 @@ export default function Footer() {
                 data-swiper-slide-index="14"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Web Designing</span>
                 </a>
@@ -261,7 +261,7 @@ export default function Footer() {
                 data-swiper-slide-index="15"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Software Solution</span>
                 </a>
@@ -273,7 +273,7 @@ export default function Footer() {
                 data-swiper-slide-index="16"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Business Solution</span>
                 </a>
@@ -285,7 +285,7 @@ export default function Footer() {
                 data-swiper-slide-index="17"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Video Editing</span>
                 </a>
@@ -297,7 +297,7 @@ export default function Footer() {
                 data-swiper-slide-index="18"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Custom Web Apps</span>
                 </a>
@@ -309,7 +309,7 @@ export default function Footer() {
                 data-swiper-slide-index="19"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>App Development</span>
                 </a>
@@ -321,7 +321,7 @@ export default function Footer() {
                 data-swiper-slide-index="20"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Web Development</span>
                 </a>
@@ -333,7 +333,7 @@ export default function Footer() {
                 data-swiper-slide-index="21"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Software Solution</span>
                 </a>
@@ -345,7 +345,7 @@ export default function Footer() {
                 data-swiper-slide-index="22"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Enterprise Apps</span>
                 </a>
@@ -357,7 +357,7 @@ export default function Footer() {
                 data-swiper-slide-index="23"
                 style={{ width: "242px", marginRight: "20px" }}
               >
-                <a className="service_pill_block" href="service_details.html">
+                <a className="service_pill_block" href="/services">
                   <i className="fa-solid fa-check"></i>
                   <span>Devops Services</span>
                 </a>
@@ -481,22 +481,22 @@ export default function Footer() {
                   </form>
                   <ul className="social_icons_block unordered_list">
                     <li>
-                      <a href="https://www.facebook.com/people/Webpalm-Technologies/61587374273329/" target="_blank">
+                      <a href="https://www.facebook.com/people/Webpalm-Technologies/61587374273329/" target="_blank" rel="noopener noreferrer">
                         <i className="fa-brands fa-facebook-f"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.instagram.com/webpalm.tech" target="_blank">
+                      <a href="https://www.instagram.com/webpalm.tech" target="_blank" rel="noopener noreferrer">
                         <i className="fa-brands fa-instagram"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.linkedin.com/company/webpalm/" target="_blank">
+                      <a href="https://www.linkedin.com/company/webpalm/" target="_blank" rel="noopener noreferrer">
                         <i className="fa-brands fa-linkedin-in"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.tiktok.com/@webpalm.tech" target="_blank">
+                      <a href="https://www.tiktok.com/@webpalm.tech" target="_blank" rel="noopener noreferrer">
                         <i className="fa-brands fa-tiktok"></i>
                       </a>
                     </li>
@@ -518,20 +518,20 @@ export default function Footer() {
             </p>
             <ul className="icon_list unordered_list">
               <li>
-                <a href="#!">
+                <Link to="/terms-of-service">
                   <span className="icon_list_icon">
                     <i className="fa-solid fa-circle"></i>
                   </span>
-                  <span className="icon_list_text"> Terms of Up </span>
-                </a>
+                  <span className="icon_list_text"> Terms of Service </span>
+                </Link>
               </li>
               <li>
-                <a href="#!">
+                <Link to="/privacy-policy">
                   <span className="icon_list_icon">
                     <i className="fa-solid fa-circle"></i>
                   </span>
                   <span className="icon_list_text"> Privacy Policy </span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

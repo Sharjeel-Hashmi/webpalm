@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../Components/Header";
 import Footer2 from "../Components/Footer2";
 import FunfactSection from "./FunfactSection";
@@ -29,9 +30,10 @@ export default function About() {
           name="google-site-verification"
           content="BuCuVdE1zHdoW0k5Ir0R2r4-SBqauodqFgDWxgma758"
         />
+        <link rel="canonical" href="https://webpalm.ie/about" />
         <meta
           name="thumbnail"
-          content="assets/images/Techco_page_thumbnail.webp"
+          content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
 
         {/* Open Graph Tags   */}
@@ -108,7 +110,7 @@ export default function About() {
                   <div className="image_wrap">
                     <img
                       src="assets/images/about/about_img_1.jpg"
-                      alt="Techco - About Image"
+                      alt="WebPalm - About Image"
                     />
                   </div>
                 </div>
@@ -116,7 +118,7 @@ export default function About() {
                   <div className="image_wrap position-relative">
                     <img
                       src="assets/images/about/about_img_2.jpg"
-                      alt="Techco - About Image"
+                      alt="WebPalm - About Image"
                     />
                   </div>
                 </div>
@@ -138,9 +140,6 @@ export default function About() {
                   </h2>
                 </div>
                 <div className="col-lg-6">
-                  {/* <p className="heading_description mb-0">
-                  At Techco, we take great satisfaction in providing dynamic and IT services that meet your unique needs. Because of our adaptable approach, we can modify our services to meet your changing demands, whether you need software development, strategic consulting, or full IT infrastructure support.
-                  </p> */}
                   <p className="heading_description mb-0">
                     At webpalm, we are passionate about transforming ideas into
                     powerful digital experiences. Our mission is to empower
@@ -260,7 +259,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_1.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -274,7 +273,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_2.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -288,7 +287,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_3.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -302,7 +301,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_4.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -316,7 +315,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_5.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -330,7 +329,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_6.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -344,7 +343,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_7.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -358,7 +357,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_1.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -372,7 +371,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_2.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -386,7 +385,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_3.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -400,7 +399,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_4.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -414,7 +413,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_5.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -428,7 +427,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_6.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -442,7 +441,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_7.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -456,7 +455,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_1.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -470,7 +469,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_2.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -484,7 +483,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_3.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -498,7 +497,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_4.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -512,7 +511,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_5.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -526,7 +525,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_6.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -540,7 +539,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_7.webp"
-                        alt="Techco - Client Logo Image"
+                        alt="WebPalm - Client Logo Image"
                       />
                     </div>
                   </div>
@@ -554,7 +553,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_7.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -568,7 +567,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_1.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -582,7 +581,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_2.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -596,7 +595,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_3.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -610,7 +609,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_4.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -624,7 +623,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_5.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -638,7 +637,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_6.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -652,7 +651,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_7.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -666,7 +665,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_1.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -680,7 +679,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_2.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -694,7 +693,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_3.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -708,7 +707,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_4.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -722,7 +721,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_5.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -736,7 +735,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_6.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -750,7 +749,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_7.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -764,7 +763,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_1.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -778,7 +777,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_2.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -792,7 +791,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_3.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -806,7 +805,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_4.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -820,7 +819,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_5.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -834,7 +833,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_6.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -848,7 +847,7 @@ export default function About() {
                     <div className="client_logo_item">
                       <img
                         src="assets/images/clients/client_logo_7.webp"
-                        alt="Techco - Client Logo"
+                        alt="WebPalm - Client Logo"
                       />
                     </div>
                   </div>
@@ -870,7 +869,7 @@ export default function About() {
                 <div className="image_wrap">
                   <img
                     src="assets/images/about/about_image_5.webp"
-                    alt="Techco - About Image"
+                    alt="WebPalm - About Image"
                   />
                 </div>
               </div>
@@ -900,7 +899,7 @@ export default function About() {
                     <li>
                       <a
                         className="iconbox_block layout_icon_left"
-                        href="service_details.html"
+                        href="/services"
                       >
                         <span className="iconbox_icon">
                           <img
@@ -918,7 +917,7 @@ export default function About() {
                     <li>
                       <a
                         className="iconbox_block layout_icon_left"
-                        href="service_details.html"
+                        href="/services"
                       >
                         <span className="iconbox_icon">
                           <img
@@ -936,7 +935,7 @@ export default function About() {
                     <li>
                       <a
                         className="iconbox_block layout_icon_left"
-                        href="service_details.html"
+                        href="/services"
                       >
                         <span className="iconbox_icon">
                           <img
@@ -954,7 +953,7 @@ export default function About() {
                     <li>
                       <a
                         className="iconbox_block layout_icon_left"
-                        href="service_details.html"
+                        href="/services"
                       >
                         <span className="iconbox_icon">
                           <img
@@ -972,7 +971,7 @@ export default function About() {
                     <li>
                       <a
                         className="iconbox_block layout_icon_left"
-                        href="service_details.html"
+                        href="/services"
                       >
                         <span className="iconbox_icon">
                           <img
@@ -990,7 +989,7 @@ export default function About() {
                     <li>
                       <a
                         className="iconbox_block layout_icon_left"
-                        href="service_details.html"
+                        href="/services"
                       >
                         <span className="iconbox_icon">
                           <img
@@ -1271,13 +1270,13 @@ export default function About() {
           <div className="decoration_item shape_image_1">
             <img
               src="assets/images/shapes/shape_space_4.svg"
-              alt="Techco Shape"
+              alt="WebPalm Decorative Shape"
             />
           </div>
           <div className="decoration_item shape_image_2">
             <img
               src="assets/images/shapes/shape_angle_3.webp"
-              alt="Techco Shape Angle"
+              alt="WebPalm Decorative Shape Angle"
             />
           </div>
         </section>
@@ -1285,28 +1284,6 @@ export default function About() {
         {/* <!-- Call To Action Section - Start
         ================================================== --> */}
         <ParallaxSection />
-        {/* <section
-          className="calltoaction_section parallaxie"
-         style= {{backgroundImage: `url(${'assets/images/backgrounds/bg_image_1.webp'})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center -22px', transformStyle:'preserve-3d'}}
-          >
-          <div className="container text-center" >
-            <div className="heading_block text-white">
-              <h2 className="heading_text">Ready to Work, Let's Chat</h2>
-              <p className="heading_description mb-0">
-                Our team of experts is ready to collaborate with you every step
-                of the way, from initial consultation to implementation.
-              </p>
-            </div>
-            <a className="btn btn-primary" href="contact.html">
-              <span className="btn_label" data-text="Contact Us Today!"
-                >Contact Us Today!</span
-              >
-              <span className="btn_icon">
-                <i className="fa-solid fa-arrow-up-right"></i>
-              </span>
-            </a>
-          </div>
-        </section>  */}
         {/* <!-- Call To Action Section - End
         ================================================== --> */}
         <WhatsAppButton />

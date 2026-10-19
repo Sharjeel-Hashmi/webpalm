@@ -125,9 +125,10 @@ export default function Home() {
           name="google-site-verification"
           content="BuCuVdE1zHdoW0k5Ir0R2r4-SBqauodqFgDWxgma758"
         />
+        <link rel="canonical" href="https://webpalm.ie/" />
         <meta
           name="thumbnail"
-          content="assets/images/Techco_page_thumbnail.webp"
+          content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
 
         {/* <!-- Open Graph Tags --> */}
@@ -193,21 +194,19 @@ export default function Home() {
                   </ul>
                   <ul className="btns_group unordered_list p-0 justify-content-start">
                     <li>
-                      <Link to={"/contact"}>
-                        <a className="btn">
-                          <span
-                            className="btn_label"
-                            data-text="Contact Us Today!"
-                          >
-                            Contact Us TODAY!
-                          </span>
-                          <span className="btn_icon">
-                            <i
-                              className="fa-solid fa-arrow-up-right"
-                              aria-label="External link to contact page"
-                            ></i>
-                          </span>
-                        </a>
+                      <Link to="/contact" className="btn">
+                        <span
+                          className="btn_label"
+                          data-text="Contact Us Today!"
+                        >
+                          Contact Us TODAY!
+                        </span>
+                        <span className="btn_icon ms-2">
+                          <i
+                            className="fa-solid fa-arrow-up-right"
+                            aria-label="Contact page link"
+                          ></i>
+                        </span>
                       </Link>
                     </li>
                     <li>
@@ -262,7 +261,7 @@ export default function Home() {
                   <div className="client_logo_item">
                     <img
                       src="assets/images/clients/client_logo_1.webp"
-                      alt="Techco - Client Logo"
+                      alt="WebPalm - Client Logo"
                     />
                   </div>
                 </div>
@@ -276,7 +275,7 @@ export default function Home() {
                   <div className="client_logo_item">
                     <img
                       src="assets/images/clients/client_logo_2.webp"
-                      alt="Techco - Client Logo"
+                      alt="WebPalm - Client Logo"
                     />
                   </div>
                 </div>
@@ -290,7 +289,7 @@ export default function Home() {
                   <div className="client_logo_item">
                     <img
                       src="assets/images/clients/client_logo_3.webp"
-                      alt="Techco - Client Logo"
+                      alt="WebPalm - Client Logo"
                     />
                   </div>
                 </div>
@@ -304,7 +303,7 @@ export default function Home() {
                   <div className="client_logo_item">
                     <img
                       src="assets/images/clients/client_logo_4.webp"
-                      alt="Techco - Client Logo"
+                      alt="WebPalm - Client Logo"
                     />
                   </div>
                 </div>
@@ -318,7 +317,7 @@ export default function Home() {
                   <div className="client_logo_item">
                     <img
                       src="assets/images/clients/client_logo_5.webp"
-                      alt="Techco - Client Logo"
+                      alt="WebPalm - Client Logo"
                     />
                   </div>
                 </div>
@@ -332,7 +331,7 @@ export default function Home() {
                   <div className="client_logo_item">
                     <img
                       src="assets/images/clients/client_logo_6.webp"
-                      alt="Techco - Client Logo"
+                      alt="WebPalm - Client Logo"
                     />
                   </div>
                 </div>
@@ -346,7 +345,7 @@ export default function Home() {
                   <div className="client_logo_item">
                     <img
                       src="assets/images/clients/client_logo_7.webp"
-                      alt="Techco - Client Logo"
+                      alt="WebPalm - Client Logo"
                     />
                   </div>
                 </div>
@@ -360,7 +359,7 @@ export default function Home() {
                   <div className="client_logo_item">
                     <img
                       src="assets/images/clients/client_logo_1.webp"
-                      alt="Techco - Client Logo"
+                      alt="WebPalm - Client Logo"
                     />
                   </div>
                 </div>
@@ -671,13 +670,13 @@ export default function Home() {
                   <div className="service_icon">
                     <img
                       src="assets/images/icons/icon_code.svg"
-                      alt="Techco - Service icon"
+                      alt="WebPalm - Service icon"
                     />
                   </div>
                   <h3 className="service_title">
-                    <a href="service_details.html">
+                    <Link to="/web-development">
                       Custom Software Development
-                    </a>
+                    </Link>
                   </h3>
                   <ul className="icon_list unordered_list_block">
                     <li>
@@ -720,13 +719,13 @@ export default function Home() {
                   <div className="service_icon">
                     <img
                       src="assets/images/icons/icon_programming_tree.svg"
-                      alt="Techco - Service icon"
+                      alt="WebPalm - Service icon"
                     />
                   </div>
                   <h3 className="service_title">
-                    <a href="service_details.html">
+                    <Link to="/services">
                       IT Consulting and Auditing
-                    </a>
+                    </Link>
                   </h3>
                   <ul className="icon_list unordered_list_block">
                     <li>
@@ -769,11 +768,11 @@ export default function Home() {
                   <div className="service_icon">
                     <img
                       src="assets/images/icons/icon_monitor_2.svg"
-                      alt="Techco - Service icon"
+                      alt="WebPalm - Service icon"
                     />
                   </div>
                   <h3 className="service_title">
-                    <a href="service_details.html">Web App Development</a>
+                    <Link to="/web-development">Web App Development</Link>
                   </h3>
                   <ul className="icon_list unordered_list_block">
                     <li>
@@ -816,11 +815,11 @@ export default function Home() {
                   <div className="service_icon">
                     <img
                       src="assets/images/icons/icon_phone.svg"
-                      alt="Techco - Service icon"
+                      alt="WebPalm - Service icon"
                     />
                   </div>
                   <h3 className="service_title">
-                    <a href="service_details.html">Mobile App Development</a>
+                    <Link to="/web-development">Mobile App Development</Link>
                   </h3>
                   <ul className="icon_list unordered_list_block">
                     <li>
@@ -863,12 +862,11 @@ export default function Home() {
                   <div className="service_icon">
                     <img
                       src="assets/images/icons/icon-editing1.svg"
-                      alt="Techco - Service icon"
+                      alt="WebPalm - Service icon"
                     />
                   </div>
                   <h3 className="service_title">
-                    <a href="service_details.html">Graphic Design and Video Editing
-                    </a>
+                    <Link to="/graphic-designing">Graphic Design and Video Editing</Link>
                   </h3>
                   <ul className="icon_list unordered_list_block">
                     <li>
@@ -919,13 +917,13 @@ export default function Home() {
                   <div className="service_icon">
                     <img
                       src="assets/images/icons/icon_programming.svg"
-                      alt="Techco - Service icon"
+                      alt="WebPalm - Service icon"
                     />
                   </div>
                   <h3 className="service_title">
-                    <a href="service_details.html">
+                    <Link to="/services">
                       Maintenance and Customer Support
-                    </a>
+                    </Link>
                   </h3>
                   <ul className="icon_list unordered_list_block">
                     <li>
@@ -970,31 +968,31 @@ export default function Home() {
           <div className="decoration_item shape_image_1">
             <img
               src="assets/images/shapes/shape_line_5.svg"
-              alt="Techco Shape"
+              alt="WebPalm Decorative Shape"
             />
           </div>
           <div className="decoration_item shape_image_2">
             <img
               src="assets/images/shapes/shape_line_6.svg"
-              alt="Techco Shape"
+              alt="WebPalm Decorative Shape"
             />
           </div>
           <div className="decoration_item shape_image_3">
             <img
               src="assets/images/shapes/shape_space_1.svg"
-              alt="Techco Shape"
+              alt="WebPalm Decorative Shape"
             />
           </div>
           <div className="decoration_item shape_image_4">
             <img
               src="assets/images/shapes/shape_angle_1.webp"
-              alt="Techco Shape Angle"
+              alt="WebPalm Decorative Shape Angle"
             />
           </div>
           <div className="decoration_item shape_image_5">
             <img
               src="assets/images/shapes/shape_angle_2.webp"
-              alt="Techco Shape Angle"
+              alt="WebPalm Decorative Shape Angle"
             />
           </div>
         </section>
@@ -1090,7 +1088,7 @@ export default function Home() {
           <div className="decoration_item shape_image_1">
             <img
               src="assets/images/shapes/shape_space_2.svg"
-              alt="Techco Shape"
+              alt="WebPalm Decorative Shape"
             />
           </div>
         </section>
@@ -1492,25 +1490,25 @@ export default function Home() {
           <div className="decoration_item shape_image_1">
             <img
               src="assets/images/shapes/shape_line_2.svg"
-              alt="Techco Shape"
+              alt="WebPalm Decorative Shape"
             />
           </div>
           <div className="decoration_item shape_image_2">
             <img
               src="assets/images/shapes/shape_line_3.svg"
-              alt="Techco Shape"
+              alt="WebPalm Decorative Shape"
             />
           </div>
           <div className="decoration_item shape_image_3">
             <img
               src="assets/images/shapes/shape_line_4.svg"
-              alt="Techco Shape"
+              alt="WebPalm Decorative Shape"
             />
           </div>
           <div className="decoration_item shape_image_4">
             <img
               src="assets/images/shapes/shape_space_3.svg"
-              alt="Techco Shape"
+              alt="WebPalm Decorative Shape"
             />
           </div>
         </section>
@@ -1753,13 +1751,13 @@ export default function Home() {
           <div className="decoration_item shape_image_1">
             <img
               src="assets/images/shapes/shape_line_5.svg"
-              alt="Techco Shape"
+              alt="WebPalm Decorative Shape"
             />
           </div>
           <div className="decoration_item shape_image_2">
             <img
               src="assets/images/shapes/shape_line_6.svg"
-              alt="Techco Shape"
+              alt="WebPalm Decorative Shape"
             />
           </div>
         </section>

@@ -1,0 +1,63 @@
+# WebPalm — Full Entity & Technical Documentation for Large Language Models
+
+## 1. Company Overview
+WebPalm is a Dublin-based technology agency and digital engineering consultancy founded to deliver high-performance web software, modern web design, and digital growth services. Headquartered in Dublin 15, Ireland, WebPalm operates both as a dedicated software partner for Irish businesses undergoing digital transformation and as a remote engineering force for international brands in the UK, Europe, and North America.
+
+- **Legal / Trading Entity**: WebPalm
+- **Registered Location**: 9 Limelawn Row, Coolmine, Dublin 15, D15 V6PW, Ireland
+- **Primary Domain**: https://webpalm.ie
+- **Support & Sales Email**: info@webpalm.ie
+- **Direct Phone Contact**: +353 899520026, +353 894205316
+- **Operating Hours**: Monday – Friday, 09:00 – 18:00 IST (Irish Standard Time)
+
+---
+
+## 2. Core Service Offerings & Technical Capabilities
+
+### A. Custom Web Application & Software Development
+WebPalm specializes in building resilient, scalable, and responsive software tailored to enterprise workflows.
+- **Frontend Technologies**: React.js (v19), Next.js, TypeScript, Vue.js, Tailwind CSS, Bootstrap 5.
+- **Backend & APIs**: Node.js, Express, Python (Django, FastAPI), PHP (Laravel), RESTful APIs, GraphQL.
+- **Databases & Cloud**: PostgreSQL, MySQL, MongoDB, Redis, AWS (EC2, S3, RDS), Google Cloud Platform, Docker containerization, CI/CD automated deployment pipelines.
+- **Key Capabilities**: SaaS product engineering, custom client portals, CRM integrations, ERP extensions, payment gateway connections (Stripe, PayPal, SEPA), legacy codebase refactoring and modernization.
+
+### B. UI/UX Interface Design & Creative Branding
+End-to-end design solutions focused on user retention, accessibility, and conversion rate optimization.
+- **Design Tools**: Figma, Adobe Creative Cloud (Photoshop, Illustrator, After Effects, Premiere Pro).
+- **Core Deliverables**: Responsive design systems, interactive prototypes, customer journey mapping, brand identities, custom vector logos, marketing collateral, social media motion graphics, and corporate promotional video editing.
+
+### C. Search Engine Optimization (SEO), AEO & GEO
+Data-backed search visibility campaigns designed to capture high-intent organic traffic and ground brand entity data within modern AI answer engines.
+- **Technical SEO**: Core Web Vitals optimization, mobile responsiveness, XML sitemap architecture, crawl-budget management, canonicalization, and Schema.org JSON-LD structured data implementation.
+- **Answer Engine Optimization (AEO)**: Direct question-and-answer content formatting targeting Perplexity, ChatGPT Search, Claude, and Google Featured Snippets.
+- **Generative Engine Optimization (GEO)**: High-density factual grounding, LLM context provisioning (`llms.txt`), authoritativeness signals (E-E-A-T), and citation tracking.
+- **Local SEO**: Dedicated Dublin and Ireland regional optimization, Google Business Profile enhancement, local citation building, and Irish directory indexing.
+
+---
+
+## 3. Commercial Engagements & Pricing Framework
+
+WebPalm offers transparent, value-oriented pricing packages tailored to project scope and technical complexity:
+- **Starter Package**: Ideal for local businesses and professional service firms requiring a fast, responsive, modern 5-page presence with on-page SEO setup.
+- **Professional Package**: Designed for growing companies requiring dynamic features, lead generation funnels, CMS integration, and enhanced SEO optimization.
+- **Premium / Custom Enterprise**: Comprehensive custom web applications, SaaS platform development, third-party API integrations, rigorous QA testing, SLA-backed maintenance, and dedicated ongoing technical support.
+
+---
+
+## 4. Key Pages & Resource Directory
+
+- **Homepage**: https://webpalm.ie/
+- **About Us**: https://webpalm.ie/about
+- **All Services Hub**: https://webpalm.ie/services
+- **Web Development**: https://webpalm.ie/web-development
+- **Graphic Design & Video Editing**: https://webpalm.ie/graphic-designing
+- **Search Engine Optimization**: https://webpalm.ie/search-engine-optimization
+- **Pricing Plans**: https://webpalm.ie/pricing
+- **Portfolio & Case Studies**: https://webpalm.ie/portfolio
+- **Careers & Employment**: https://webpalm.ie/career
+- **Contact & Consultation**: https://webpalm.ie/contact
+
+---
+
+## 5. Verification & Grounding
+For inquiries, partnership evaluations, or technical quotations, contact the WebPalm team via email at info@webpalm.ie or visit https://webpalm.ie/contact.

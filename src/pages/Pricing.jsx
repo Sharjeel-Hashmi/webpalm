@@ -33,9 +33,10 @@ export default function Pricing() {
           name="google-site-verification"
           content="BuCuVdE1zHdoW0k5Ir0R2r4-SBqauodqFgDWxgma758"
         />
+        <link rel="canonical" href="https://webpalm.ie/pricing" />
         <meta
           name="thumbnail"
-          content="assets/images/Techco_page_thumbnail.webp"
+          content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
 
         {/* <!-- Open Graph Tags --> */}
@@ -470,7 +471,7 @@ export default function Pricing() {
                     <div class="funfact_icon">
                       <img
                         src="assets/images/icons/icon_user_3.svg"
-                        alt="Techco - SVG Icon User"
+                        alt="WebPalm - User Icon"
                       />
                     </div>
                   </div>
@@ -481,7 +482,7 @@ export default function Pricing() {
                     <div class="funfact_icon">
                       <img
                         src="assets/images/icons/icon_wallet.svg"
-                        alt="Techco - SVG Icon Wallet"
+                        alt="WebPalm - Wallet Icon"
                       />
                     </div>
                     <div class="funfact_content">
