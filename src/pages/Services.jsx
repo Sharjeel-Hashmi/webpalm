@@ -113,6 +113,24 @@ export default function Services() {
                     "position": 3,
                     "name": "Search Engine Optimization (SEO), AEO & GEO",
                     "url": "https://webpalm.ie/search-engine-optimization"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Digital & Social Media Marketing",
+                    "url": "https://webpalm.ie/digital-social-media-marketing"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "name": "Website Maintenance & Support",
+                    "url": "https://webpalm.ie/website-maintenance"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "name": "Custom Software Development",
+                    "url": "https://webpalm.ie/software-development"
                   }
                 ]
               }

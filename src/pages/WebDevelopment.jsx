@@ -2,79 +2,54 @@ import React from "react";
 import Header from "../Components/Header";
 import "./Home.css";
 import Footer2 from "../Components/Footer2";
-import ParallaxSection3 from "./ParallaxSection3";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import WhatsAppButton from "../Components/WhatsAppButton";
 
 export default function WebDevelopment() {
   return (
     <div>
       <Helmet>
-        {/* <!-- Title --> */}
-        <title>Web Development Services in Dublin | WebPalm</title>
-
-        {/* <!-- Meta Tags --> */}
+        <title>Custom Website & Web App Development in Dublin | WebPalm</title>
         <meta
           name="description"
-          content="Professional web development services in Dublin, specializing in modern frameworks like React, Next.js, Angular, PHP, Python, and Laravel. From design to deployment, we deliver high-performance websites and web applications."
+          content="WebPalm builds custom websites, business web apps, and conversion-focused digital products for growing businesses in Dublin and beyond."
         />
         <meta
           name="keywords"
-          content="Web development Dublin, React.js development, Next.js development, Angular development, Python development, PHP development, Laravel development, Node.js development, custom websites Ireland, frontend development, backend development, business web applications"
+          content="web development Dublin, custom websites Ireland, business web apps, React development, Laravel development, Node.js development, WordPress websites, website design and development, WebPalm web development"
         />
         <meta name="author" content="WebPalm" />
         <meta name="robots" content="index, follow" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="format-detection" content="telephone=+353894205316" />
-        <meta
-          name="google-site-verification"
-          content="BuCuVdE1zHdoW0k5Ir0R2r4-SBqauodqFgDWxgma758"
-        />
         <link rel="canonical" href="https://webpalm.ie/web-development" />
-        <meta
-          name="thumbnail"
-          content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
-        />
-
-        {/* <!-- Open Graph Tags --> */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://webpalm.ie/web-development" />
         <meta
           property="og:title"
-          content="Web Development Services in Dublin | WebPalm"
+          content="Custom Website & Web App Development in Dublin | WebPalm"
         />
         <meta
           property="og:description"
-          content="WebPalm builds responsive, high-performance websites using React, Next.js, Angular, PHP, Python, Laravel, and Node.js. End-to-end web solutions from planning to launch."
+          content="WebPalm designs and develops fast, accessible, and business-ready websites and web applications for companies that want a better digital presence."
         />
         <meta property="og:site_name" content="WebPalm" />
         <meta
           property="og:image"
           content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta
-          property="og:image:alt"
-          content="Web development services by WebPalm"
-        />
-
-        {/* <!-- Twitter Card --> */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Web Development Services in Dublin | WebPalm"
+          content="Custom Website & Web App Development in Dublin | WebPalm"
         />
         <meta
           name="twitter:description"
-          content="WebPalm builds responsive, high-performance websites using React, Next.js, Angular, PHP, Python, Laravel, and Node.js. End-to-end web solutions from planning to launch."
+          content="WebPalm builds websites and apps that are responsive, easy to manage, and made to convert visitors into customers."
         />
         <meta
           name="twitter:image"
           content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
         />
-
-        {/* Schema.org Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -82,41 +57,15 @@ export default function WebDevelopment() {
               {
                 "@type": "Service",
                 "@id": "https://webpalm.ie/web-development#service",
-                "name": "Custom Web Application & Software Development",
+                "name": "Custom Web Development Services",
                 "serviceType": "Web Development",
-                "provider": {
-                  "@id": "https://webpalm.ie/#organization"
-                },
+                "provider": { "@id": "https://webpalm.ie/#organization" },
                 "areaServed": [
                   { "@type": "Country", "name": "Ireland" },
                   { "@type": "City", "name": "Dublin" }
                 ],
-                "description": "Professional web development and custom software engineering services in Dublin specializing in React, Next.js, Node.js, Python, and Laravel.",
+                "description": "Custom websites, business applications, e-commerce builds, API integrations, and support for Ireland-based and international businesses.",
                 "url": "https://webpalm.ie/web-development"
-              },
-              {
-                "@type": "BreadcrumbList",
-                "@id": "https://webpalm.ie/web-development#breadcrumb",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Home",
-                    "item": "https://webpalm.ie/"
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Services",
-                    "item": "https://webpalm.ie/services"
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Web Development",
-                    "item": "https://webpalm.ie/web-development"
-                  }
-                ]
               },
               {
                 "@type": "FAQPage",
@@ -124,34 +73,26 @@ export default function WebDevelopment() {
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "What frameworks and programming languages does WebPalm specialize in?",
+                    "name": "What kind of projects does WebPalm build?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "WebPalm specializes in modern JavaScript frameworks including React 19, Next.js, and TypeScript for frontend interfaces, alongside Python (Django, FastAPI), Node.js, and PHP (Laravel) for robust backend engineering and RESTful APIs."
+                      "text": "We build business websites, custom web apps, e-commerce stores, membership platforms, booking systems, landing pages, and front-end and back-end integrations for companies that need a digital tool that works for real operations."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "How long does it take to develop a custom web application?",
+                    "name": "How long does a web development project usually take?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Typical custom web applications require between 4 to 12 weeks depending on feature complexity, third-party integrations, and testing requirements. Standard business websites and MVPs can be launched in 2 to 4 weeks."
+                      "text": "A straightforward business website can often launch within a few weeks. More complex custom apps or systems with integrations usually take longer depending on planning, content, approvals, and testing."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Are WebPalm websites optimized for SEO and mobile devices?",
+                    "name": "Do you build sites that are mobile-friendly and SEO-ready?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes, every website and application engineered by WebPalm is built mobile-first, follows strict Core Web Vitals standards, and includes on-page SEO metadata, semantic HTML5, and Schema.org structured data out of the box."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Does WebPalm provide ongoing website maintenance and support in Ireland?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Yes, WebPalm provides dedicated monthly SLA-backed maintenance, security patching, performance monitoring, cloud backups, and feature enhancements for businesses in Dublin and throughout Ireland."
+                      "text": "Yes. We build with responsive layouts, clean page structure, fast load times, and SEO-friendly markup so the site performs well for search and for people using phones, tablets, and desktops."
                     }
                   }
                 ]
@@ -160,12 +101,9 @@ export default function WebDevelopment() {
           })}
         </script>
       </Helmet>
+
       <Header />
       <main className="page_content">
-        {/* <!-- Page Banner Section - Start
-        ==================================================  --> */}
-
-        {/* <!-- ======= ABOUT US CONTENT ======= --> */}
         <section
           className="page_banner_section text-center"
           style={{
@@ -174,343 +112,111 @@ export default function WebDevelopment() {
           }}
         >
           <div className="container">
-            <h1 className="page_title mb-0 text-white">Web Development</h1>
+            <h1 className="page_title mb-0 text-white">Custom Website & Web App Development</h1>
             <p className="text-white mt-2 myPara">
-              Web development involves creating and maintaining websites and web
-              applications. It requires a mix of design, development, and
-              deployment skills across various technologies.
+              We build digital platforms that look sharp, work smoothly, and help businesses turn interest into action.
             </p>
           </div>
         </section>
-        <section
-          class="empowering_success_section section_space bg-light"
-          style={{
-            backgroundPosition: "left top",
-            backgroundRepeat: "no-repeat",
-            backgroundImage: `url(assets/images/shapes/shape_line_2.svg)`,
-          }}
-        >
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-10">
-                <div class="heading_block text-center">
-                  <h2 class="heading_text mb-0">
-                    <mark>Development Process</mark>
-                  </h2>
-                  <p class="heading_description mb-0 text-dark">
-                    Choosing the best website development framework scope of
-                    work can help complete your website development project.
-                  </p>
-                </div>
+
+        <section className="service_details_section section_space bg-light">
+          <div className="container">
+            <div className="row align-items-center justify-content-lg-between">
+              <div className="col-lg-6">
+                <h2 className="details_item_title">Web development that fits how your business actually operates</h2>
+                <p>
+                  A website is more than a digital brochure. It should help people understand your offering, trust your business, and take the next step. We design and build websites and web apps that are practical, clear, and built around outcomes.
+                </p>
+                <p>
+                  Whether you need a clean business website, a more efficient internal tool, an online store, or a custom platform with unique workflows, we help shape the brief, choose the right stack, and deliver something your team can actually use.
+                </p>
+                <p>
+                  We work with modern technologies and a straightforward process: understand the business problem, design the right experience, build the product, test thoroughly, and make sure it is ready to go live without surprises.
+                </p>
               </div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-lg-6">
-                <div class="image_wrap">
+              <div className="col-lg-5">
+                <div className="image_wrap">
                   <img
-                    class="rounded"
+                    className="rounded"
                     src="assets/images/backgrounds/web.jpg"
-                    alt="WebPalm software development directory structure with debugging tools, project files, and documentation listings"
+                    alt="Web application development project planning and implementation by WebPalm"
                   />
                 </div>
               </div>
-              <div class="col-lg-6">
-                <ul class="empowering_services unordered_list_block ps-lg-5">
-                  <li>
-                    <div class="iconbox_block layout_icon_left">
-                      <div class="iconbox_icon">
-                        <img
-                          src="assets/images/icons/icon_bulb.svg"
-                          alt="Bulb SVG Icon"
-                        />
-                      </div>
-                      <div class="iconbox_content">
-                        <h3 class="iconbox_title">Discovery</h3>
-                        <p class="mb-0">
-                          Understand the website's purpose, target audience, and
-                          goals.​Clarifying your needs and knowing what you want
-                          is crucial in getting the required information.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="iconbox_block layout_icon_left">
-                      <div class="iconbox_icon">
-                        <img
-                          src="assets/images/icons/icon_design.png"
-                          alt="Bulb SVG Icon"
-                        />
-                      </div>
-                      <div class="iconbox_content">
-                        <h3 class="iconbox_title">Design</h3>
-                        <p class="mb-0">
-                          This step will be more straightforward once you have
-                          the above two steps streamlined. Develop the visual
-                          elements, including color schemes, typography, and
-                          imagery, to align with the brand identity.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="iconbox_block layout_icon_left">
-                      <div class="iconbox_icon">
-                        <img
-                          src="assets/images/icons/icon_code.png"
-                          alt="Bulb SVG Icon"
-                        />
-                      </div>
-                      <div class="iconbox_content">
-                        <h3 class="iconbox_title">Development</h3>
-                        <p class="mb-0">
-                          Create a sitemap and wireframe to outline the site's
-                          structure and layout. Convert the design into a
-                          functional website using coding languages and
-                          frameworks.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="iconbox_block layout_icon_left">
-                      <div class="iconbox_icon">
-                        <img
-                          src="assets/images/icons/icon_launch.png"
-                          alt="Bulb SVG Icon"
-                        />
-                      </div>
-                      <div class="iconbox_content">
-                        <h3 class="iconbox_title">Testing and Launching</h3>
-                        <p class="mb-0">
-                          Evaluate the website's functionality, compatibility,
-                          and performance across different devices and browsers.
-                          Deploy the website to a live server, making it
-                          accessible to users.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </section>
-        <section
-          class="business_consulting_service_section section_space"
-          style={{
-            backgroundImage: `url('assets/images/backgrounds/bg_image_3.webp')`,
-          }}
-        >
-          <div class="container margincontainer">
-            <div class="row justify-content-center">
-              <div class="col-lg-7">
-                <div class="heading_block text-center">
-                  <h2 class="heading_text">
-                    <mark>Web Application Development Technologies</mark>
-                  </h2>
-                  <p class="heading_description mb-0 text-dark">
-                    Languages And Frameworks
-                  </p>
-                </div>
+
+        <section className="section_space">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-10 text-center">
+                <h2 className="heading_text mb-3">
+                  <mark>What we build</mark>
+                </h2>
+                <p className="heading_description mb-0 text-dark">
+                  We create digital products that solve real business challenges and support day-to-day operations.
+                </p>
               </div>
             </div>
 
-            <div class="business_consulting_services row">
-              <div class="col-lg-4 mycon1">
-                <div
-                  class="iconbox_block mycon"
-                  style={{
-                    padding: "36px 55px",
-                    boxShadow: "0 20px 30px 0 rgba(174, 191, 210, 0.3)",
-                  }}
-                >
-                  {/* <div class="iconbox_icon">
-                    <img
-                     src="assets/images/icons/icon_javascript.svg"
-                     alt="JavaScript SVG Icon"
-                    />
-                  </div> */}
-                  <div class="iconbox_content">
-                    <h3 class="iconbox_title">
-                      <span style={{ color: "navy" }}>
-                        JavaScript Development
-                      </span>
-                    </h3>
-                    <p class="mb-0 myconPara">
-                      We master JavaScript to craft dynamic interactive web
-                      experiences professionally.We build engaging animations,
-                      validations, and interactive API integrations
-                      seamlessly.We power modern web projects with JavaScript
-                      and creative coding.
+            <div className="row mt-5 g-4">
+              <div className="col-lg-4 col-md-6">
+                <div className="iconbox_block h-100" style={{ padding: "32px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">Business websites</h3>
+                    <p className="mb-0">
+                      Clean, conversion-focused sites for service businesses, agencies, consultants, and growing companies that need a stronger online presence.
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div
-                  class="iconbox_block mycon"
-                  style={{
-                    padding: "36px 55px",
-                    boxShadow: "0 20px 30px 0 rgba(174, 191, 210, 0.3)",
-                  }}
-                >
-                  <div class="iconbox_content">
-                    <h3 class="iconbox_title">
-                      <span style={{ color: "navy" }}>
-                        React JS Development
-                      </span>
-                    </h3>
-                    <p class="mb-0 myconPara">
-                      We utilize React.js to build interactive, modular user
-                      interfaces seamlessly.We streamline front-end tasks and
-                      consistently optimize website performance well.We value
-                      React.js for its modular design and active community.
+              <div className="col-lg-4 col-md-6">
+                <div className="iconbox_block h-100" style={{ padding: "32px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">Custom web applications</h3>
+                    <p className="mb-0">
+                      Tools, dashboards, client portals, booking systems, and operational platforms tailored to your workflow and data requirements.
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div
-                  class="iconbox_block mycon"
-                  style={{
-                   
-                    padding: "36px 55px",
-                    boxShadow: "0 20px 30px 0 rgba(174, 191, 210, 0.3)",
-                  }}
-                >
-                  <div class="iconbox_content">
-                    <h3 class="iconbox_title">
-                      <span style={{ color: "navy" }}>
-                        Next JS Development
-                      </span>
-                    </h3>
-                    <p class="mb-0 myconPara">
-                      We employ Next.js to enhance React with server rendering
-                      capabilities.We achieve improved SEO, faster loading, and
-                      strong scalability consistently.We select Next.js for
-                      performance optimization and seamless integration.
+              <div className="col-lg-4 col-md-6">
+                <div className="iconbox_block h-100" style={{ padding: "32px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">E-commerce builds</h3>
+                    <p className="mb-0">
+                      Storefronts designed for trust, easy navigation, and smoother customer journeys from discovery to purchase.
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div
-                  class="iconbox_block mycon"
-                  style={{
-                   
-                    padding: "36px 55px",
-                    boxShadow: "0 20px 30px 0 rgba(174, 191, 210, 0.3)",
-                  }}
-                >
-                  <div class="iconbox_content">
-                    <h3 class="iconbox_title">
-                      <span style={{ color: "navy" }}>
-                        Angular JS Development
-                      </span>
-                    </h3>
-                    <p class="mb-0 myconPara">
-                      We leverage Angular to create dynamic, single-page web
-                      applications efficiently.We utilize two-way data binding
-                      to simplify interactive web creation.We trust Angular for
-                      comprehensive tools and structured development.
+              <div className="col-lg-4 col-md-6">
+                <div className="iconbox_block h-100" style={{ padding: "32px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">Landing pages</h3>
+                    <p className="mb-0">
+                      Campaign pages built to explain a message clearly, support paid traffic, and convert interest into enquiries.
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div
-                  class="iconbox_block mycon"
-                  style={{
-                   
-                    padding: "36px 55px",
-                    boxShadow: "0 20px 30px 0 rgba(174, 191, 210, 0.3)",
-                  }}
-                >
-                  <div class="iconbox_content">
-                    <h3 class="iconbox_title">
-                      <span style={{ color: "navy" }}>
-                        Python Development
-                      </span>
-                    </h3>
-                    <p class="mb-0 myconPara">
-                      We use Python for versatile solutions and efficient web
-                      programming.We simplify coding through Python's clear
-                      syntax and extensive libraries.We value Python for rapid
-                      development and diverse technical capabilities.
+              <div className="col-lg-4 col-md-6">
+                <div className="iconbox_block h-100" style={{ padding: "32px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">API and system integrations</h3>
+                    <p className="mb-0">
+                      We connect the tools you already use so your website or app fits the way your team works and your customers expect to be served.
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div
-                  class="iconbox_block mycon"
-                  style={{
-                   
-                    padding: "36px 55px",
-                    boxShadow: "0 20px 30px 0 rgba(174, 191, 210, 0.3)",
-                  }}
-                >
-                  <div class="iconbox_content">
-                    <h3 class="iconbox_title">
-                      <span style={{ color: "navy" }}>
-                        PHP Development
-                      </span>
-                    </h3>
-                    <p class="mb-0 myconPara">
-                      We employ PHP to build dynamic server-side web
-                      applications effectively.We integrate databases seamlessly
-                      while managing robust website logic effortlessly.We
-                      appreciate PHP for its flexibility, community, and fast
-                      development.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div
-                  class="iconbox_block mycon"
-                  style={{
-                   
-                    padding: "36px 55px",
-                    boxShadow: "0 20px 30px 0 rgba(174, 191, 210, 0.3)",
-                  }}
-                >
-                  <div class="iconbox_content">
-                    <h3 class="iconbox_title">
-                      <span style={{ color: "navy" }}>
-                        Laravel Development
-                      </span>
-                    </h3>
-                    <p class="mb-0 myconPara">
-                      We choose Laravel to build elegant, organized PHP web
-                      applications.We streamline development with simplified
-                      routing, automated tasks, and innovation.We trust Laravel
-                      for faster builds and improved organization remarkably.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div
-                  class="iconbox_block mycon"
-                  style={{
-                   
-                    padding: "36px 55px",
-                    boxShadow: "0 20px 30px 0 rgba(174, 191, 210, 0.3)",
-                  }}
-                >
-                  <div class="iconbox_content">
-                    <h3 class="iconbox_title">
-                      <span style={{ color: "navy" }}>
-                        Node JS Development
-                      </span>
-                    </h3>
-                    <p class="mb-0 myconPara">
-                      We harness Node.js to execute JavaScript for scalable
-                      server applications.We enable full-stack development with
-                      non-blocking, event-driven designs consistently today.We
-                      appreciate Node.js for unmatched speed and robust modules.
+              <div className="col-lg-4 col-md-6">
+                <div className="iconbox_block h-100" style={{ padding: "32px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">Maintenance and support</h3>
+                    <p className="mb-0">
+                      Ongoing updates, performance checks, security monitoring, and improvements after launch to keep things stable and current.
                     </p>
                   </div>
                 </div>
@@ -518,325 +224,150 @@ export default function WebDevelopment() {
             </div>
           </div>
         </section>
-        {/* ==========Space Section========== */}
-        <section
-          className="process_technology_review_section bg-light section_decoration"
-          style={{
-            marginTop: "-70px",
-            backgroundPosition: "right",
-            backgroundRepeat: "no-repeat",
-            backgroundImage: `url(assets/images/shapes/shape_line_3.svg)`,
-          }}
-        >
+
+        <section className="about_section section_space bg-light">
           <div className="container">
-            <div className="section_space" style={{ marginTop: "-70px" }}>
-              <div className="heading_block text-center">
-                <div
-                  className="heading_focus_text has_underline d-inline-flex"
-                  style={{
-                    backgroundImage: `url(${"assets/images/shapes/shape_title_under_line.svg"})`,
-                  }}
-                >
-                  Our Technology
+            <div className="row align-items-center justify-content-lg-between">
+              <div className="col-lg-5">
+                <div className="about_content">
+                  <div className="heading_block">
+                    <h2 className="heading_text">
+                      A clear process from idea to launch
+                    </h2>
+                    <p className="heading_description mb-2">
+                      We do not start with flashy mockups alone. We begin by understanding the business goal, audience, content, and constraints, then build from there.
+                    </p>
+                    <p className="heading_description mb-0">
+                      This keeps the project realistic, avoids unnecessary features, and gives you a product that is easier to maintain long after launch.
+                    </p>
+                  </div>
                 </div>
-                <h2 className="heading_text mb-0">
-                  <mark>Technologies</mark> That We Use
+              </div>
+              <div className="col-lg-6">
+                <div className="row g-3">
+                  <div className="col-md-6">
+                    <div className="iconbox_block h-100" style={{ padding: "24px 20px" }}>
+                      <div className="iconbox_content">
+                        <h3 className="iconbox_title">01. Discovery</h3>
+                        <p className="mb-0">We define the project goals, audience, scope, and the actual problems the site or app needs to solve.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="iconbox_block h-100" style={{ padding: "24px 20px" }}>
+                      <div className="iconbox_content">
+                        <h3 className="iconbox_title">02. Design</h3>
+                        <p className="mb-0">We map the user journey and produce a design that feels intentional, easy to navigate, and aligned to your brand.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="iconbox_block h-100" style={{ padding: "24px 20px" }}>
+                      <div className="iconbox_content">
+                        <h3 className="iconbox_title">03. Build</h3>
+                        <p className="mb-0">We turn the approved design into a responsive, high-performing product using the right framework and structure.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="iconbox_block h-100" style={{ padding: "24px 20px" }}>
+                      <div className="iconbox_content">
+                        <h3 className="iconbox_title">04. Launch</h3>
+                        <p className="mb-0">We test across devices, fix the weak points, and deploy the site or app with a smooth handoff and support plan.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="business_consulting_service_section section_space" style={{ backgroundImage: `url('assets/images/backgrounds/bg_image_3.webp')` }}>
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-8 text-center">
+                <h2 className="heading_text">
+                  <mark>Technology we use</mark>
+                </h2>
+                <p className="heading_description mb-0 text-dark">
+                  We select tools based on the project, not trends. That means better performance, clearer maintenance, and fewer compromises later.
+                </p>
+              </div>
+            </div>
+
+            <div className="row mt-5 g-4">
+              <div className="col-lg-4">
+                <div className="iconbox_block h-100" style={{ padding: "30px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">Frontend</h3>
+                    <p className="mb-0">React, Next.js, JavaScript, TypeScript, and responsive design systems for engaging interfaces.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div className="iconbox_block h-100" style={{ padding: "30px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">Backend</h3>
+                    <p className="mb-0">Node.js, PHP, Laravel, Python, and API-driven architecture for scalable functionality and data handling.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div className="iconbox_block h-100" style={{ padding: "30px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">Performance & security</h3>
+                    <p className="mb-0">Fast-loading builds, clean deployment setups, secure hosting practices, and testing to catch issues before launch.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section_space bg-light">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-8 text-center">
+                <h2 className="heading_text mb-3">
+                  <mark>FAQ</mark>
                 </h2>
               </div>
-
-              <div className="tab_block_wrapper">
-                <ul className="nav justify-content-center" role="tablist">
-                  <li className="nav-item" role="presentation">
-                    <button
-                      className="nav-link active"
-                      data-bs-toggle="tab"
-                      data-bs-target="#tab_web_platform"
-                      type="button"
-                      role="tab"
-                      aria-selected="true"
-                    >
-                      Frontend Stack
-                    </button>
-                  </li>
-                  <li className="nav-item" role="presentation">
-                    <button
-                      className="nav-link"
-                      data-bs-toggle="tab"
-                      data-bs-target="#tab_databases"
-                      type="button"
-                      role="tab"
-                      aria-selected="false"
-                    >
-                      Backend Stack
-                    </button>
-                  </li>
-                  <li className="nav-item" role="presentation">
-                    <button
-                      className="nav-link"
-                      data-bs-toggle="tab"
-                      data-bs-target="#tab_cloud_devops"
-                      type="button"
-                      role="tab"
-                      aria-selected="false"
-                    >
-                      Databases Stack
-                    </button>
-                  </li>
-                  <li className="nav-item" role="presentation">
-                    <button
-                      className="nav-link"
-                      data-bs-toggle="tab"
-                      data-bs-target="#tab_other_frameworks"
-                      type="button"
-                      role="tab"
-                      aria-selected="false"
-                    >
-                      E-commerce
-                    </button>
-                  </li>
-                </ul>
-                <div className="tab-content">
-                  {/* ==========Frontend Stack ========== */}
-                  <div
-                    className="tab-pane fade show active"
-                    id="tab_web_platform"
-                    role="tabpanel"
-                  >
-                    <div className="web_development_technologies row justify-content-center">
-                      <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
-                          <div className="iconbox_icon">
-                            <img
-                              src="assets/images/icons/icon_javascript.svg"
-                              alt="JavaScript SVG Icon"
-                            />
-                          </div>
-                          <div className="iconbox_content">
-                            <h3 className="iconbox_title mb-0">JavaScript</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
-                          <div className="iconbox_icon">
-                            <img
-                              src="assets/images/icons/icon_react_js.svg"
-                              alt="React Js SVG Icon"
-                            />
-                          </div>
-                          <div className="iconbox_content">
-                            <h3 className="iconbox_title mb-0">React Js</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
-                          <div className="iconbox_icon">
-                               <img
-                                  style={{ maxWidth: "80px" }}
-                                  width="80"
-                                  height="54"
-                                  src="assets/images/icons/icon_nextjs.webp"
-                                  alt="React Js SVG Icon"
-                                />
-                          </div>
-                          <div className="iconbox_content">
-                            <h3 className="iconbox_title mb-0">Next Js</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
-                          <div className="iconbox_icon">
-                            <img
-                              style={{ maxWidth: "80px" }}
-                              src="assets/images/icons/icon_angular.png"
-                              alt="React Js SVG Icon"
-                            />
-                          </div>
-                          <div className="iconbox_content">
-                            <h3 className="iconbox_title mb-0">Angular Js</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
-                          <div className="iconbox_icon">
-                            <img
-                              style={{ maxWidth: "55px" }}
-                              src="assets/images/icons/icon_html.png"
-                              alt="React Js SVG Icon"
-                            />
-                          </div>
-                          <div className="iconbox_content">
-                            <h3 className="iconbox_title mb-0">HTML5</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
-                          <div className="iconbox_icon">
-                            <img
-                              style={{ maxWidth: "55px" }}
-                              src="assets/images/icons/icon_css.png"
-                              alt="React Js SVG Icon"
-                            />
-                          </div>
-                          <div className="iconbox_content">
-                            <h3 className="iconbox_title mb-0">CSS 3</h3>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            </div>
+            <div className="accordion" id="webDevelopmentFaq">
+              <div className="accordion-item">
+                <h3 className="accordion-header" id="headingOne">
+                  <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Do you work on small business websites as well as larger builds?
+                  </button>
+                </h3>
+                <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#webDevelopmentFaq">
+                  <div className="accordion-body">
+                    Yes. We help businesses of different sizes, from clear, efficient service websites to more advanced platforms with custom user journeys and integrations.
                   </div>
-                  {/* ==========Backend Stack ========== */}
-                  <div
-                    className="tab-pane fade"
-                    id="tab_databases"
-                    role="tabpanel"
-                  >
-                    <div className="web_development_technologies row justify-content-center">
-                      <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
-                          <div className="iconbox_icon">
-                            <img
-                              src="assets/images/case/icon_python.svg"
-                              alt="Python SVG Icon"
-                            />
-                          </div>
-                          <div className="iconbox_content">
-                            <h3 className="iconbox_title mb-0">Python</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
-                          <div className="iconbox_icon">
-                            <img
-                              src="assets/images/icons/icon_php.svg"
-                              alt="PHP SVG Icon"
-                            />
-                          </div>
-                          <div className="iconbox_content">
-                            <h3 className="iconbox_title mb-0">PHP</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
-                          <div className="iconbox_icon">
-                            <img
-                              src="assets/images/icons/icon_laravel.svg"
-                              alt="Laraval SVG Icon"
-                            />
-                          </div>
-                          <div className="iconbox_content">
-                            <h3 className="iconbox_title mb-0">Laraval</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
-                          <div className="iconbox_icon">
-                            <img
-                              style={{ maxWidth: "70px" }}
-                              src="assets/images/icons/icon_nodejs.png"
-                              alt="Laraval SVG Icon"
-                            />
-                          </div>
-                          <div className="iconbox_content">
-                            <h3 className="iconbox_title mb-0">Node JS</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
-                          <div className="iconbox_icon">
-                            <img
-                              style={{ maxWidth: "70px" }}
-                              src="assets/images/icons/icon_express.png"
-                              alt="Laraval SVG Icon"
-                            />
-                          </div>
-                          <div className="iconbox_content">
-                            <h3 className="iconbox_title mb-0">Express JS</h3>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div className="accordion-item">
+                <h3 className="accordion-header" id="headingTwo">
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Can you redesign an existing website instead of building one from scratch?
+                  </button>
+                </h3>
+                <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#webDevelopmentFaq">
+                  <div className="accordion-body">
+                    Absolutely. We often improve older sites by simplifying navigation, strengthening brand presentation, improving load times, and updating structure so the website performs better for users and search engines.
                   </div>
-                  {/* =============Databases Stack ======== */}
-                  <div
-                    className="tab-pane fade"
-                    id="tab_cloud_devops"
-                    role="tabpanel"
-                  >
-                    <div className="web_development_technologies row justify-content-center">
-                      <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
-                          <div className="iconbox_icon">
-                            <img
-                              style={{ maxWidth: "65px" }}
-                              src="assets/images/icons/icon_mysql.png"
-                              alt="MySQL Database Icon"
-                            />
-                          </div>
-                          <div className="iconbox_content">
-                            <h3 className="iconbox_title mb-0">MySQL</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
-                          <div className="iconbox_icon">
-                            <img
-                              src="assets/images/icons/icon_mongodb.png"
-                              alt="MongoDB Database Icon"
-                            />
-                          </div>
-                          <div className="iconbox_content">
-                            <h3 className="iconbox_title mb-0">MongoDB</h3>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* ===============E-commerce Stack ======== */}
-                  <div
-                    className="tab-pane fade"
-                    id="tab_other_frameworks"
-                    role="tabpanel"
-                  >
-                    <div className="web_development_technologies row justify-content-center">
-                      <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
-                          <div className="iconbox_icon">
-                            <img
-                              style={{ maxWidth: "55px" }}
-                              src="assets/images/icons/icon_shopify.png"
-                              alt="Shopify E-Commerce Icon"
-                            />
-                          </div>
-                          <div className="iconbox_content">
-                            <h3 className="iconbox_title mb-0">Shopify</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <div className="iconbox_block text-center p-0 shadow-none bg-transparent">
-                          <div className="iconbox_icon">
-                            <img
-                              style={{ maxWidth: "55px" }}
-                              src="assets/images/icons/icon_wordpress.png"
-                              alt="WordPress CMS Icon"
-                            />
-                          </div>
-                          <div className="iconbox_content">
-                            <h3 className="iconbox_title mb-0">Wordpress</h3>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div className="accordion-item">
+                <h3 className="accordion-header" id="headingThree">
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What happens after launch?
+                  </button>
+                </h3>
+                <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#webDevelopmentFaq">
+                  <div className="accordion-body">
+                    We offer support options for updates, technical fixes, performance monitoring, and future improvements so your site continues to serve your business well.
                   </div>
                 </div>
               </div>
@@ -844,137 +375,19 @@ export default function WebDevelopment() {
           </div>
         </section>
 
-        {/* <!-- FAQ Section - Start
-        ================================================== --> */}
-        <section className="faq_section section_decoration section_space">
+        <section className="section_space text-center">
           <div className="container">
-            <div className="heading_block text-center">
-              <div
-                className="heading_focus_text has_underline d-inline-flex"
-                style={{
-                  backgroundImage: `url(${"assets/images/shapes/shape_title_under_line.svg"})`,
-                }}
-              >
-                F.A.Q.
-              </div>
-              <h2 className="heading_text mb-0">
-                Frequently Asked <mark>Questions</mark>
-              </h2>
-              <p className="heading_description mb-0 mt-2">
-                Everything you need to know about our web development process, tech stack, and delivery in Dublin.
-              </p>
-            </div>
-
-            <div className="faq_accordion accordion" id="webdev_faq_accordion">
-              <div className="accordion-item">
-                <div
-                  className="accordion-button"
-                  role="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse_wd_one"
-                  aria-expanded="true"
-                  aria-controls="collapse_wd_one"
-                >
-                  Q. What frameworks and programming languages does WebPalm specialize in?
-                </div>
-                <div
-                  id="collapse_wd_one"
-                  className="accordion-collapse collapse show"
-                  data-bs-parent="#webdev_faq_accordion"
-                >
-                  <div className="accordion-body">
-                    <div className="text_a">A.</div>
-                    <p>
-                      WebPalm specializes in modern JavaScript frameworks including React 19, Next.js, and TypeScript for frontend interfaces, alongside Python (Django, FastAPI), Node.js, and PHP (Laravel) for robust backend engineering and RESTful APIs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="accordion-item">
-                <div
-                  className="accordion-button collapsed"
-                  role="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse_wd_two"
-                  aria-expanded="false"
-                  aria-controls="collapse_wd_two"
-                >
-                  Q. How long does it take to develop a custom web application?
-                </div>
-                <div
-                  id="collapse_wd_two"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#webdev_faq_accordion"
-                >
-                  <div className="accordion-body">
-                    <div className="text_a">A.</div>
-                    <p>
-                      Typical custom web applications require between 4 to 12 weeks depending on feature complexity, third-party integrations, and testing requirements. Standard business websites and MVPs can be launched in 2 to 4 weeks.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="accordion-item">
-                <div
-                  className="accordion-button collapsed"
-                  role="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse_wd_three"
-                  aria-expanded="false"
-                  aria-controls="collapse_wd_three"
-                >
-                  Q. Are WebPalm websites optimized for SEO and mobile devices?
-                </div>
-                <div
-                  id="collapse_wd_three"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#webdev_faq_accordion"
-                >
-                  <div className="accordion-body">
-                    <div className="text_a">A.</div>
-                    <p>
-                      Yes, every website and application engineered by WebPalm is built mobile-first, follows strict Core Web Vitals standards, and includes on-page SEO metadata, semantic HTML5, and Schema.org structured data out of the box.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="accordion-item">
-                <div
-                  className="accordion-button collapsed"
-                  role="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse_wd_four"
-                  aria-expanded="false"
-                  aria-controls="collapse_wd_four"
-                >
-                  Q. Does WebPalm provide ongoing website maintenance and support in Ireland?
-                </div>
-                <div
-                  id="collapse_wd_four"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#webdev_faq_accordion"
-                >
-                  <div className="accordion-body">
-                    <div className="text_a">A.</div>
-                    <p>
-                      Yes, WebPalm provides dedicated monthly SLA-backed maintenance, security patching, performance monitoring, cloud backups, and feature enhancements for businesses in Dublin and throughout Ireland.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h2 className="heading_text mb-3">Need a website that works harder for your business?</h2>
+            <p className="mb-4">Tell us what you need, and we will advise on the right build, structure, and next steps.</p>
+            <Link to="/contact" className="btn btn-primary">
+              <span className="btn_label" data-text="Book a consultation">Book a consultation</span>
+            </Link>
           </div>
         </section>
-        {/* <!-- FAQ Section - End
-        ================================================== --> */}
 
-        <ParallaxSection3 />
+        <Footer2 />
         <WhatsAppButton />
       </main>
-      <Footer2 />
     </div>
   );
 }

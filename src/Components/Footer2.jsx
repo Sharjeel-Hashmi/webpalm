@@ -186,27 +186,37 @@ export default function Footer2() {
                     <h3 className="footer_info_title">Services</h3>
                     <ul className="icon_list unordered_list_block">
                       <li>
-                        <Link to="/web-development" style={{ fontSize: "20px" }}>
+                        <Link to="/web-development" className="footer_link">
                           <span className="icon_list_text">Web Development</span>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/graphic-designing" style={{ fontSize: "20px" }}>
-                          <span className="icon_list_text">Graphic Designing</span>
+                        <Link to="/digital-social-media-marketing" className="footer_link">
+                          <span className="icon_list_text">Digital & Social Media Marketing</span>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/search-engine-optimization" style={{ fontSize: "20px" }}>
-                          <span className="icon_list_text">Search Engine Optimization</span>
+                        <Link to="/website-maintenance" className="footer_link">
+                          <span className="icon_list_text">Website Maintenance</span>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/web-development-dublin" style={{ fontSize: "20px" }}>
-                          <span className="icon_list_text">Web Development Dublin</span>
+                        <Link to="/software-development" className="footer_link">
+                          <span className="icon_list_text">Software Development</span>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/services" style={{ fontSize: "20px" }}>
+                        <Link to="/graphic-designing" className="footer_link">
+                          <span className="icon_list_text">Graphic Design</span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/search-engine-optimization" className="footer_link">
+                          <span className="icon_list_text">SEO & GEO</span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/services" className="footer_link">
                           <span className="icon_list_text">All Services</span>
                         </Link>
                       </li>
@@ -218,32 +228,32 @@ export default function Footer2() {
                     <h3 className="footer_info_title">Information</h3>
                     <ul className="icon_list unordered_list_block">
                       <li>
-                        <Link to="/" style={{ fontSize: "20px" }}>
+                        <Link to="/" className="footer_link">
                           <span className="icon_list_text">Home</span>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/about" style={{ fontSize: "20px" }}>
+                        <Link to="/about" className="footer_link">
                           <span className="icon_list_text">About Us</span>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/pricing" style={{ fontSize: "20px" }}>
+                        <Link to="/pricing" className="footer_link">
                           <span className="icon_list_text">Our Pricing Plan</span>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/portfolio" style={{ fontSize: "20px" }}>
+                        <Link to="/portfolio" className="footer_link">
                           <span className="icon_list_text">Portfolio</span>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/career" style={{ fontSize: "20px" }}>
+                        <Link to="/career" className="footer_link">
                           <span className="icon_list_text">Career</span>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/contact" style={{ fontSize: "20px" }}>
+                        <Link to="/contact" className="footer_link">
                           <span className="icon_list_text">Contact Us</span>
                         </Link>
                       </li>
@@ -255,17 +265,17 @@ export default function Footer2() {
                     <h3 className="footer_info_title">Legal & Trust</h3>
                     <ul className="icon_list unordered_list_block">
                       <li>
-                        <Link to="/privacy-policy" style={{ fontSize: "20px" }}>
+                        <Link to="/privacy-policy" className="footer_link">
                           <span className="icon_list_text">Privacy Policy</span>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/terms-of-service" style={{ fontSize: "20px" }}>
+                        <Link to="/terms-of-service" className="footer_link">
                           <span className="icon_list_text">Terms of Service</span>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/cookie-policy" style={{ fontSize: "20px" }}>
+                        <Link to="/cookie-policy" className="footer_link">
                           <span className="icon_list_text">Cookie Policy</span>
                         </Link>
                       </li>

@@ -12,6 +12,10 @@ import Portfolio from './pages/Portfolio';
 import GraphicDesign from './pages/GraphicDesign';
 import WebDevelopment from './pages/WebDevelopment';
 import Seo from './pages/Seo';
+import DigitalSocialMediaMarketing from './pages/DigitalSocialMediaMarketing';
+import WebsiteMaintenance from './pages/WebsiteMaintenance';
+import SoftwareDevelopment from './pages/SoftwareDevelopment';
+import CaseStudyKildareDoc from './pages/CaseStudyKildareDoc';
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 import Pricing from './pages/Pricing';
@@ -65,6 +69,10 @@ let allRoutes = createBrowserRouter(
       element:<Portfolio/>
     },
     {
+      path:'portfolio/kildaredoc',
+      element:<CaseStudyKildareDoc/>
+    },
+    {
       path:'portfolio/edunest',
       element:<CaseStudyEduNest/>
     },
@@ -75,6 +83,18 @@ let allRoutes = createBrowserRouter(
     {
       path:'portfolio/propvista',
       element:<CaseStudyPropVista/>
+    },
+    {
+      path:'digital-social-media-marketing',
+      element:<DigitalSocialMediaMarketing/>
+    },
+    {
+      path:'website-maintenance',
+      element:<WebsiteMaintenance/>
+    },
+    {
+      path:'software-development',
+      element:<SoftwareDevelopment/>
     },
     {
       path:'contact',
