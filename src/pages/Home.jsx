@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Home.css";
 import Header1 from "../Components/Header1";
-import Footer from "../Components/Footer";
+import Footer2 from "../Components/Footer2";
 import FunFactCounter from "./FunFactCounter";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -1823,7 +1823,7 @@ export default function Home() {
         
         <WhatsAppButton />
       </main>
-      <Footer />
+      <Footer2 />
     </>
   );
 }

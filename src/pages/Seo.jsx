@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../Components/Header";
 import "./Home.css";
 import Footer2 from "../Components/Footer2";
-import ParallaxSection4 from "./ParallaxSection4";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import WhatsAppButton from "../Components/WhatsAppButton";
@@ -11,73 +10,34 @@ export default function Seo() {
   return (
     <div>
       <Helmet>
-        {/* <!-- Title --> */}
-        <title>
-          Search Engine Optimization (SEO) Services in Dublin | WebPalm
-        </title>
-
-        {/* <!-- Meta Tags --> */}
+        <title>SEO, AEO & GEO Services in Dublin | WebPalm</title>
         <meta
           name="description"
-          content="Boost your online visibility with WebPalm's professional SEO services in Dublin. We offer keyword research, SEO analysis, CRO, and link building to help your business rank higher and grow sustainably."
+          content="WebPalm helps businesses improve search visibility, local rankings, and AI search discoverability with technical SEO, content strategy, and conversion-focused optimization."
         />
         <meta
           name="keywords"
-          content="SEO Dublin, search engine optimization Ireland, keyword research services, link building Dublin, CRO Dublin, SEO analysis, improve Google rankings, organic traffic growth, WebPalm SEO services, professional SEO agency Dublin"
+          content="SEO Dublin, local SEO Ireland, search engine optimization agency, technical SEO, AEO services Dublin, GEO marketing, AI search optimization, keyword strategy, WebPalm SEO"
         />
         <meta name="author" content="WebPalm" />
         <meta name="robots" content="index, follow" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="format-detection" content="telephone=+353894205316" />
-        <meta
-          name="google-site-verification"
-          content="BuCuVdE1zHdoW0k5Ir0R2r4-SBqauodqFgDWxgma758"
-        />
         <link rel="canonical" href="https://webpalm.ie/search-engine-optimization" />
-        <meta
-          name="thumbnail"
-          content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
-        />
-
-        {/* <!-- Open Graph Tags --> */}
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://webpalm.ie/search-engine-optimization"
-        />
-        <meta
-          property="og:title"
-          content="Search Engine Optimization (SEO) Services in Dublin | WebPalm"
-        />
+        <meta property="og:url" content="https://webpalm.ie/search-engine-optimization" />
+        <meta property="og:title" content="SEO, AEO & GEO Services in Dublin | WebPalm" />
         <meta
           property="og:description"
-          content="WebPalm offers SEO strategies including keyword research, SEO analysis, CRO, and link building to help businesses in Dublin and beyond improve search rankings and attract more customers."
+          content="WebPalm offers services that improve rankings, attract qualified traffic, and position businesses for visibility in both traditional search and AI-powered answer engines."
         />
         <meta property="og:site_name" content="WebPalm" />
-        <meta
-          property="og:image"
-          content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
-        />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="SEO services by WebPalm" />
-
-        {/* <!-- Twitter Card --> */}
+        <meta property="og:image" content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Search Engine Optimization (SEO) Services in Dublin | WebPalm"
-        />
+        <meta name="twitter:title" content="SEO, AEO & GEO Services in Dublin | WebPalm" />
         <meta
           name="twitter:description"
-          content="WebPalm offers SEO strategies including keyword research, SEO analysis, CRO, and link building to help businesses in Dublin and beyond improve search rankings and attract more customers."
+          content="WebPalm helps businesses rank higher in Google, improve local search visibility, and prepare for AI-driven search discovery."
         />
-        <meta
-          name="twitter:image"
-          content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png"
-        />
-
-        {/* Schema.org Structured Data */}
+        <meta name="twitter:image" content="https://webpalm.ie/assets/images/site_logo/site_logo_002.png" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -85,41 +45,15 @@ export default function Seo() {
               {
                 "@type": "Service",
                 "@id": "https://webpalm.ie/search-engine-optimization#service",
-                "name": "Search Engine Optimization (SEO), AEO & GEO Services",
+                "name": "Search Engine Optimization, AEO & GEO Services",
                 "serviceType": "Search Engine Optimization",
-                "provider": {
-                  "@id": "https://webpalm.ie/#organization"
-                },
+                "provider": { "@id": "https://webpalm.ie/#organization" },
                 "areaServed": [
                   { "@type": "Country", "name": "Ireland" },
                   { "@type": "City", "name": "Dublin" }
                 ],
-                "description": "Comprehensive SEO, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), technical audits, and local Dublin search marketing.",
+                "description": "Technical SEO and search visibility strategies for businesses in Ireland and Dublin, including local SEO, keyword strategy, content optimization, and AI answer engine visibility.",
                 "url": "https://webpalm.ie/search-engine-optimization"
-              },
-              {
-                "@type": "BreadcrumbList",
-                "@id": "https://webpalm.ie/search-engine-optimization#breadcrumb",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Home",
-                    "item": "https://webpalm.ie/"
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Services",
-                    "item": "https://webpalm.ie/services"
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Search Engine Optimization",
-                    "item": "https://webpalm.ie/search-engine-optimization"
-                  }
-                ]
               },
               {
                 "@type": "FAQPage",
@@ -127,34 +61,18 @@ export default function Seo() {
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "What SEO, AEO, and GEO services does WebPalm provide?",
+                    "name": "What does SEO include?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "WebPalm delivers technical SEO audits, on-page optimization, Schema.org structured data engineering, Answer Engine Optimization (AEO) for AI overviews, Generative Engine Optimization (GEO) for ChatGPT and Perplexity, local Dublin SEO, and high-authority link acquisition."
+                      "text": "It includes technical fixes, on-page optimization, content strategy, keyword research, internal linking, local SEO, and ongoing performance analysis to improve visibility over time."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "How long does it take to see organic rankings and traffic improvements?",
+                    "name": "What is AEO and GEO in simple terms?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Most technical SEO fixes and indexation improvements show measurable results within 4 to 8 weeks. Competitive keyword ranking gains, organic traffic growth, and AI answer engine citations typically accelerate between 3 to 6 months of active optimization."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "What is Answer Engine Optimization (AEO) and why does it matter?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "AEO optimizes your web content for direct AI answers, voice search, and AI search engines like ChatGPT Search, Perplexity, and Google AI Overviews. It ensures your business is cited as the definitive answer for queries related to your products or services."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Do you provide Local SEO for Dublin and Irish businesses?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Yes, WebPalm specializes in Irish local SEO, optimizing Google Business Profiles, local NAP citations, geo-targeted landing pages, and localized Dublin structured data to capture high-intent regional searches."
+                      "text": "AEO focuses on being the clear answer in AI-powered search experiences, while GEO helps a business show up in AI-generated summaries and recommendations across modern search platforms."
                     }
                   }
                 ]
@@ -163,294 +81,203 @@ export default function Seo() {
           })}
         </script>
       </Helmet>
+
       <Header />
       <main className="page_content">
-        {/* <!-- Page Banner Section - Start
-        ==================================================  --> */}
-
-        {/* <!-- ======= ABOUT US CONTENT ======= --> */}
         <section
           className="page_banner_section text-center"
           style={{
             backgroundImage: `url(${"assets/images/backgrounds/SEOImg33.png"})`,
-            backgroundPosition: "top",
-            backgroundBlendMode: "overlay",
+            backgroundPosition: "center center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
           }}
         >
           <div className="container">
-            <h1 className="page_title mb-0 text-white">
-              Search Engine Optimization
-            </h1>
+            <h1 className="page_title mb-0 text-white">SEO, AEO & GEO for Growth</h1>
             <p className="text-white mt-2 myPara">
-              Maximize your organic reach across Google, Bing, and AI search engines.
-              WebPalm engineers technical SEO, Answer Engine Optimization (AEO), and
-              localized Dublin ranking campaigns that turn searches into revenue.
+              We help businesses improve visibility in Google, attract better traffic, and stay discoverable in the AI-driven search landscape.
             </p>
           </div>
         </section>
-        <section
-          className="section_space"
-          style={{
-            backgroundImage: `url('assets/images/backgrounds/bg_image_3.webp')`,
-            backgroundPosition: "bottom",
-          }}
-        >
-          <div className="container">
-            <div className="row text-center">
-              <div className="col-lg-12 pb-5">
-                <h1 className="page_title mb-0 px-5 ">
-                  What can SEO Agency do for Your Business?
-                </h1>
-                <p className="seoPara mb-2" style={{ textAlign: "" }}>
-                  An SEO agency helps businesses improve their visibility on
-                  search engines like Google to attract more organic traffic.
-                  They optimize website content, structure, and technical
-                  elements, perform keyword research, build backlinks, and
-                  ensure the site is fast and mobile-friendly. By tracking
-                  performance and staying updated with algorithm changes, SEO
-                  agencies help boost rankings, reach the right audience, and
-                  drive business growth.
-                </p>
-              </div>
-              <div className="col-lg-12">
-                <div className="row align-items-center justify-content-center">
-                  <div className="col-lg-2 col-md-4 seodiv col-sm-6">
-                    <img
-                      className="seoimg px-2"
-                      src="assets/images/seo/bing.webp"
-                      alt="Bing Search Engine Optimization"
-                    />
-                  </div>
-                  <div className="col-lg-2 col-md-4 seodiv col-sm-6">
-                    <img
-                      className="seoimg px-2"
-                      src="assets/images/seo/google.webp"
-                      alt="Google SEO and Analytics"
-                    />
-                  </div>
-                  <div className="col-lg-2 col-md-4 seodiv col-sm-6">
-                    <img
-                      className="seoimg px-2"
-                      src="assets/images/seo/ubersuggest.webp"
-                      alt="Ubersuggest Keyword Intelligence"
-                    />
-                  </div>
-                  <div className="col-lg-2 col-md-4 seodiv col-sm-6">
-                    <img
-                      className="seoimg px-2"
-                      src="assets/images/seo/hubspot.webp"
-                      alt="HubSpot Inbound Marketing Software"
-                    />
-                  </div>
-                  <div className="col-lg-2 col-md-4 seodiv col-sm-6">
-                    <img
-                      className="seoimg px-2"
-                      src="assets/images/seo/yahoo.webp"
-                      alt="Yahoo Search Engine Network"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          className="about_section section_space bg-light"
-          style={{ paddingTop: "60px" }}
-        >
+
+        <section className="service_details_section section_space bg-light">
           <div className="container">
             <div className="row align-items-center justify-content-lg-between">
-              <div className="col-lg-6 order-lg-last">
+              <div className="col-lg-6">
+                <h2 className="details_item_title">Search visibility is not a side task. It is a revenue channel.</h2>
+                <p>
+                  Most businesses do not struggle because they have a weak product or a bad service. They struggle because people cannot easily find them when they are already looking. SEO helps fix that by making your website more visible, more relevant, and easier to trust.
+                </p>
+                <p>
+                  At WebPalm, we combine technical SEO, local search optimization, content strategy, and AI search positioning so your business is discoverable across both traditional search and newer answer-based systems. We focus on ranking for the right terms and attracting visitors who are ready to act.
+                </p>
+              </div>
+              <div className="col-lg-5">
                 <div className="image_wrap">
                   <img
-                    style={{ borderRadius: "25px" }}
+                    className="rounded"
                     src="assets/images/backgrounds/bg-seo_img_11.jpg"
-                    alt="WebPalm SEO Strategy and Organic Search Marketing Solutions"
+                    alt="SEO strategy and digital discovery overview for businesses by WebPalm"
                   />
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section_space">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-10 text-center">
+                <h2 className="heading_text mb-3">
+                  <mark>What we do</mark>
+                </h2>
+                <p className="heading_description mb-0 text-dark">
+                  We build practical, measurable SEO strategies designed for real business growth.
+                </p>
+              </div>
+            </div>
+            <div className="row mt-5 g-4">
+              <div className="col-lg-4 col-md-6">
+                <div className="iconbox_block h-100" style={{ padding: "32px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">Technical SEO</h3>
+                    <p className="mb-0">We improve crawlability, indexability, page speed, site structure, metadata, and technical health so search engines can understand your website properly.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6">
+                <div className="iconbox_block h-100" style={{ padding: "32px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">Keyword strategy</h3>
+                    <p className="mb-0">We focus on the terms your audience actually searches for, aligning content and pages with intent rather than vanity metrics.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6">
+                <div className="iconbox_block h-100" style={{ padding: "32px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">Local SEO</h3>
+                    <p className="mb-0">We help Dublin and Irish businesses win more local visibility through Google Business Profile optimization, location pages, and local signals.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6">
+                <div className="iconbox_block h-100" style={{ padding: "32px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">Content & landing pages</h3>
+                    <p className="mb-0">We create pages and content that answer real user questions, reflect search intent, and support conversion rather than just traffic numbers.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6">
+                <div className="iconbox_block h-100" style={{ padding: "32px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">AEO & GEO</h3>
+                    <p className="mb-0">We structure content for AI answer engines and modern search experiences so your business is more discoverable in direct-answer results.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6">
+                <div className="iconbox_block h-100" style={{ padding: "32px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">Performance tracking</h3>
+                    <p className="mb-0">We review rankings, traffic quality, conversion paths, and the pages that are actually driving enquiries so strategy stays grounded in results.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="about_section section_space bg-light">
+          <div className="container">
+            <div className="row align-items-center justify-content-lg-between">
               <div className="col-lg-5">
                 <div className="about_content">
                   <div className="heading_block">
-                    <h2 className="heading_text">
-                      <mark>
-                        Develop Your Business With SEO Strategies Solutions
-                      </mark>
-                    </h2>
+                    <h2 className="heading_text">How we work</h2>
                     <p className="heading_description mb-2">
-                      SEO plays a key role in driving business growth by
-                      increasing a website’s visibility to potential customers.
-                      Higher search engine rankings lead to more organic
-                      traffic, which means more opportunities for conversions
-                      and sales. With targeted keywords, optimized content, and
-                      a strong online presence, businesses can reach the right
-                      audience at the right time—boosting brand credibility,
-                      customer trust, and long-term revenue.
+                      We start with the business context, search intent, and your current website situation. That gives us a realistic view of what is holding rankings or conversions back.
                     </p>
                     <p className="heading_description mb-0">
-                      {" "}
-                      By consistently appearing in top search results,
-                      businesses establish authority in their industry. SEO also
-                      offers long-term results, unlike paid ads which stop when
-                      the budget ends. With ongoing optimization, businesses can
-                      scale sustainably and stay ahead of competitors.
+                      From there, we build a focused plan across technical improvements, content opportunities, and local or commercial visibility gaps. We do not chase every tactic — we chase the ones that matter.
                     </p>
                   </div>
-                  <Link to="/contact" className="btn btn-primary">
-                    <span className="btn_label" data-text="Contact Us Today!">
-                      Contact Us TODAY!
-                    </span>
-                    <span className="btn_icon">
-                      <i className="fa-solid fa-arrow-up-right"></i>
-                    </span>
-                  </Link>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="row g-3">
+                  <div className="col-md-6">
+                    <div className="iconbox_block h-100" style={{ padding: "24px 20px" }}>
+                      <div className="iconbox_content">
+                        <h3 className="iconbox_title">01. Audit</h3>
+                        <p className="mb-0">We review technical setup, keyword opportunities, content gaps, and the pages already attracting or losing traffic.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="iconbox_block h-100" style={{ padding: "24px 20px" }}>
+                      <div className="iconbox_content">
+                        <h3 className="iconbox_title">02. Strategy</h3>
+                        <p className="mb-0">We prioritise the fixes and opportunities that will create the strongest return based on your market and goals.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="iconbox_block h-100" style={{ padding: "24px 20px" }}>
+                      <div className="iconbox_content">
+                        <h3 className="iconbox_title">03. Execution</h3>
+                        <p className="mb-0">We optimise the site, improve content structure, and support pages with stronger relevance and clearer conversion paths.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="iconbox_block h-100" style={{ padding: "24px 20px" }}>
+                      <div className="iconbox_content">
+                        <h3 className="iconbox_title">04. Review</h3>
+                        <p className="mb-0">We monitor progress, refine the approach, and adjust based on what actually moves rankings, traffic, and enquiries.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section
-          className="portfolio_section section_space bg-light"
-          style={{
-            backgroundImage: `url('assets/images/backgrounds/bg_image_3.webp')`,
-          }}
-        >
+
+        <section className="section_space">
           <div className="container">
-            <div className="filter_elements_nav px-3">
-              <h1 className="page_title mb-0">What You Accquire</h1>
+            <div className="row justify-content-center">
+              <div className="col-lg-8 text-center">
+                <h2 className="heading_text mb-3">
+                  <mark>Why businesses choose SEO</mark>
+                </h2>
+              </div>
             </div>
-            <div className="filter_elements_wrapper row">
-              <div
-                className="col-lg-6 text-center"
-                style={{ padding: "30px 35px" }}
-              >
-                <div
-                  className="portfolio_block portfolio_layout_2 port1"
-                  style={{ height: "602px" }}
-                >
-                  <div class=" layout_icon_left">
-                    <img
-                      src="assets/images/icons/seo-icon1.webp"
-                      alt="Bulb SVG Icon"
-                    />
-                  </div>
-                  <div className="px-3">
-                    <h3 className="portfolio_title">SEO Analysis</h3>
-                    <p
-                      className=" mt-2 myPara1 pb-4"
-                      style={{ textAlign: "justify" }}
-                    >
-                      SEO analysis for WebPalm involves a comprehensive review
-                      of the website’s performance in search engines to identify
-                      areas for improvement. This includes evaluating on-page
-                      elements such as meta titles, descriptions, headers, and
-                      keyword usage to ensure they align with target search
-                      terms. It also checks the site’s technical health—like
-                      page speed, mobile responsiveness, crawlability, and
-                      indexing status. Off-page factors such as backlink
-                      quality, domain authority, and social signals are assessed
-                      to measure WebPalm’s online reputation.
-                    </p>
+            <div className="row g-4">
+              <div className="col-lg-4">
+                <div className="iconbox_block h-100" style={{ padding: "28px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">Better visibility</h3>
+                    <p className="mb-0">The right search visibility puts your business in front of people who are already looking for your service.</p>
                   </div>
                 </div>
               </div>
-              <div
-                className="col-lg-6 text-center"
-                style={{ padding: "30px 35px" }}
-              >
-                <div className="portfolio_block portfolio_layout_2">
-                  <div class=" layout_icon_left">
-                    <img
-                      src="assets/images/icons/seo-icon2.webp"
-                      alt="Bulb SVG Icon"
-                    />
-                  </div>
-                  <div className="px-3">
-                    <h3 className="portfolio_title">KeyWord Research in SEO</h3>
-                    <p
-                      className=" mt-2 myPara1 pb-4"
-                      style={{ textAlign: "justify" }}
-                    >
-                      Keyword research is a vital part of WebPalm’s SEO
-                      strategy, helping identify the search terms potential
-                      customers use when looking for services like web
-                      development, graphic designing, and SEO. By analyzing
-                      search volume, competition, and user intent, WebPalm can
-                      target high-impact keywords that align with each service
-                      offering. This ensures that content is optimized to
-                      attract the right audience, improve rankings, and drive
-                      qualified traffic. Effective Keyword research also helped
-                      WebPalm.stay ahead of competitors by focusing customers
-                      needs.
-                    </p>
+              <div className="col-lg-4">
+                <div className="iconbox_block h-100" style={{ padding: "28px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">More qualified traffic</h3>
+                    <p className="mb-0">Targeted content and optimization attract the visitors most likely to enquire or buy, rather than broad but low-intent traffic.</p>
                   </div>
                 </div>
               </div>
-              <div
-                className="col-lg-6 text-center"
-                style={{ padding: "30px 35px" }}
-              >
-                <div
-                  className="portfolio_block portfolio_layout_2 port1"
-                  style={{ height: "602px" }}
-                >
-                  <div class=" layout_icon_left">
-                    <img
-                      src="assets/images/icons/seo-icon4.webp"
-                      alt="Bulb SVG Icon"
-                    />
-                  </div>
-                  <div className="px-3">
-                    <h3 className="portfolio_title">
-                      Conversion Rate Optimization (CRO)
-                    </h3>
-                    <p
-                      className=" mt-2 myPara1 pb-4"
-                      style={{ textAlign: "justify" }}
-                    >
-                      Conversion Rate Optimization (CRO) in SEO focuses on
-                      turning website visitors into customers by improving the
-                      user experience and guiding them toward desired
-                      actions—like filling out a form, making a purchase, or
-                      booking a service. While SEO drives traffic to the site,
-                      CRO ensures that traffic is effectively converted into
-                      leads or sales. This involves optimizing landing pages,
-                      improving page load speed, creating calls-to-action, and
-                      testing different layouts or layouts.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-6 text-center"
-                style={{ padding: "30px 35px" }}
-              >
-                <div
-                  className="portfolio_block portfolio_layout_2 port1"
-                  style={{ height: "602px" }}
-                >
-                  <div class=" layout_icon_left">
-                    <img
-                      src="assets/images/icons/seo-icon3.webp"
-                      alt="Bulb SVG Icon"
-                    />
-                  </div>
-                  <div className="px-3">
-                    <h3 className="portfolio_title">Link Building in SEO</h3>
-                    <p
-                      className=" mt-2 myPara1 pb-4"
-                      style={{ textAlign: "justify" }}
-                    >
-                      Link building is a key SEO strategy for WebPalm that
-                      involves acquiring high-quality backlinks from reputable
-                      websites to improve domain authority and search engine
-                      rankings. By earning links through guest blogging,
-                      industry directories, and content sharing, WebPalm boosts
-                      the credibility of its services like web development,
-                      These backlinks act as votes
-                      of confidence, signaling to search engines that WebPalm is
-                      a trusted, authoritative provider of digital services in Ireland.
-                    </p>
+              <div className="col-lg-4">
+                <div className="iconbox_block h-100" style={{ padding: "28px 24px" }}>
+                  <div className="iconbox_content">
+                    <h3 className="iconbox_title">Long-term compounding</h3>
+                    <p className="mb-0">Strong SEO builds a foundation that keeps generating visibility over time, unlike paid campaigns that stop when the spend stops.</p>
                   </div>
                 </div>
               </div>
@@ -458,137 +285,69 @@ export default function Seo() {
           </div>
         </section>
 
-        {/* <!-- FAQ Section - Start
-        ================================================== --> */}
-        <section className="faq_section section_decoration section_space">
+        <section className="section_space bg-light">
           <div className="container">
-            <div className="heading_block text-center">
-              <div
-                className="heading_focus_text has_underline d-inline-flex"
-                style={{
-                  backgroundImage: `url(${"assets/images/shapes/shape_title_under_line.svg"})`,
-                }}
-              >
-                F.A.Q.
+            <div className="row justify-content-center">
+              <div className="col-lg-8 text-center">
+                <h2 className="heading_text mb-3">
+                  <mark>FAQ</mark>
+                </h2>
               </div>
-              <h2 className="heading_text mb-0">
-                Frequently Asked <mark>Questions</mark>
-              </h2>
-              <p className="heading_description mb-0 mt-2">
-                Learn more about our search engine optimization (SEO), answer engine optimization (AEO), and local Dublin ranking services.
-              </p>
             </div>
-
-            <div className="faq_accordion accordion" id="seo_faq_accordion">
+            <div className="accordion" id="seoFaq">
               <div className="accordion-item">
-                <div
-                  className="accordion-button"
-                  role="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse_seo_one"
-                  aria-expanded="true"
-                  aria-controls="collapse_seo_one"
-                >
-                  Q. What SEO, AEO, and GEO services does WebPalm provide?
-                </div>
-                <div
-                  id="collapse_seo_one"
-                  className="accordion-collapse collapse show"
-                  data-bs-parent="#seo_faq_accordion"
-                >
+                <h3 className="accordion-header" id="seoHeadingOne">
+                  <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#seoCollapseOne" aria-expanded="true" aria-controls="seoCollapseOne">
+                    How long does SEO usually take to show results?
+                  </button>
+                </h3>
+                <div id="seoCollapseOne" className="accordion-collapse collapse show" aria-labelledby="seoHeadingOne" data-bs-parent="#seoFaq">
                   <div className="accordion-body">
-                    <div className="text_a">A.</div>
-                    <p>
-                      WebPalm delivers technical SEO audits, on-page optimization, Schema.org structured data engineering, Answer Engine Optimization (AEO) for AI overviews, Generative Engine Optimization (GEO) for ChatGPT and Perplexity, local Dublin SEO, and high-authority link acquisition.
-                    </p>
+                    SEO is a long-game channel, but improvements can become visible within a few weeks once technical issues are fixed and stronger content is in place. Significant ranking gains usually follow over a few months, depending on competition and scope.
                   </div>
                 </div>
               </div>
-
               <div className="accordion-item">
-                <div
-                  className="accordion-button collapsed"
-                  role="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse_seo_two"
-                  aria-expanded="false"
-                  aria-controls="collapse_seo_two"
-                >
-                  Q. How long does it take to see organic rankings and traffic improvements?
-                </div>
-                <div
-                  id="collapse_seo_two"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#seo_faq_accordion"
-                >
+                <h3 className="accordion-header" id="seoHeadingTwo">
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#seoCollapseTwo" aria-expanded="false" aria-controls="seoCollapseTwo">
+                    Do you help with local search for Dublin businesses?
+                  </button>
+                </h3>
+                <div id="seoCollapseTwo" className="accordion-collapse collapse" aria-labelledby="seoHeadingTwo" data-bs-parent="#seoFaq">
                   <div className="accordion-body">
-                    <div className="text_a">A.</div>
-                    <p>
-                      Most technical SEO fixes and indexation improvements show measurable results within 4 to 8 weeks. Competitive keyword ranking gains, organic traffic growth, and AI answer engine citations typically accelerate between 3 to 6 months of active optimization.
-                    </p>
+                    Yes. We help businesses improve local rankings through Google Business Profile optimisation, local landing pages, consistent business details, and search-focused content built for the area they serve.
                   </div>
                 </div>
               </div>
-
               <div className="accordion-item">
-                <div
-                  className="accordion-button collapsed"
-                  role="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse_seo_three"
-                  aria-expanded="false"
-                  aria-controls="collapse_seo_three"
-                >
-                  Q. What is Answer Engine Optimization (AEO) and why does it matter?
-                </div>
-                <div
-                  id="collapse_seo_three"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#seo_faq_accordion"
-                >
+                <h3 className="accordion-header" id="seoHeadingThree">
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#seoCollapseThree" aria-expanded="false" aria-controls="seoCollapseThree">
+                    What is the difference between SEO, AEO and GEO?
+                  </button>
+                </h3>
+                <div id="seoCollapseThree" className="accordion-collapse collapse" aria-labelledby="seoHeadingThree" data-bs-parent="#seoFaq">
                   <div className="accordion-body">
-                    <div className="text_a">A.</div>
-                    <p>
-                      AEO optimizes your web content for direct AI answers, voice search, and AI search engines like ChatGPT Search, Perplexity, and Google AI Overviews. It ensures your business is cited as the definitive answer for queries related to your products or services.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="accordion-item">
-                <div
-                  className="accordion-button collapsed"
-                  role="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse_seo_four"
-                  aria-expanded="false"
-                  aria-controls="collapse_seo_four"
-                >
-                  Q. Do you provide Local SEO for Dublin and Irish businesses?
-                </div>
-                <div
-                  id="collapse_seo_four"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#seo_faq_accordion"
-                >
-                  <div className="accordion-body">
-                    <div className="text_a">A.</div>
-                    <p>
-                      Yes, WebPalm specializes in Irish local SEO, optimizing Google Business Profiles, local NAP citations, geo-targeted landing pages, and localized Dublin structured data to capture high-intent regional searches.
-                    </p>
+                    SEO focuses on rankings in search engines. AEO is about showing up clearly in AI and answer-based search experiences. GEO looks at how your brand and content are represented in AI-generated summaries and recommendations. We build all three into a more complete visibility strategy.
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        {/* <!-- FAQ Section - End
-        ================================================== --> */}
 
-        <ParallaxSection4 />
+        <section className="section_space text-center">
+          <div className="container">
+            <h2 className="heading_text mb-3">Ready to grow your visibility and attract the right traffic?</h2>
+            <p className="mb-4">We can review your current site and recommend the highest-impact next steps.</p>
+            <Link to="/contact" className="btn btn-primary">
+              <span className="btn_label" data-text="Request an SEO review">Request an SEO review</span>
+            </Link>
+          </div>
+        </section>
+
+        <Footer2 />
         <WhatsAppButton />
       </main>
-      <Footer2 />
     </div>
   );
 }

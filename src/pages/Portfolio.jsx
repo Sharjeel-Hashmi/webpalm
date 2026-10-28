@@ -117,12 +117,18 @@ export default function Portfolio() {
                   {
                     "@type": "ListItem",
                     "position": 1,
+                    "name": "KildareDoc - GP Clinic Website & Local Healthcare Presence",
+                    "url": "https://webpalm.ie/portfolio/kildaredoc"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
                     "name": "EduNest - EdTech Learning Management & Student Portal",
                     "url": "https://webpalm.ie/portfolio/edunest"
                   },
                   {
                     "@type": "ListItem",
-                    "position": 2,
+                    "position": 3,
                     "name": "FitFlow - Health & Gym Member Management Platform",
                     "url": "https://webpalm.ie/portfolio/fitflow"
                   },
@@ -233,6 +239,27 @@ export default function Portfolio() {
             </div>
 
             <div className="row g-4 mb-5">
+              <div className="col-lg-4 col-md-6">
+                <div className="card h-100 border-0 shadow-sm rounded overflow-hidden">
+                  <img
+                    src="https://www.kildaredoc.ie/social-preview.webp"
+                    alt="KildareDoc GP clinic website preview"
+                    className="card-img-top"
+                    style={{ height: "200px", objectFit: "cover" }}
+                  />
+                  <div className="card-body p-4 d-flex flex-column">
+                    <span className="badge bg-primary text-white mb-2 align-self-start">Healthcare & Local Services</span>
+                    <h3 className="h5 card-title text-dark">KildareDoc GP Clinic Website</h3>
+                    <p className="card-text text-muted small flex-grow-1">
+                      Designed a clear, mobile-first healthcare website for a local GP clinic to improve trust, clarity, and service discovery.
+                    </p>
+                    <Link to="/portfolio/kildaredoc" className="btn btn-outline-primary btn-sm mt-3">
+                      Read Full Case Study &rarr;
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
               <div className="col-lg-4 col-md-6">
                 <div className="card h-100 border-0 shadow-sm rounded overflow-hidden">
                   <img
