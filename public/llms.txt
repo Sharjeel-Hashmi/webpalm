@@ -16,6 +16,16 @@
 - [Graphic Designing & Video Editing](https://webpalm.ie/graphic-designing): Comprehensive UI/UX interface design, branding systems, social media visual assets, motion graphics, and video production.
 - [Search Engine Optimization (SEO)](https://webpalm.ie/search-engine-optimization): Technical SEO audits, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), keyword strategy, link building, and conversion rate optimization (CRO).
 - [Services Hub](https://webpalm.ie/services): Overview of all digital engineering, cloud migration, and consulting capabilities.
+- [Web Development Ireland](https://webpalm.ie/web-development-ireland): Nationwide web development services for Irish businesses across all 32 counties. Custom websites from €900, web apps from €3,500+.
+- [Web Developer Kildare](https://webpalm.ie/web-developer-kildare): Local web development serving County Kildare — Naas, Newbridge, Athy, Maynooth, Leixlip, and Celbridge businesses.
+- [Web Development Tipperary](https://webpalm.ie/web-development-tipperary): Web development services for businesses in County Tipperary including Clonmel, Thurles, Nenagh, and Cashel.
+- [Web Development Laois](https://webpalm.ie/web-development-laois): Web development for County Laois businesses including Portlaoise, Portarlington, Mountmellick, and Mountrath.
+- [Laravel Development Ireland](https://webpalm.ie/laravel-development-ireland): Specialist Laravel PHP development agency — custom business applications, REST APIs, SaaS platforms, and admin portals.
+- [Motion Graphics Dublin](https://webpalm.ie/motion-graphics-dublin): Professional motion graphics, animated social media videos, explainer animations, and brand video content for Dublin businesses.
+- [Graphic Design Dublin](https://webpalm.ie/graphic-design-dublin): Logo design, brand identity systems, social media design, and marketing collateral for Dublin businesses. Logos from €350.
+- [Web Application Development Dublin](https://webpalm.ie/web-application-development-dublin): Custom web application development in Dublin — SaaS platforms, business portals, and enterprise web apps from €3,500.
+- [Social Media Marketing Dublin](https://webpalm.ie/social-media-marketing-dublin): Social media strategy, content creation, paid advertising, and community management for Dublin businesses. From €400/month.
+- [Drupal Development Dublin](https://webpalm.ie/drupal-development-dublin): Expert Drupal 10 development, custom modules, theme design, and CMS migration for Dublin and Irish businesses.
 
 ## Featured Case Studies
 - [EduNest Case Study](https://webpalm.ie/portfolio/edunest): Cloud-native LMS platform delivering +210% course enrollment growth and 0.8s load times.
@@ -24,6 +34,12 @@
 
 ## Pricing & Commercial Engagements
 - [Pricing Plans](https://webpalm.ie/pricing): Transparent tiers for startups, small businesses, and enterprises ranging from Starter websites to bespoke enterprise web platforms.
+- **Motion Graphics**: From €250 for single animated reels, €500 for explainers, €1,500+ for full productions.
+- **Graphic Design**: Logos from €350, brand identity packages from €750, social media templates from €200.
+- **Social Media Management**: From €400/month for 2-platform management, €1,200+/month for full multi-platform.
+- **Laravel Development**: From €3,500 for single-module tools, €25,000+ for enterprise SaaS platforms.
+- **Drupal Development**: From €2,500 for theme/CMS setup, €5,000–€30,000 for enterprise builds.
+- **Web Applications**: From €3,500 for internal tools, €8,000–€20,000 for mid-tier SaaS, €25,000+ for enterprise.
 
 ## Trust & Verification
 - [About WebPalm](https://webpalm.ie/about): Company background, engineering philosophy, and values.

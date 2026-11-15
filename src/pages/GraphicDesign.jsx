@@ -282,6 +282,52 @@ export default function GraphicDesign() {
           </div>
         </section>
 
+        {/* Dedicated Local Design & Motion Services */}
+        <section className="section_space bg-white border-top border-bottom">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-8 text-center mb-4">
+                <div
+                  className="heading_focus_text has_underline d-inline-flex"
+                  style={{
+                    backgroundImage: `url(${"assets/images/shapes/shape_title_under_line.svg"})`,
+                  }}
+                >
+                  Specialized Design Practices
+                </div>
+                <h2 className="heading_text mb-3">
+                  Local Studios & <mark>Motion Services</mark>
+                </h2>
+                <p className="heading_description mb-0 text-dark">
+                  Looking for dedicated Dublin graphic design or animated motion content? Discover our specialized service pages:
+                </p>
+              </div>
+            </div>
+            <div className="row g-4 justify-content-center">
+              <div className="col-lg-5 col-md-6">
+                <div className="p-4 bg-light rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-solid fa-pen-nib"></i></div>
+                  <h3 className="h5 text-dark mb-2">Graphic Design Dublin</h3>
+                  <p className="text-muted small mb-3">
+                    Bespoke logo design, branding identity kits, social media post templates, and print collateral crafted for Dublin businesses.
+                  </p>
+                  <Link to="/graphic-design-dublin" className="small fw-bold text-primary">Dublin Design Hub &rarr;</Link>
+                </div>
+              </div>
+              <div className="col-lg-5 col-md-6">
+                <div className="p-4 bg-light rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-solid fa-film"></i></div>
+                  <h3 className="h5 text-dark mb-2">Motion Graphics Dublin</h3>
+                  <p className="text-muted small mb-3">
+                    High-impact animated social reels, explainer animations, logo motion, and promotional video editing for brands across Ireland.
+                  </p>
+                  <Link to="/motion-graphics-dublin" className="small fw-bold text-primary">Motion Graphics Hub &rarr;</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="section_space bg-light">
           <div className="container">
             <div className="row justify-content-center">

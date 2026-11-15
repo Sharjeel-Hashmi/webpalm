@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import Footer2 from '../Components/Footer2';
 import Header from '../Components/Header';
@@ -448,6 +449,129 @@ export default function Services() {
         </section>
         {/* <!-- Service Details Section - End
         ================================================== --> */}
+
+        {/* Dedicated Regional & Specialized Service Pages */}
+        <section className="section_space bg-white">
+          <div className="container">
+            <div className="heading_block text-center mb-5">
+              <div
+                className="heading_focus_text has_underline d-inline-flex"
+                style={{
+                  backgroundImage: `url(${"assets/images/shapes/shape_title_under_line.svg"})`,
+                }}
+              >
+                Specialized Services & Locations
+              </div>
+              <h2 className="heading_text mb-3">
+                Explore Our <mark>Regional & Technology Practices</mark>
+              </h2>
+              <p className="heading_description mb-0 text-dark">
+                Tailored digital engineering, bespoke application development, and creative marketing across Ireland and dedicated county hubs.
+              </p>
+            </div>
+
+            <div className="row g-4">
+              <div className="col-lg-4 col-md-6">
+                <div className="p-4 bg-light rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-solid fa-city"></i></div>
+                  <h3 className="h5 text-dark mb-2">Web Development Dublin</h3>
+                  <p className="text-muted small mb-3">
+                    Local web development from our Coolmine D15 office. Bespoke React sites, high-converting stores, and web portals.
+                  </p>
+                  <Link to="/web-development-dublin" className="small fw-bold text-primary">Dublin Office &rarr;</Link>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6">
+                <div className="p-4 bg-light rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-solid fa-map-location-dot"></i></div>
+                  <h3 className="h5 text-dark mb-2">Web Development Ireland</h3>
+                  <p className="text-muted small mb-3">
+                    Nationwide web development and software engineering serving businesses across all 32 counties in Ireland.
+                  </p>
+                  <Link to="/web-development-ireland" className="small fw-bold text-primary">Nationwide Ireland &rarr;</Link>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6">
+                <div className="p-4 bg-light rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-solid fa-laptop-code"></i></div>
+                  <h3 className="h5 text-dark mb-2">Web App Development</h3>
+                  <p className="text-muted small mb-3">
+                    Custom web application development in Dublin. React, Next.js, Node.js, and Python SaaS platforms and portals.
+                  </p>
+                  <Link to="/web-application-development-dublin" className="small fw-bold text-primary">Web Applications &rarr;</Link>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6">
+                <div className="p-4 bg-light rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-brands fa-laravel"></i></div>
+                  <h3 className="h5 text-dark mb-2">Laravel Development Ireland</h3>
+                  <p className="text-muted small mb-3">
+                    PHP & Laravel software house. Custom web applications, REST APIs, and database-heavy business platforms.
+                  </p>
+                  <Link to="/laravel-development-ireland" className="small fw-bold text-primary">Laravel Agency &rarr;</Link>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6">
+                <div className="p-4 bg-light rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-brands fa-drupal"></i></div>
+                  <h3 className="h5 text-dark mb-2">Drupal Development Dublin</h3>
+                  <p className="text-muted small mb-3">
+                    Drupal 10 builds, custom module development, decoupled React architectures, and enterprise CMS migrations.
+                  </p>
+                  <Link to="/drupal-development-dublin" className="small fw-bold text-primary">Drupal Agency &rarr;</Link>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6">
+                <div className="p-4 bg-light rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-solid fa-bullhorn"></i></div>
+                  <h3 className="h5 text-dark mb-2">Social Media Agency Dublin</h3>
+                  <p className="text-muted small mb-3">
+                    Social media marketing, content creation, Reels/TikTok production, and paid ads management for Dublin brands.
+                  </p>
+                  <Link to="/social-media-marketing-dublin" className="small fw-bold text-primary">Dublin Social Agency &rarr;</Link>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6">
+                <div className="p-4 bg-light rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-solid fa-pen-nib"></i></div>
+                  <h3 className="h5 text-dark mb-2">Graphic Design Dublin</h3>
+                  <p className="text-muted small mb-3">
+                    Logo design, complete brand identity packages, digital marketing creatives, and presentation designs in Dublin.
+                  </p>
+                  <Link to="/graphic-design-dublin" className="small fw-bold text-primary">Dublin Design &rarr;</Link>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6">
+                <div className="p-4 bg-light rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-solid fa-film"></i></div>
+                  <h3 className="h5 text-dark mb-2">Motion Graphics Dublin</h3>
+                  <p className="text-muted small mb-3">
+                    Animated social media reels, 2D explainer animations, logo motion, and brand video editing across Ireland.
+                  </p>
+                  <Link to="/motion-graphics-dublin" className="small fw-bold text-primary">Motion Graphics &rarr;</Link>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6">
+                <div className="p-4 bg-light rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-solid fa-location-dot"></i></div>
+                  <h3 className="h5 text-dark mb-2">Web Developer Kildare</h3>
+                  <p className="text-muted small mb-3">
+                    Serving Naas, Newbridge, Athy, and County Kildare with custom web design, software development, and SEO.
+                  </p>
+                  <Link to="/web-developer-kildare" className="small fw-bold text-primary">Kildare Hub &rarr;</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* <!-- Call To Action Section - Start
         ================================================== --> */}

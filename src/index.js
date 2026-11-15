@@ -28,6 +28,16 @@ import CaseStudyEduNest from './pages/CaseStudyEduNest';
 import CaseStudyFitFlow from './pages/CaseStudyFitFlow';
 import CaseStudyPropVista from './pages/CaseStudyPropVista';
 import WebDevelopmentDublin from './pages/WebDevelopmentDublin';
+import WebDevelopmentIreland from './pages/WebDevelopmentIreland';
+import WebDeveloperKildare from './pages/WebDeveloperKildare';
+import WebDevelopmentTipperary from './pages/WebDevelopmentTipperary';
+import WebDevelopmentLaois from './pages/WebDevelopmentLaois';
+import LaravelDevelopmentIreland from './pages/LaravelDevelopmentIreland';
+import MotionGraphicsDublin from './pages/MotionGraphicsDublin';
+import GraphicDesignDublin from './pages/GraphicDesignDublin';
+import WebApplicationDevelopmentDublin from './pages/WebApplicationDevelopmentDublin';
+import SocialMediaMarketingDublin from './pages/SocialMediaMarketingDublin';
+import DrupalDevelopmentDublin from './pages/DrupalDevelopmentDublin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let allRoutes = createBrowserRouter(
@@ -59,6 +69,46 @@ let allRoutes = createBrowserRouter(
     {
       path:'web-development-dublin',
       element:<WebDevelopmentDublin/>
+    },
+    {
+      path:'web-development-ireland',
+      element:<WebDevelopmentIreland/>
+    },
+    {
+      path:'web-developer-kildare',
+      element:<WebDeveloperKildare/>
+    },
+    {
+      path:'web-development-tipperary',
+      element:<WebDevelopmentTipperary/>
+    },
+    {
+      path:'web-development-laois',
+      element:<WebDevelopmentLaois/>
+    },
+    {
+      path:'laravel-development-ireland',
+      element:<LaravelDevelopmentIreland/>
+    },
+    {
+      path:'motion-graphics-dublin',
+      element:<MotionGraphicsDublin/>
+    },
+    {
+      path:'graphic-design-dublin',
+      element:<GraphicDesignDublin/>
+    },
+    {
+      path:'web-application-development-dublin',
+      element:<WebApplicationDevelopmentDublin/>
+    },
+    {
+      path:'social-media-marketing-dublin',
+      element:<SocialMediaMarketingDublin/>
+    },
+    {
+      path:'drupal-development-dublin',
+      element:<DrupalDevelopmentDublin/>
     },
     {
       path:'search-engine-optimization',

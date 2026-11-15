@@ -325,7 +325,113 @@ export default function WebDevelopment() {
           </div>
         </section>
 
+        {/* Regional Hubs & Specialized Development Services */}
         <section className="section_space bg-light">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-10 text-center mb-5">
+                <div
+                  className="heading_focus_text has_underline d-inline-flex"
+                  style={{
+                    backgroundImage: `url(${"assets/images/shapes/shape_title_under_line.svg"})`,
+                  }}
+                >
+                  Regional & Technology Hubs
+                </div>
+                <h2 className="heading_text mb-3">
+                  Local Expertise Across <mark>Dublin & Ireland</mark>
+                </h2>
+                <p className="heading_description mb-0 text-dark">
+                  Explore our dedicated regional development hubs and specialized technology practices designed to deliver tailored digital solutions for your business.
+                </p>
+              </div>
+            </div>
+            <div className="row g-4">
+              <div className="col-lg-3 col-md-6">
+                <div className="p-4 bg-white rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-solid fa-city"></i></div>
+                  <h3 className="h6 text-dark mb-2">Web Development Dublin</h3>
+                  <p className="text-muted small mb-3">
+                    Bespoke web development from our Coolmine D15 engineering office serving Dublin City, Fingal, and South Dublin.
+                  </p>
+                  <Link to="/web-development-dublin" className="small fw-bold text-primary">Dublin Hub &rarr;</Link>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6">
+                <div className="p-4 bg-white rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-solid fa-map-location-dot"></i></div>
+                  <h3 className="h6 text-dark mb-2">Web Development Ireland</h3>
+                  <p className="text-muted small mb-3">
+                    Nationwide web development and software engineering serving businesses across all 32 counties in Ireland.
+                  </p>
+                  <Link to="/web-development-ireland" className="small fw-bold text-primary">Ireland Nationwide &rarr;</Link>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6">
+                <div className="p-4 bg-white rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-solid fa-location-dot"></i></div>
+                  <h3 className="h6 text-dark mb-2">Web Developer Kildare</h3>
+                  <p className="text-muted small mb-3">
+                    Web development, apps, and digital marketing for Naas, Newbridge, Athy, and County Kildare businesses.
+                  </p>
+                  <Link to="/web-developer-kildare" className="small fw-bold text-primary">Kildare Hub &rarr;</Link>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6">
+                <div className="p-4 bg-white rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-solid fa-laptop-code"></i></div>
+                  <h3 className="h6 text-dark mb-2">Web App Development</h3>
+                  <p className="text-muted small mb-3">
+                    Custom React, Next.js, and Node.js web applications, SaaS platforms, and enterprise business portals in Dublin.
+                  </p>
+                  <Link to="/web-application-development-dublin" className="small fw-bold text-primary">Web Apps Dublin &rarr;</Link>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6">
+                <div className="p-4 bg-white rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-brands fa-laravel"></i></div>
+                  <h3 className="h6 text-dark mb-2">Laravel Development</h3>
+                  <p className="text-muted small mb-3">
+                    Specialist PHP and Laravel backend architecture, REST APIs, and database-driven software across Ireland.
+                  </p>
+                  <Link to="/laravel-development-ireland" className="small fw-bold text-primary">Laravel Agency &rarr;</Link>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6">
+                <div className="p-4 bg-white rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-brands fa-drupal"></i></div>
+                  <h3 className="h6 text-dark mb-2">Drupal Development</h3>
+                  <p className="text-muted small mb-3">
+                    Enterprise Drupal 10 CMS builds, custom modules, decoupled React setups, and security patch maintenance.
+                  </p>
+                  <Link to="/drupal-development-dublin" className="small fw-bold text-primary">Drupal Dublin &rarr;</Link>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6">
+                <div className="p-4 bg-white rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-solid fa-mountain-sun"></i></div>
+                  <h3 className="h6 text-dark mb-2">Web Development Tipperary</h3>
+                  <p className="text-muted small mb-3">
+                    Digital solutions, websites, and SEO for businesses in Clonmel, Thurles, Nenagh, and County Tipperary.
+                  </p>
+                  <Link to="/web-development-tipperary" className="small fw-bold text-primary">Tipperary Hub &rarr;</Link>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6">
+                <div className="p-4 bg-white rounded shadow-sm h-100 border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-solid fa-compass"></i></div>
+                  <h3 className="h6 text-dark mb-2">Web Development Laois</h3>
+                  <p className="text-muted small mb-3">
+                    Website design and web applications for businesses in Portlaoise, Portarlington, and County Laois.
+                  </p>
+                  <Link to="/web-development-laois" className="small fw-bold text-primary">Laois Hub &rarr;</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section_space">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
