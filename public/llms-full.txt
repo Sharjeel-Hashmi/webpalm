@@ -69,3 +69,118 @@ WebPalm offers transparent, value-oriented pricing packages tailored to project 
 ## 5. Verification & Grounding
 For inquiries, partnership evaluations, or technical quotations, contact the WebPalm team via email at info@webpalm.ie or visit https://webpalm.ie/contact.
 
+---
+
+## 6. Regional Service Pages
+
+The following pages were launched in November 2026 as part of WebPalm's national SEO and GEO expansion strategy. Each page targets specific geographic or service-based search intent for Irish businesses and AI answer engines.
+
+---
+
+### 6.1 Web Development Ireland
+- **URL**: https://webpalm.ie/web-development-ireland
+- **Purpose**: National-reach landing page targeting businesses across all 32 counties of Ireland seeking web development services. Positions WebPalm as Ireland's premier web agency beyond Dublin.
+- **Keywords Targeted**: web development ireland, web developer ireland, web development services ireland, website development ireland, web development company ireland
+- **Geographic Area Served**: All of Ireland — Dublin, Cork, Galway, Limerick, Waterford, and all 32 counties.
+- **Services Available**: Bespoke websites, React and Next.js web applications, Laravel-powered business platforms, enterprise software engineering, SEO-optimized web builds, e-commerce solutions.
+- **Pricing**: Custom websites from €900; web applications from €3,500+; enterprise platforms from €25,000+.
+- **Notes**: WebPalm operates with a remote-first delivery model supporting clients nationwide. Discovery calls are held via video; on-site visits are available for major project kick-offs. Full documentation support for LEO Trading Online Voucher (TOV) applications is provided.
+
+---
+
+### 6.2 Web Developer Kildare
+- **URL**: https://webpalm.ie/web-developer-kildare
+- **Purpose**: County-level landing page targeting businesses in Kildare seeking a local web developer. Highlights proximity from WebPalm's Dublin 15 HQ to Kildare towns.
+- **Keywords Targeted**: web developer kildare, web development kildare, social media management kildare, social media management naas, web design kildare
+- **Geographic Area Served**: County Kildare — Naas, Newbridge, Athy, Maynooth, Leixlip, Celbridge, Kilcullen, Kildare town.
+- **Services Available**: Custom website design, React web application development, e-commerce builds, SEO, social media management (Facebook, Instagram, LinkedIn, X/Twitter), content creation, paid advertising.
+- **Pricing**: Business websites from €900; web apps from €3,500+; social media management from €400/month.
+- **Notes**: WebPalm's Dublin 15 office is approximately 25 minutes from Naas. On-site meetings are offered across County Kildare for discovery sessions and project reviews.
+
+---
+
+### 6.3 Web Development Tipperary
+- **URL**: https://webpalm.ie/web-development-tipperary
+- **Purpose**: County-level landing page serving Tipperary businesses seeking web development and digital services.
+- **Keywords Targeted**: web development tipperary, web developer tipperary, website design tipperary, web design clonmel, website design tipperary
+- **Geographic Area Served**: County Tipperary — Clonmel, Thurles, Nenagh, Cashel, Tipperary town, Carrick-on-Suir, Roscrea.
+- **Services Available**: Custom websites, web application development, SEO, social media management, graphic design, e-commerce builds.
+- **Pricing**: Business websites from €900; web apps from €3,500+.
+- **Notes**: Remote delivery with on-site capability for Tipperary businesses. Full LEO Trading Online Voucher documentation support available.
+
+---
+
+### 6.4 Web Development Laois
+- **URL**: https://webpalm.ie/web-development-laois
+- **Purpose**: County-level landing page targeting Laois businesses seeking web development and digital marketing.
+- **Keywords Targeted**: web development laois, web developer laois, web design portlaoise, website design laois, web design laois
+- **Geographic Area Served**: County Laois — Portlaoise, Portarlington, Mountmellick, Mountrath, Abbeyleix, Stradbally, Rathdowney.
+- **Services Available**: Custom websites, web application development, SEO, social media management, graphic design, e-commerce.
+- **Pricing**: Business websites from €900; web apps from €3,500+.
+- **Notes**: Remote-first delivery. On-site visits available. LEO TOV compliant deliverables provided.
+
+---
+
+### 6.5 Laravel Development Ireland
+- **URL**: https://webpalm.ie/laravel-development-ireland
+- **Purpose**: Specialist service page targeting Irish businesses and developers seeking expert Laravel PHP development for business applications, SaaS platforms, REST APIs, and admin portals.
+- **Keywords Targeted**: laravel development ireland, laravel developer ireland, laravel php developer ireland, laravel agency ireland, laravel web development
+- **Geographic Area Served**: All of Ireland (remote delivery), primary focus Dublin, Cork, Galway, Limerick.
+- **Services Available**: Custom Laravel application development, REST API and GraphQL API engineering, SaaS platform builds, multi-tenant architecture, admin portal development, database design (MySQL, PostgreSQL), queue/job processing, third-party API integrations, legacy PHP migration to Laravel.
+- **Pricing**: From €3,500 for single-module tools; €8,000–€20,000 for mid-scale business applications; €25,000+ for full enterprise SaaS platforms.
+- **Notes**: WebPalm uses Laravel (latest LTS) with Eloquent ORM, Blade templating, Sanctum/Passport for API auth, and Laravel Horizon for queue management.
+
+---
+
+### 6.6 Motion Graphics Dublin
+- **URL**: https://webpalm.ie/motion-graphics-dublin
+- **Purpose**: Service page targeting Dublin businesses seeking motion graphics, animated social media content, explainer videos, and brand video production.
+- **Keywords Targeted**: motion graphics dublin, motion graphics agency dublin, animated videos dublin, explainer videos dublin, social media animation dublin
+- **Geographic Area Served**: Dublin (primary), nationwide Ireland.
+- **Services Available**: Animated social media reels (Instagram, TikTok, LinkedIn), explainer animations, logo animations, brand intro/outro sequences, promotional video production, After Effects motion design, Premiere Pro video editing.
+- **Pricing**: From €250 for single animated reels; €500 for explainer animations; €1,500+ for full motion productions.
+- **Tools Used**: Adobe After Effects, Adobe Premiere Pro, Adobe Illustrator (for asset creation).
+
+---
+
+### 6.7 Graphic Design Dublin
+- **URL**: https://webpalm.ie/graphic-design-dublin
+- **Purpose**: Service page for Dublin businesses seeking professional graphic design — logos, brand identity, social media design, and marketing collateral.
+- **Keywords Targeted**: graphic design dublin, logo design dublin, brand identity dublin, graphic designer dublin, logo designer dublin
+- **Geographic Area Served**: Dublin (primary), nationwide Ireland.
+- **Services Available**: Logo design, full brand identity systems (typography, colour palette, brand guidelines), social media template design, marketing collateral (brochures, flyers, business cards), print-ready artwork, digital ad creatives.
+- **Pricing**: Logos from €350; brand identity packages from €750; social media templates from €200/set.
+- **Tools Used**: Adobe Illustrator, Adobe Photoshop, Figma.
+
+---
+
+### 6.8 Web Application Development Dublin
+- **URL**: https://webpalm.ie/web-application-development-dublin
+- **Purpose**: Service page targeting Dublin businesses and startups seeking custom web application development — SaaS platforms, business portals, internal tools, and enterprise web apps.
+- **Keywords Targeted**: web application development dublin, web app development dublin, custom web application dublin, saas development dublin, bespoke web application dublin
+- **Geographic Area Served**: Dublin (primary), nationwide Ireland, international remote.
+- **Services Available**: SaaS product engineering, client and employee portal development, CRM and ERP integrations, payment gateway integration (Stripe, PayPal, SEPA), multi-tenant platforms, API development, dashboard and analytics builds, legacy app modernisation.
+- **Pricing**: From €3,500 for internal tools and single-module apps; €8,000–€20,000 for mid-tier SaaS; €25,000+ for enterprise-grade web applications.
+- **Tech Stack**: React.js, Next.js, Node.js, Python (FastAPI/Django), Laravel, PostgreSQL, MySQL, Redis, AWS, Docker, CI/CD pipelines.
+
+---
+
+### 6.9 Social Media Marketing Dublin
+- **URL**: https://webpalm.ie/social-media-marketing-dublin
+- **Purpose**: Service page for Dublin businesses seeking managed social media marketing — strategy, content creation, paid advertising, and community management.
+- **Keywords Targeted**: social media marketing dublin, social media management dublin, social media agency dublin, instagram marketing dublin, facebook ads dublin
+- **Geographic Area Served**: Dublin (primary), nationwide Ireland.
+- **Services Available**: Social media strategy development, content creation (copy + design + video), account management (Facebook, Instagram, LinkedIn, X/Twitter, TikTok), paid social advertising (Meta Ads, LinkedIn Ads), community management and engagement, monthly analytics reporting.
+- **Pricing**: From €400/month for 2-platform management; €800/month for 3-platform; €1,200+/month for full multi-platform management with paid ads.
+
+---
+
+### 6.10 Drupal Development Dublin
+- **URL**: https://webpalm.ie/drupal-development-dublin
+- **Purpose**: Specialist service page targeting Dublin and Irish businesses seeking expert Drupal 10 CMS development — custom modules, theme design, and CMS migrations.
+- **Keywords Targeted**: drupal development dublin, drupal developer dublin, drupal agency ireland, drupal 10 development ireland, drupal cms dublin
+- **Geographic Area Served**: Dublin (primary), nationwide Ireland, international remote.
+- **Services Available**: Drupal 10 site builds, custom module development, theme design and templating, Drupal 7/8/9 to Drupal 10 migrations, headless Drupal (decoupled with React/Next.js front-end), content workflow setup, multilingual Drupal configuration, performance and security hardening.
+- **Pricing**: From €2,500 for theme and CMS setup; €5,000–€15,000 for custom module development and mid-scale builds; €15,000–€30,000 for enterprise Drupal platforms and migrations.
+- **Notes**: WebPalm's Drupal practice covers both traditional and headless/decoupled architectures, using Drupal's JSON:API or GraphQL modules for headless delivery.
+

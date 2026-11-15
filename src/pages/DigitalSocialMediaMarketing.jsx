@@ -249,6 +249,42 @@ export default function DigitalSocialMediaMarketing() {
           </div>
         </section>
 
+        {/* Dublin Local Social Media Hub */}
+        <section className="section_space bg-white border-top border-bottom">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-8 text-center mb-4">
+                <div
+                  className="heading_focus_text has_underline d-inline-flex"
+                  style={{
+                    backgroundImage: `url(${"assets/images/shapes/shape_title_under_line.svg"})`,
+                  }}
+                >
+                  Dublin Marketing Hub
+                </div>
+                <h2 className="heading_text mb-3">
+                  Local Agency for <mark>Dublin Businesses</mark>
+                </h2>
+                <p className="heading_description mb-0 text-dark">
+                  Need dedicated Dublin-based social media management, local targeting, and paid ad management? Explore our local agency page:
+                </p>
+              </div>
+            </div>
+            <div className="row justify-content-center">
+              <div className="col-lg-6">
+                <div className="p-4 bg-light rounded shadow-sm border text-start">
+                  <div className="text-primary fs-3 mb-2"><i className="fa-solid fa-bullhorn"></i></div>
+                  <h3 className="h5 text-dark mb-2">Social Media Marketing Agency Dublin</h3>
+                  <p className="text-muted small mb-3">
+                    Bespoke content creation, Reels/TikTok production, Meta & LinkedIn ad campaigns, and monthly growth management from our Coolmine D15 office. Packages from €400/month.
+                  </p>
+                  <Link to="/social-media-marketing-dublin" className="small fw-bold text-primary">Dublin Agency Hub &rarr;</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="section_space bg-light">
           <div className="container">
             <div className="row justify-content-center">
